@@ -1,3 +1,5 @@
 # Generated artefacts live at the repo root only as working copies;
 # the served, hashed copies are tracked under docs/img/.
 /*.png
+
+BRIEFING.md
