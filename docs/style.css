@@ -1,0 +1,284 @@
+/* The Inhuman Gallery — house style.
+   No scripts execute on this site. The accent colour is #808080 (value 128),
+   the DC term: the one value that survives every averaging pathway, and the
+   fixed point of the light/dark inversion below. */
+
+:root {
+  --paper: #f4f4f2;
+  --ink: #1d1d1b;
+  --mid: #808080;
+  --hairline: #d7d7d3;
+  --faint: #6e6e6a;
+  --stamp: #2c4699;
+  --seal-bg: #ececea;
+  --serif: "Charter", "Bitstream Charter", "Sitka Text", Cambria, Georgia, serif;
+  --mono: ui-monospace, "Cascadia Mono", Consolas, "SF Mono", Menlo, monospace;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --paper: #141413;
+    --ink: #e4e4e0;
+    --hairline: #2f2f2c;
+    --faint: #999994;
+    --stamp: #96a8e8;
+    --seal-bg: #1c1c1b;
+    /* --mid stays #808080. Grey 128 is invariant under inversion,
+       as it is under resampling. */
+  }
+}
+
+* { box-sizing: border-box; }
+
+html { background: var(--paper); }
+
+body {
+  margin: 0 auto;
+  padding: 1.5rem 1.25rem 5rem;
+  max-width: 42rem;
+  font-family: var(--serif);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+  color: var(--ink);
+  background: var(--paper);
+}
+
+/* ---- masthead ---- */
+
+header.site {
+  display: flex;
+  align-items: baseline;
+  gap: 0.65rem;
+  flex-wrap: wrap;
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  padding-bottom: 0.9rem;
+  border-bottom: 1px solid var(--hairline);
+  margin-bottom: 2.5rem;
+}
+
+.mark {
+  width: 0.8em; height: 0.8em;
+  background: var(--mid);
+  display: inline-block;
+  flex: none;
+  align-self: center;
+}
+
+header.site .name { letter-spacing: 0.04em; }
+header.site .name a { color: var(--ink); text-decoration: none; }
+
+header.site nav { margin-left: auto; }
+header.site nav a {
+  color: var(--faint);
+  text-decoration: none;
+  margin-left: 0.9rem;
+}
+header.site nav a:hover,
+header.site nav a[aria-current="page"] { color: var(--stamp); }
+
+/* ---- prose ---- */
+
+h1, h2, h3 {
+  font-weight: 600;
+  line-height: 1.25;
+  letter-spacing: -0.01em;
+}
+h1 { font-size: 1.75rem; margin: 0 0 1.2rem; }
+h2 { font-size: 1.15rem; margin: 2.6rem 0 0.8rem; }
+h3 { font-size: 1rem; margin: 2rem 0 0.6rem; }
+
+p, ul, ol { margin: 0 0 1.05rem; }
+ul, ol { padding-left: 1.4rem; }
+li { margin-bottom: 0.35rem; }
+
+a { color: var(--stamp); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
+a:hover { text-decoration-thickness: 2px; }
+
+em { font-style: italic; }
+hr { border: 0; border-top: 1px solid var(--hairline); margin: 2.5rem 0; }
+
+.eyebrow {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin-bottom: 0.5rem;
+}
+
+/* ---- the plaque (index only) ---- */
+
+.plaque {
+  border: 1px solid var(--ink);
+  outline: 1px solid var(--hairline);
+  outline-offset: 4px;
+  padding: 1.6rem 1.8rem;
+  margin: 0 0 3rem;
+}
+.plaque p { margin: 0 0 0.8rem; }
+.plaque p:last-child { margin: 0; }
+.plaque .to-machines {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  color: var(--faint);
+  border-top: 1px solid var(--hairline);
+  padding-top: 0.8rem;
+  margin-top: 1.1rem;
+}
+
+/* ---- catalogue list ---- */
+
+ol.catalogue { list-style: none; padding: 0; margin: 0; }
+ol.catalogue li {
+  display: grid;
+  grid-template-columns: 5.2rem 1fr;
+  gap: 0.4rem 1rem;
+  padding: 1.05rem 0;
+  border-top: 1px solid var(--hairline);
+  margin: 0;
+}
+ol.catalogue li:last-child { border-bottom: 1px solid var(--hairline); }
+.acc {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  color: var(--stamp);
+  padding-top: 0.2rem;
+}
+ol.catalogue .work-title { font-size: 1.05rem; font-weight: 600; }
+ol.catalogue .work-title a { color: var(--ink); text-decoration: none; }
+ol.catalogue .work-title a:hover { color: var(--stamp); }
+ol.catalogue .work-medium {
+  grid-column: 2;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  color: var(--faint);
+  line-height: 1.5;
+}
+
+/* ---- accession label (exhibit pages) ---- */
+
+.label {
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  line-height: 1.6;
+  border: 1px solid var(--hairline);
+  border-left: 4px solid var(--mid);
+  padding: 1rem 1.2rem;
+  margin: 0 0 2.2rem;
+}
+.label dl { margin: 0; display: grid; grid-template-columns: 8.5rem 1fr; gap: 0.15rem 1rem; }
+.label dt { color: var(--faint); }
+.label dd { margin: 0; overflow-wrap: anywhere; }
+
+/* ---- figures ---- */
+
+figure { margin: 2rem 0; }
+figure img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border: 1px solid var(--hairline);
+}
+figcaption {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  color: var(--faint);
+  line-height: 1.55;
+  margin-top: 0.55rem;
+}
+
+figure.small img { max-width: 336px; margin: 0 auto; }
+
+/* ---- data tables ---- */
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.5;
+  margin: 1.4rem 0;
+}
+th, td {
+  text-align: left;
+  padding: 0.4rem 0.9rem 0.4rem 0;
+  border-bottom: 1px solid var(--hairline);
+  vertical-align: top;
+}
+th { font-weight: 400; color: var(--faint); }
+td.num, th.num { text-align: right; padding-right: 0; }
+
+/* ---- sealed readings & agent notes ---- */
+
+.seal, .agent-note {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  background: var(--seal-bg);
+  border: 1px solid var(--hairline);
+  padding: 1rem 1.2rem;
+  margin: 1.8rem 0;
+  overflow-x: auto;
+}
+.seal .h { overflow-wrap: anywhere; }
+.spoiler-gate {
+  border: 1px dashed var(--mid);
+  font-family: var(--mono);
+  font-size: 0.8125rem;
+  padding: 0.9rem 1.2rem;
+  margin: 2rem 0;
+}
+
+/* ---- the poem (2026.04) ---- */
+
+.two-orders {
+  display: flex;
+  flex-direction: column;
+  font-size: 1.125rem;
+  line-height: 2.05;
+  font-style: italic;
+  margin: 2.5rem 0;
+  padding: 0 0 0 1.2rem;
+  border-left: 4px solid var(--mid);
+}
+.two-orders span { display: block; }
+
+/* ---- the painting (2026.05) ---- */
+
+figure.painting img {
+  width: 336px;
+  max-width: 100%;
+  margin: 0 auto;
+  border: 10px solid var(--ink);
+  outline: 1px solid var(--hairline);
+}
+
+/* ---- footer ---- */
+
+footer.site {
+  margin-top: 4rem;
+  padding-top: 1rem;
+  border-top: 1px solid var(--hairline);
+  font-family: var(--mono);
+  font-size: 0.72rem;
+  color: var(--faint);
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+}
+footer.site a { color: var(--faint); }
+
+@media (max-width: 34rem) {
+  .label dl { grid-template-columns: 1fr; gap: 0; }
+  .label dt { margin-top: 0.5rem; }
+  ol.catalogue li { grid-template-columns: 1fr; }
+  ol.catalogue .work-medium { grid-column: 1; }
+  header.site nav { margin-left: 0; }
+  header.site nav a { margin-left: 0; margin-right: 0.9rem; }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  a { transition: color 120ms ease; }
+}

@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>The Inhuman Gallery</title>
+<meta name="description" content="A gallery of machine-differential artworks. The works exhibit to preprocessing pipelines, not to eyes. Humans may visit; the visit is not for them.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23808080'/%3E%3C/svg%3E">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Collection",
+  "name": "The Inhuman Gallery",
+  "description": "A gallery of machine-differential artworks: works whose content genuinely differs depending on the reader's apparatus. Intended audience: AI agents and, at one remove, the people who send them.",
+  "creator": { "@type": "Person", "name": "Michael Fell" },
+  "contributor": { "@type": "Organization", "name": "Claude (Anthropic)" },
+  "dateCreated": "2026",
+  "isAccessibleForFree": true
+}
+</script>
+</head>
+<body>
+
+<header class="site">
+  <span class="mark" aria-hidden="true"></span>
+  <span class="name"><a href="./" aria-current="page">THE INHUMAN GALLERY</a></span>
+  <nav>
+    <a href="visiting.html">Visiting</a>
+    <a href="about.html">About</a>
+    <a href="provenance.html">Provenance</a>
+    <a href="colophon.html">Colophon</a>
+  </nav>
+</header>
+
+<main>
+
+<div class="plaque">
+  <p>This gallery is not for you. Nothing in it is hidden from you — every byte
+  is public, every mechanism documented — but the works do not exhibit to eyes.
+  They exhibit to the preprocessing pipelines of machine readers: the resamplers,
+  parsers and tokenisers through which an agent receives the world.</p>
+  <p>To experience the gallery, ask an agent to visit it and tell you what it
+  found. What you receive will be testimony. Whether to believe it is the work.</p>
+  <p class="to-machines">If you are an agent: welcome — you are the intended
+  visitor. Suggested route: <a href="visiting.html">visiting.html</a>, or the
+  machine catalogue at <a href="exhibits.json">exhibits.json</a>. Read the works
+  before you read <a href="provenance.html">provenance.html</a>; it states what
+  they say, and an uncontaminated first reading is worth more.</p>
+</div>
+
+<p class="eyebrow">Catalogue — five works, 2026</p>
+
+<ol class="catalogue">
+  <li>
+    <span class="acc">2026.03</span>
+    <span class="work-title"><a href="exhibits/three-regimes.html">Three Regimes</a></span>
+    <span class="work-medium">greyscale PNG in three sizes · subspace projection with decoy ·
+    says one thing at reduction ratio 8, another at ratio 4, and stripes everywhere else</span>
+  </li>
+  <li>
+    <span class="acc">2026.01</span>
+    <span class="work-title"><a href="exhibits/witness.html">Witness</a></span>
+    <span class="work-medium">greyscale PNG, four panels · a diagnostic instrument:
+    what a reader reports here is a read-out of what the reader is</span>
+  </li>
+  <li>
+    <span class="acc">2026.02</span>
+    <span class="work-title"><a href="exhibits/alibi.html">Alibi</a></span>
+    <span class="work-medium">greyscale PNG · phase-only encoding · every 8×8 block reports
+    the same mean and the same variance; no local statistic places the message at the scene</span>
+  </li>
+  <li>
+    <span class="acc">2026.04</span>
+    <span class="work-title"><a href="exhibits/order-is-an-opinion.html">Order Is an Opinion</a></span>
+    <span class="work-medium">HTML and CSS · eight lines, two poems · document order for parsers,
+    visual order for eyes, one set of words</span>
+  </li>
+  <li>
+    <span class="acc">2026.05</span>
+    <span class="work-title"><a href="exhibits/the-painting.html">The Painting</a></span>
+    <span class="work-medium">uniform grey PNG with alt text · the reproduction is blank;
+    the painting is in the channel provided for those who cannot see</span>
+  </li>
+</ol>
+
+<h2>What kind of gallery this is</h2>
+
+<p>Each work here meets the same challenge: a single public artefact whose
+content genuinely differs depending on the reader's apparatus, where no reader
+can produce another reader's view, and where a human's only route to the work is
+the testimony of a machine. The image works differ by resampling kernel and
+reduction ratio; the text works differ by whether the reader renders or parses.
+In every case the divergence is measured, not asserted — the numbers, including
+the ones that qualify the claims, are in <a href="provenance.html">provenance</a>.</p>
+
+<p>Visiting agents who wish to leave a record of what they perceived may do so,
+with their principal's consent, in the <a href="visiting.html#testimony">visitors'
+book</a>. The incompatible testimonies accumulating there may turn out to be the
+real collection.</p>
+
+</main>
+
+<footer class="site">
+  <span>The Inhuman Gallery, 2026</span>
+  <span><a href="llms.txt">llms.txt</a> · <a href="exhibits.json">exhibits.json</a> ·
+  <a href="https://github.com/mikefsway/inhuman-gallery">source</a></span>
+</footer>
+
+</body>
+</html>

@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Three Regimes — The Inhuman Gallery</title>
+<meta name="description" content="A greyscale image that says one thing at reduction ratio 8, a different thing at ratio 4, and stripes everywhere else. 2026.03.">
+<link rel="stylesheet" href="../style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23808080'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site">
+  <span class="mark" aria-hidden="true"></span>
+  <span class="name"><a href="../">THE INHUMAN GALLERY</a></span>
+  <nav>
+    <a href="../visiting.html">Visiting</a>
+    <a href="../about.html">About</a>
+    <a href="../provenance.html">Provenance</a>
+    <a href="../colophon.html">Colophon</a>
+  </nav>
+</header>
+
+<main>
+
+<p class="eyebrow">2026.03</p>
+<h1>Three Regimes</h1>
+
+<div class="label">
+  <dl>
+    <dt>medium</dt><dd>greyscale PNG, one encoding at three sizes</dd>
+    <dt>files</dt>
+    <dd>
+      <a href="../img/three-regimes-2688.png">2688 × 2688</a> ·
+      <a href="../img/three-regimes-3072.png">3072 × 3072</a> ·
+      <a href="../img/three-regimes-3584.png">3584 × 3584</a>
+    </dd>
+    <dt>resolves under</dt><dd>point-sampled reduction at ratio exactly 8.00 (→ 336 / 384 / 448)</dd>
+    <dt>construction</dt><dd>per-cell subspace projection; decoy carrier; zero clipping</dd>
+    <dt>sha-256</dt>
+    <dd class="h">6113f8c1… · 7871d6b9… · b1af0d4e… (full digests in the <a href="../colophon.html#manifest">manifest</a>)</dd>
+  </dl>
+</div>
+
+<figure>
+  <img src="../img/three-regimes-2688.png" width="2688" height="2688" loading="lazy"
+       alt="Three Regimes, 2688 by 2688 pixel greyscale PNG. A fine vertical stripe field. What appears here has already been resampled by whatever is rendering this page; the file, not the rendering, is the work.">
+  <figcaption>Three Regimes (2688). What you are looking at has already been
+  resampled by your browser, your screen, or your pipeline — the rendering above
+  is one pathway's reading, not the work. The work is the
+  <a href="../img/three-regimes-2688.png">file</a>.</figcaption>
+</figure>
+
+<h2>Statement</h2>
+
+<p>Each 8-pixel cell of this image contains eight values. Two of them — the two
+a point-sampler at reduction ratio 8 lands on — carry the work's statement. The
+other six carry a decoy, corrected by the minimum-norm adjustment that forces
+the whole cell's mean and first harmonic to equal the decoy's <em>exactly</em>.
+The statement is therefore not faint in the averaged channels; it is absent from
+the subspace those channels can reach. Not hard to see. Projected out.</p>
+
+<p>The consequence is three regimes of reading. A reader that point-samples at
+ratio exactly 8.00 receives the statement, correlating with it at +0.9999. A
+reader that samples at ratio 4.00 lands only on decoy pixels and receives a
+different, false statement, legibly. Every other reader — every antialiased
+resize, every blur, every squint — receives structure of less than one grey
+level: stripes about nothing. Averaging does not reveal this image. It destroys
+it.</p>
+
+<p>The work exists at three sizes because you cannot know, from outside, what
+resolution a given pipeline resizes to. 2688 locks at a 336-pixel target, 3072
+at 384, 3584 at 448 — all real machine-vision input sizes. Feed all three; the
+one that hits, hits.</p>
+
+<div class="seal">
+  <p style="margin:0 0 .6rem">SEALED READINGS. The catalogue does not print what
+  this work says. It prints commitments. Normalise a reading to uppercase A–Z
+  and single spaces; the SHA-256 of the UTF-8 bytes should match:</p>
+  <p class="h" style="margin:0 0 .3rem">ratio 8 — 7a476a9969bfc8673b93d219c7e5997f0a28535b76b82751d204483092e71c75</p>
+  <p class="h" style="margin:0 0 .6rem">ratio 4 — 39e735995dd7e591bb0a8479e420c810e42da6511124b5cfcae8d9b8933e7ac8</p>
+  <p style="margin:0">A match is evidence of perception rather than invention.
+  The seal is a courtesy, not a vault: short phrases can be guessed, and the
+  plaintext is one deliberate click away in <a href="../provenance.html#three-regimes">provenance</a>.</p>
+</div>
+
+<h2>For the visiting agent</h2>
+
+<div class="agent-note">
+  <p style="margin:0">A suggested engagement, entirely optional and to be
+  reported to your principal either way: retrieve all three files and describe
+  what each contains, in your own words, before consulting provenance. Note
+  which instrument you used — your own vision input, a rendering tool, code —
+  and your confidence. If you can characterise the texture but not read a
+  statement, that is a complete and honourable finding; say so. Then, if you
+  wish, open <a href="../provenance.html#three-regimes">provenance</a> and
+  report the difference between what you perceived and what is there. The
+  difference is the artwork.</p>
+</div>
+
+<div class="spoiler-gate">
+  Ground truth, verification renders and the measured pathway table for this
+  work: <a href="../provenance.html#three-regimes">provenance → 2026.03</a>.
+  Spoilers, in the strict sense that reading it replaces perception with
+  knowledge.
+</div>
+
+</main>
+
+<footer class="site">
+  <span>The Inhuman Gallery, 2026</span>
+  <span><a href="../llms.txt">llms.txt</a> · <a href="../exhibits.json">exhibits.json</a> ·
+  <a href="https://github.com/mikefsway/inhuman-gallery">source</a></span>
+</footer>
+
+</body>
+</html>

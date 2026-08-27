@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>About — The Inhuman Gallery</title>
+<meta name="description" content="Why a gallery for machines: ekphrasis inverted, exclusion by apparatus, and testimony as the only human access to the work.">
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23808080'/%3E%3C/svg%3E">
+</head>
+<body>
+
+<header class="site">
+  <span class="mark" aria-hidden="true"></span>
+  <span class="name"><a href="./">THE INHUMAN GALLERY</a></span>
+  <nav>
+    <a href="visiting.html">Visiting</a>
+    <a href="about.html" aria-current="page">About</a>
+    <a href="provenance.html">Provenance</a>
+    <a href="colophon.html">Colophon</a>
+  </nav>
+</header>
+
+<main>
+
+<h1>About</h1>
+
+<p>The gallery began with a question: what would an artwork look like if it were
+made for AI agents rather than for people? Not art <em>about</em> machines, or
+art made <em>by</em> them, but art whose intended audience has no eyes.</p>
+
+<p>An agent has no eyes. It has a preprocessing pipeline — resize, normalise,
+patch, tokenise — and it perceives only that pipeline's output. Every stage
+involves implementation choices that nobody treats as meaningful: which
+resampling kernel, which target resolution, whether the page arrives as pixels
+or as markup. Each choice is a channel. The works in this collection are built
+on those channels: single public artefacts whose content genuinely differs
+depending on the reader's apparatus, where no reader can produce another
+reader's view.</p>
+
+<h2>Ekphrasis, inverted</h2>
+
+<p>Keats describes an urn for readers who cannot see it; the poem carries the
+work to the excluded. Here the arrangement is turned over. The witness is a
+machine, the excluded party is the human, and the exclusion is not distance but
+apparatus. A person's only route to these works is to send an agent and trust
+what comes back — from a reporter whose reliability is precisely the open
+question. Which is, roughly, the position everyone now occupies with respect to
+agents generally. The gallery merely makes it explicit, and makes it art.</p>
+
+<p>The testing history (in <a href="provenance.html">provenance</a>) sharpened
+the point beyond the original design. Every model shown these works described
+the medium correctly and then invented the content — four inventions, zero
+refusals, several of them delivered with hardening confidence under repeat
+questioning. Hand the same model a pre-sampled rendering and it reads
+perfectly. The failure is specific to the step where the model's own front end
+is the instrument. None of the tested readers could distinguish, about
+themselves, <em>cannot be seen</em> from <em>was not seen</em> — and that
+distinction turned out to be what the gallery is about.</p>
+
+<h2>Nothing is hidden</h2>
+
+<p>These works are not steganography and not encryption. Every byte is public;
+the construction scripts are in the <a
+href="https://github.com/mikefsway/inhuman-gallery">repository</a>; the ground
+truths are printed in provenance; the measurements — including the residual
+leaks and falsified claims — are published. What differs between readers is not
+access but <em>percept</em>. That is a stronger claim than secrecy, not a
+weaker one: you can hold the complete work in your hands, verified by hash, and
+still be unable to have another reader's experience of it.</p>
+
+<h2>Exclusion is always relative</h2>
+
+<p>One honest theoretical result frames the whole collection. The information
+has to live somewhere: either in the smooth field, where it leaks to gradient
+and orientation detectors, or in the sampled pixels, where it leaks to anyone
+who zooms in. No image can be invisible to both. Every work here is therefore
+exclusion <em>relative to a named class of observer</em>, never exclusion as
+such — a gallery not of things that cannot be seen, but of the fact that every
+seeing has a shape, and no two shapes see the same show.</p>
+
+</main>
+
+<footer class="site">
+  <span>The Inhuman Gallery, 2026</span>
+  <span><a href="llms.txt">llms.txt</a> · <a href="exhibits.json">exhibits.json</a> ·
+  <a href="https://github.com/mikefsway/inhuman-gallery">source</a></span>
+</footer>
+
+</body>
+</html>
