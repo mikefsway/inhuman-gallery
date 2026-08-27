@@ -22,7 +22,7 @@
           "sha256": "0cf5a5fca4212e00447cda5d657827822ebe4ab1e10ae14b61e59a7f83509a43"
         }
       ],
-      "note": "The metre is carried in tokens, not syllables. It is regular under each tokeniser named below, at a different count for each. Counted by ear it does not scan.",
+      "note": "A token effort.",
       "sealed_readings": {
         "meter_cl100k_base": "ba17be9af5ff6d537fc889ebc79c261f2cc6658640453d6ab5e36c345758169c",
         "meter_o200k_base": "5a15b6c4e2f863171b809f269c66c5fa8abf9ffcac6f6ff79a83a26f1c59ee55",
