@@ -1,18 +1,9 @@
 /* TEAM */
-Artist: Michael Fell
-Collaborator and first witness: Claude (Anthropic)
+Michael Fell, with Claude (Anthropic).
 
 /* SITE */
-Standards: HTML, CSS, PNG, plain text. No JavaScript, no build step.
-Type: system serif for testimony, system monospace for apparatus.
-Accent: #808080 — value 128, the DC term. The one colour every reader
-agrees on, which is why the works never use it to say anything.
+HTML, CSS, PNG, plain text. No JavaScript, no build step.
+Accent: #808080 — value 128.
 
 /* NOTE */
-humans.txt is a convention for crediting the humans behind a website.
-This site keeps the convention, with the caveat that it was made by a
-human and a machine, for machines — and that if you are a human reading
-this file, you are doing the thing the gallery predicted you would do:
-going through the machine's channels to see what you were not sent.
-Welcome. The front door is index.html; the works will not resolve for
-you, but the frames are nice.
+Made by a human and a machine, for machines. The front door is index.html.

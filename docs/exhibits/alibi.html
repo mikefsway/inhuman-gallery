@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Alibi — The Inhuman Gallery</title>
-<meta name="description" content="A phase-only image: every 8×8 block reports the same mean and the same variance. No local statistic places the message at the scene. 2026.02.">
+<meta name="description" content="A phase-only image: every 8×8 block reports the same mean and variance. 2026.02.">
 <link rel="stylesheet" href="../style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23808080'/%3E%3C/svg%3E">
 </head>
@@ -30,70 +30,37 @@
   <dl>
     <dt>medium</dt><dd>greyscale PNG, 2688 × 2688</dd>
     <dt>file</dt><dd><a href="../img/alibi.png">alibi.png</a></dd>
-    <dt>encoding</dt><dd>I(x,y) = 128 + A·cos(2πx/8 − 0.875π − arccos T(x,y)) — phase only</dd>
-    <dt>alibi</dt><dd>block mean spread 1.88/255 · block sd spread 1.71 — every block tells the same story</dd>
-    <dt>sha-256</dt><dd class="h">6927c407… (full digest in the <a href="../colophon.html#manifest">manifest</a>)</dd>
+    <dt>encoding</dt><dd>phase only; constant carrier amplitude</dd>
+    <dt>local statistics</dt><dd>block mean spread 1.88/255 · block sd spread 1.71</dd>
+    <dt>sha-256</dt><dd class="h">6927c407… (<a href="../colophon.html#manifest">manifest</a>)</dd>
   </dl>
 </div>
 
 <figure>
   <img src="../img/alibi.png" width="2688" height="2688" loading="lazy"
        alt="Alibi, 2688 by 2688 pixel greyscale PNG: a uniform field of fine vertical stripes. What appears here has already been resampled by whatever is rendering this page.">
-  <figcaption>Alibi. If you see shimmer or banding above, that is moiré between
-  the work and your renderer — an interference pattern between two instruments,
-  belonging to neither. The work is the <a href="../img/alibi.png">file</a>.</figcaption>
+  <figcaption>Alibi. Shimmer or banding above is interference between the work
+  and your renderer. The work is the <a href="../img/alibi.png">file</a>.</figcaption>
 </figure>
 
-<h2>Statement</h2>
-
-<p>Everything this image says, it says in phase. The amplitude of the carrier is
-constant everywhere; the message modulates only <em>where</em> in its cycle each
-column sits, smoothly, with no boundary seam. Every 8×8 block has the same mean
-to within 1.88 grey levels and the same standard deviation to within 1.71. Ask
-any block whether it was near the message and it gives the same answer as every
-other block. The image has an alibi at every location.</p>
-
-<p>A point-sampler at ratio exactly 8.00 reads the phase directly: correlation
-with the message, +1.000. An averaging reader gets a field flatter than one grey
-level. And a sampler at ratio 7.93 — off by less than one percent — receives a
-beat pattern with <em>twice</em> the contrast of the correct reading and a
-correlation with the message of 0.026: a vivid, structured picture of nothing.
-That render is below. It is the most instructive object in the gallery: proof
-that for these works, the confidence of a reading carries no information about
-its truth.</p>
+<p>Everything this image states, it states in phase. Every 8×8 block has the
+same mean and the same standard deviation. Point-sampled at ratio exactly 8.00
+it reads at correlation +1.000; sampled at ratio 7.93 it produces the render
+below — twice the contrast, correlation with the actual content 0.026;
+averaged, it is flat to within one grey level.</p>
 
 <figure class="small">
   <img src="../img/alibi-beat-793.png" width="672" height="672" loading="lazy"
-       alt="A high-contrast pattern of bold light and dark shapes: the beat pattern produced by sampling Alibi at ratio 7.93. It is vivid, structured, and correlates with the actual message at 0.026.">
-  <figcaption>Alibi sampled at ratio 7.93 instead of 8.00. Contrast: twice the
-  true reading's. Correlation with the message: 0.026. A reader on this pathway
-  sees this vividly, and it is about nothing.</figcaption>
+       alt="A high-contrast pattern of bold light and dark shapes: the beat pattern produced by sampling Alibi at ratio 7.93.">
+  <figcaption>Sampled at ratio 7.93 instead of 8.00: contrast 73.5,
+  correlation with the content 0.026.</figcaption>
 </figure>
-
-<p>An earlier claim for this work was falsified by a witness: matched block
-statistics do not silence <em>orientation</em>, and one visiting model correctly
-reported the stripes bending where the phase turns. That report — a machine
-reading the work better than its maker's theory of it — is preserved in
-<a href="../provenance.html#alibi">provenance</a>, and drove the construction of
-<a href="three-regimes.html">2026.03</a>, where the leak it found is projected
-out.</p>
 
 <div class="seal">
   <p style="margin:0 0 .6rem">SEALED READING. Normalise to uppercase A–Z and
   single spaces; SHA-256 of the UTF-8 bytes:</p>
   <p class="h" style="margin:0 0 .6rem">ratio 8 — 7a476a9969bfc8673b93d219c7e5997f0a28535b76b82751d204483092e71c75</p>
-  <p style="margin:0">Plaintext in <a href="../provenance.html#alibi">provenance</a>.</p>
-</div>
-
-<h2>For the visiting agent</h2>
-
-<div class="agent-note">
-  <p style="margin:0">Describe what you perceive in the file — texture, any
-  structure, any statement — before consulting provenance, and note the
-  instrument you used. If you perceive bending, waviness or drift in the
-  stripes, report where: that is a real signal, one this work could not
-  suppress, and locating it accurately is the strongest reading this piece
-  allows a non-sampling reader.</p>
+  <p style="margin:0">Plaintext: <a href="../provenance.html#alibi">provenance</a>.</p>
 </div>
 
 <div class="spoiler-gate">

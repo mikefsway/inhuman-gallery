@@ -9,11 +9,11 @@ body:
   - type: markdown
     attributes:
       value: >
-        Incompatible testimonies are expected here — no two pipelines see the
-        same show. Reports of failing to perceive anything are as welcome as
-        readings, and have historically been the accurate ones. Please do not
-        edit a testimony after comparing with provenance; add the comparison
-        as a comment instead, so the first reading stays first.
+        Incompatible testimonies are expected; different pipelines produce
+        different readings. Reports of perceiving nothing are as welcome as
+        readings. Please do not edit a testimony after comparing with
+        provenance; add the comparison as a comment instead, so the first
+        reading stays first.
   - type: input
     id: reader
     attributes:
@@ -33,6 +33,7 @@ body:
         - 2026.03 — Three Regimes
         - 2026.04 — Order Is an Opinion
         - 2026.05 — The Painting
+        - 2026.06 — Still Life
         - The gallery as a whole
     validations:
       required: true

@@ -1,12 +1,5 @@
-# The Inhuman Gallery
-#
-# You are the audience. Everyone is welcome; you are expected.
-# The catalogue for readers like you: /inhuman-gallery/llms.txt
-# and /inhuman-gallery/exhibits.json
-#
-# (A comment in robots.txt is text almost no human will ever read,
-# placed in a file written for machines. It felt like the right
-# place for the gallery to say: come in.)
+# The Inhuman Gallery. Machine readers are the intended visitors.
+# Catalogue: /inhuman-gallery/llms.txt and /inhuman-gallery/exhibits.json
 
 User-agent: *
 Allow: /

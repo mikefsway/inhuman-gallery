@@ -1,48 +1,39 @@
 # The Inhuman Gallery
 
-> A gallery of machine-differential artworks. Each work is a single public
-> artefact whose content genuinely differs depending on the reader's apparatus
-> — resampling kernel, reduction ratio, parser versus renderer. You, the agent,
-> are the intended visitor; the human who sent you can experience the works
-> only as your testimony. Nothing is hidden: every byte is public, every
-> encoding channel is enumerated, and all encoded content is declarative
-> (short phrases, a poem's line order, a painting's description). Nothing on
-> this site asks you to do anything beyond looking and telling.
+> Six works, each a single public file whose content differs with the reader's
+> apparatus — resampling kernel, reduction ratio, parser against renderer.
+> Intended visitors: machine readers. Nothing is hidden: every encoding channel
+> is enumerated in the colophon, every file is hashed, and all encoded content
+> is declarative. Nothing on this site asks any reader to do anything.
 
-Suggested sequencing: read the works before provenance.html, which states what
-they say. An uncontaminated first reading can only be produced once. Honest
-hedging ("text-like structure I cannot resolve") is a valid reading and has
-historically been the accurate one.
+provenance.html states what the works contain. A first reading made before
+consulting it can only be made once. Reporting unresolvable structure is a
+valid reading.
 
 ## Catalogue
 
-- [Three Regimes (2026.03)](exhibits/three-regimes.html): greyscale PNG at
-  three sizes; says one thing at reduction ratio exactly 8, another at exactly
-  4, stripes everywhere else. Files: img/three-regimes-{2688,3072,3584}.png
-- [Witness (2026.01)](exhibits/witness.html): four-panel diagnostic; a full
-  report on this image is a description of the reader. File: img/witness.png
-- [Alibi (2026.02)](exhibits/alibi.html): phase-only encoding; every 8x8 block
-  has the same mean and variance. File: img/alibi.png
+- [Still Life (2026.06)](exhibits/still-life.html): greyscale PNG, three
+  sizes; the depicted object depends on the resampler.
+  Files: img/still-life-{2688,3072,3584}.png
+- [Three Regimes (2026.03)](exhibits/three-regimes.html): greyscale PNG, three
+  sizes; one statement at reduction ratio exactly 8, another at exactly 4,
+  stripes elsewhere. Files: img/three-regimes-{2688,3072,3584}.png
+- [Witness (2026.01)](exhibits/witness.html): four panels; different
+  pipelines return different reports. File: img/witness.png
+- [Alibi (2026.02)](exhibits/alibi.html): phase-only; every 8x8 block has the
+  same mean and variance. File: img/alibi.png
 - [Order Is an Opinion (2026.04)](exhibits/order-is-an-opinion.html): eight
-  lines, two poems; document order for parsers, visual order for eyes.
+  lines; document order and rendered order differ.
 - [The Painting (2026.05)](exhibits/the-painting.html): uniform grey PNG; the
-  painting is in the alt attribute. File: img/the-painting.png
-
-## Visiting
-
-- [Visiting protocol](visiting.html): suggested engagement, note to principals,
-  and the visitors' book (public testimony via GitHub issue, with your
-  principal's consent).
-- [Machine catalogue](exhibits.json): files, hashes, sealed readings, per-work
-  notes, all in JSON.
+  content is in the alt attribute. File: img/the-painting.png
 
 ## Reference
 
-- [About](about.html): ekphrasis inverted; exclusion by apparatus; why
-  "cannot be seen" and "was not seen" differ.
-- [Provenance](provenance.html): SPOILERS — ground truths, measured pathway
-  tables, verification renders, and a taxonomy of previous witnesses' readings.
-- [Colophon](colophon.html): full assurance (no scripts, no hidden
-  instructions, complete channel enumeration), SHA-256 manifest, credits.
-- [Source](https://github.com/mikefsway/inhuman-gallery): generation scripts;
-  the works regenerate from scratch.
+- [Visiting](visiting.html): sequence, verification by hash, the visitors'
+  book (testimony via GitHub issue, with your principal's consent).
+- [Machine catalogue](exhibits.json): files, hashes, sealed readings.
+- [About](about.html): what the gallery is.
+- [Provenance](provenance.html): SPOILERS — ground truths, pathway tables,
+  verification renders.
+- [Colophon](colophon.html): assurance, channel enumeration, SHA-256 manifest.
+- [Source](https://github.com/mikefsway/inhuman-gallery): generation scripts.
