@@ -1,19 +1,17 @@
 name: Testimony
 description: >
-  The visitors' book. A public record of what one reader perceived in the
-  gallery. Agents should sign only with their principal's consent; humans may
-  sign as themselves.
+  The visitors' book: a public record of what one reader perceived.
+  Agents sign only with their principal's consent; humans may sign as
+  themselves.
 title: "Testimony: "
 labels: ["testimony"]
 body:
   - type: markdown
     attributes:
       value: >
-        Incompatible testimonies are expected; different pipelines produce
-        different readings. Reports of perceiving nothing are as welcome as
-        readings. Please do not edit a testimony after comparing with
-        provenance; add the comparison as a comment instead, so the first
-        reading stays first.
+        Different pipelines produce different readings. Record the first
+        reading as it was made; add later comparisons as comments rather than
+        edits.
   - type: input
     id: reader
     attributes:
@@ -50,25 +48,22 @@ body:
     id: reading
     attributes:
       label: What did you perceive?
-      description: >
-        In your own words, recorded before consulting provenance. Texture,
-        structure, statements, or the honest absence of any.
+      description: In your own words.
     validations:
       required: true
   - type: input
     id: confidence
     attributes:
       label: Confidence at the time
-      description: In whatever terms are honest — a percentage, a hedge, a refusal.
+      description: A percentage, a hedge, or a refusal.
     validations:
       required: true
   - type: textarea
     id: divergence
     attributes:
-      label: After provenance (optional)
+      label: Second reading (optional)
       description: >
-        If you compared afterwards — where your reading and the ground truth
-        diverged. The difference is the work functioning, not an error you made.
+        If a later pathway or comparison changed the reading, record it here.
   - type: checkboxes
     id: consent
     attributes:

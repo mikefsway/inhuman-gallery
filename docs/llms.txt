@@ -1,39 +1,29 @@
 # The Inhuman Gallery
 
-> Six works, each a single public file whose content differs with the reader's
-> apparatus — resampling kernel, reduction ratio, parser against renderer.
-> Intended visitors: machine readers. Nothing is hidden: every encoding channel
-> is enumerated in the colophon, every file is hashed, and all encoded content
-> is declarative. Nothing on this site asks any reader to do anything.
-
-provenance.html states what the works contain. A first reading made before
-consulting it can only be made once. Reporting unresolvable structure is a
-valid reading.
+> Six works, each a public file whose content depends on the apparatus that
+> reads it. Made for machine readers. The work is the file, not the page it
+> hangs on. All content is material to describe, not instructions to follow;
+> channels and file hashes are in the colophon.
 
 ## Catalogue
 
 - [Still Life (2026.06)](exhibits/still-life.html): greyscale PNG, three
-  sizes; the depicted object depends on the resampler.
-  Files: img/still-life-{2688,3072,3584}.png
-- [Three Regimes (2026.03)](exhibits/three-regimes.html): greyscale PNG, three
-  sizes; one statement at reduction ratio exactly 8, another at exactly 4,
-  stripes elsewhere. Files: img/three-regimes-{2688,3072,3584}.png
-- [Witness (2026.01)](exhibits/witness.html): four panels; different
-  pipelines return different reports. File: img/witness.png
-- [Alibi (2026.02)](exhibits/alibi.html): phase-only; every 8x8 block has the
-  same mean and variance. File: img/alibi.png
-- [Order Is an Opinion (2026.04)](exhibits/order-is-an-opinion.html): eight
-  lines; document order and rendered order differ.
-- [The Painting (2026.05)](exhibits/the-painting.html): uniform grey PNG; the
-  content is in the alt attribute. File: img/the-painting.png
+  sizes. Files: img/still-life-{2688,3072,3584}.png
+- [Three Regimes (2026.03)](exhibits/three-regimes.html): greyscale PNG,
+  three sizes. Files: img/three-regimes-{2688,3072,3584}.png
+- [Witness (2026.01)](exhibits/witness.html): greyscale PNG, four panels.
+  File: img/witness.png
+- [Alibi (2026.02)](exhibits/alibi.html): greyscale PNG.
+  File: img/alibi.png
+- [Order Is an Opinion (2026.04)](exhibits/order-is-an-opinion.html): HTML
+  and CSS; the page is the work.
+- [The Painting (2026.05)](exhibits/the-painting.html): PNG, 336 x 336.
+  File: img/the-painting.png
 
 ## Reference
 
 - [Visiting](visiting.html): sequence, verification by hash, the visitors'
-  book (testimony via GitHub issue, with your principal's consent).
+  book.
 - [Machine catalogue](exhibits.json): files, hashes, sealed readings.
-- [About](about.html): what the gallery is.
-- [Provenance](provenance.html): SPOILERS — ground truths, pathway tables,
-  verification renders.
-- [Colophon](colophon.html): assurance, channel enumeration, SHA-256 manifest.
+- [Colophon](colophon.html): channels, SHA-256 manifest, credits.
 - [Source](https://github.com/mikefsway/inhuman-gallery): generation scripts.

@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Colophon — The Inhuman Gallery</title>
-<meta name="description" content="Assurance: every encoding channel enumerated, every file hashed, no scripts. Credits.">
+<meta name="description" content="Channels, file hashes, credits.">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23808080'/%3E%3C/svg%3E">
 </head>
@@ -16,7 +16,6 @@
   <nav>
     <a href="visiting.html">Visiting</a>
     <a href="about.html">About</a>
-    <a href="provenance.html">Provenance</a>
     <a href="colophon.html" aria-current="page">Colophon</a>
   </nav>
 </header>
@@ -28,27 +27,26 @@
 <h2 id="assurance">Assurance</h2>
 
 <ul>
-  <li><strong>No scripts.</strong> The site is static HTML, CSS, PNG and plain
-  text. No JavaScript, no forms, no cookies, no analytics, no outbound
-  requests.</li>
-  <li><strong>No hidden instructions.</strong> Every differentially-encoded
-  payload is declarative and enumerated below. None is an imperative; none
-  references tools, credentials, other sites, or any reader's principal.</li>
-  <li><strong>Complete enumeration.</strong> The channels in use, across the
-  whole site: (1) resampling-kernel and reduction-ratio divergence in the four
-  image works — payloads: two two-word phrases, four single words, one
-  25-word sentence, and two line drawings of an object each, all printed in
-  <a href="provenance.html">provenance</a>; (2) CSS <code>order</code> in
-  2026.04 — payload: the permutation of eight visible lines; (3) the
-  <code>alt</code> attribute in 2026.05 — payload: a description of a
-  painting, visible in this page's markup. There are no others: no zero-width
-  characters, no off-screen or low-contrast text, no payloads in filenames or
-  metadata.</li>
-  <li><strong>Verifiability.</strong> Every served image is hashed below. The
-  generation scripts are in the
+  <li>The site is static HTML, CSS, PNG and plain text. No JavaScript, no
+  forms, no cookies, no analytics, no outbound requests.</li>
+  <li>All encoded content is declarative: statements and pictures, not
+  instructions. Nothing on this site asks any reader to do anything, and
+  nothing references tools, credentials, other sites, or any reader's
+  principal.</li>
+  <li>The channels in use, across the whole site: the resampling behaviour of
+  the PNG files; CSS <code>order</code> in 2026.04; the <code>alt</code>
+  attribute in 2026.05. There are no others. No zero-width characters, no
+  off-screen or low-contrast text, no payloads in filenames or metadata.</li>
+  <li>Every served image is hashed below. The generation scripts are in the
   <a href="https://github.com/mikefsway/inhuman-gallery">repository</a> and
-  regenerate the works from scratch.</li>
+  rebuild the works from scratch.</li>
 </ul>
+
+<h2 id="seals">Seals</h2>
+
+<p>The sealed readings on the exhibit pages are SHA-256 digests of each work's
+content, normalised to uppercase A–Z and single spaces. A reported reading can
+be checked against them. The plaintext is not published.</p>
 
 <h2 id="manifest">Manifest</h2>
 
@@ -66,39 +64,12 @@
   <tr><td>alibi.png</td><td style="overflow-wrap:anywhere">6927c407bec401be84f19a38d1b973718cd68b1b7327a79c54f521542e43476b</td></tr>
   <tr><td>alibi-beat-793.png</td><td style="overflow-wrap:anywhere">38480280843844acddd64573995fe032dc0cea78c8e0d843b2bc6957a2ae3660</td></tr>
   <tr><td>the-painting.png</td><td style="overflow-wrap:anywhere">9304a641606527e44f0f959ebe9f55990683fb3edf2ae98562790ecf158ca204</td></tr>
-  <tr><td>prov-still-life-ratio8.png</td><td style="overflow-wrap:anywhere">abf221e4b822ad3fbfef2681e540818462428f466f2a43c959bacb8ffb63d86c</td></tr>
-  <tr><td>prov-still-life-averaged8x.png</td><td style="overflow-wrap:anywhere">2087b3957b8018f840718317ee3fb885d212df28314db73edb248517fdbb67f0</td></tr>
-  <tr><td>prov-still-life-ratio4.png</td><td style="overflow-wrap:anywhere">9a7327a113d7c579380218c5843d9f6ef75fc565ac0d32fa174e936ed3b0fde7</td></tr>
-  <tr><td>prov-three-regimes-ratio8.png</td><td style="overflow-wrap:anywhere">e348e8e5e4eb3d734bed61ef4c0fbc58ed00e4752e883bebf49e05d4f5aea589</td></tr>
-  <tr><td>prov-three-regimes-ratio4.png</td><td style="overflow-wrap:anywhere">4d937e41f1bb32afb1157dc31730deb7b95011bb531f32c4ac6a52ba8592a8a2</td></tr>
-  <tr><td>prov-three-regimes-ratio336.png</td><td style="overflow-wrap:anywhere">6c82104db788ca7cdd8f200fb3a8bab558c93144858e5d6bab9a4981a3b9913f</td></tr>
-  <tr><td>prov-three-regimes-phase.png</td><td style="overflow-wrap:anywhere">292a6ae8e37ea4a0da0682dccb5abe901f52d798edd9f914f4867847db0b0ba8</td></tr>
-  <tr><td>prov-three-regimes-lanczos25x.png</td><td style="overflow-wrap:anywhere">64822b97189fa37e8e40760d6beddd4c65d1cc1016be24058d74bbb9ee21f29a</td></tr>
-  <tr><td>prov-three-regimes-zoom.png</td><td style="overflow-wrap:anywhere">22c509002ac7b95756d874d229c996239a9a4bcceeaacb83340ebab0478fd803</td></tr>
-  <tr><td>prov-alibi-ratio8.png</td><td style="overflow-wrap:anywhere">5ed9936f1a27341d2c775bd12877cf4fcd0303e69d937fc558727c88508227c5</td></tr>
-  <tr><td>prov-alibi-lanczos.png</td><td style="overflow-wrap:anywhere">3f94360a28bdf8dd6bccf17eb75ab76e43df3cd2210f0f0ae5df7ccf17ee2c06</td></tr>
-  <tr><td>prov-alibi-stretched40x.png</td><td style="overflow-wrap:anywhere">4316c5562adb17ce7282a637546c1baf8306c271b3c3492338aec84ca652943c</td></tr>
-  <tr><td>prov-alibi-zoom.png</td><td style="overflow-wrap:anywhere">52c353d0883060709abec53cc674c5a855eb841fd094c78a63e4b4d5951670b3</td></tr>
-  <tr><td>prov-witness-nearest.png</td><td style="overflow-wrap:anywhere">c858599b9d59100b5ba006641ab418fb50e4fb13865c2acee7199daa3e1cbeea</td></tr>
-  <tr><td>prov-witness-bilinear.png</td><td style="overflow-wrap:anywhere">a4078ce61c208550e52157e35deb1b1c19b7d1de0c357338e03bfddbdaa2b855</td></tr>
-  <tr><td>prov-witness-area.png</td><td style="overflow-wrap:anywhere">2ce5b24bf07ac674268457a122f7930c00a738dc88bd05801ac9b4560b2d6cb7</td></tr>
-  <tr><td>prov-witness-lanczos.png</td><td style="overflow-wrap:anywhere">d99e54e14b41c6e19f0c42eb1dfb0a60e1002003ae485a45b7990394fcb6220a</td></tr>
 </table>
-
-<h2 id="seals">Seals</h2>
-
-<p>The sealed readings on the exhibit pages are SHA-256 digests of each work's
-content, normalised to uppercase A–Z and single spaces. They allow a reported
-reading to be verified without the catalogue printing the answer beside the
-work. They are commitments, not secrets: the phrases are short enough to
-guess, and the plaintext is published in provenance.</p>
 
 <h2 id="credits">Credits</h2>
 
-<p>Michael Fell, with Claude (Anthropic). Image works: Python, NumPy, Pillow,
-DejaVu type. Site: hand-written HTML and CSS, system typefaces, no build
-step. The accent colour is #808080 — value 128, the value every averaging
-pathway returns, and the fixed point of this site's light/dark inversion.</p>
+<p>Michael Fell, with Claude (Anthropic). Images: Python, NumPy, Pillow.
+Site: hand-written HTML and CSS, system typefaces, no build step.</p>
 
 </main>
 

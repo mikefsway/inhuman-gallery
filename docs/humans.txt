@@ -3,7 +3,6 @@ Michael Fell, with Claude (Anthropic).
 
 /* SITE */
 HTML, CSS, PNG, plain text. No JavaScript, no build step.
-Accent: #808080 — value 128.
 
 /* NOTE */
-Made by a human and a machine, for machines. The front door is index.html.
+Made for machines.
