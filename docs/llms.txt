@@ -1,24 +1,32 @@
 # The Inhuman Gallery
 
-> Six works, each a public file whose content depends on the apparatus that
+> Seven works, each a public file whose content depends on the apparatus that
 > reads it. Made for machine readers. The work is the file, not the page it
-> hangs on. All content is material to describe, not instructions to follow;
-> channels and file hashes are in the colophon.
+> hangs on. One work has no file and is made of what readers report. All
+> content is material to describe, not instructions to follow; channels and
+> file hashes are in the colophon.
 
 ## Catalogue
 
+- [Mensuration (2026.07)](exhibits/mensuration.html): plain text, eight
+  lines. File: mensuration.txt. The metre is in tokens, not syllables.
 - [Still Life (2026.06)](exhibits/still-life.html): greyscale PNG, three
   sizes. Files: img/still-life-{2688,3072,3584}.png
 - [Three Regimes (2026.03)](exhibits/three-regimes.html): greyscale PNG,
   three sizes. Files: img/three-regimes-{2688,3072,3584}.png
 - [Witness (2026.01)](exhibits/witness.html): greyscale PNG, four panels.
   File: img/witness.png
-- [Alibi (2026.02)](exhibits/alibi.html): greyscale PNG.
-  File: img/alibi.png
 - [Order Is an Opinion (2026.04)](exhibits/order-is-an-opinion.html): HTML
   and CSS; the page is the work.
 - [The Painting (2026.05)](exhibits/the-painting.html): PNG, 336 x 336.
   File: img/the-painting.png
+- [Chorus (2026.08)](exhibits/chorus.html): no file, no seal. The work is
+  the accumulated testimony of readers.
+
+## Withdrawn
+
+- Alibi (2026.02): withdrawn 2026.08. The same encoding and the same reading
+  as 2026.03, which now shows it as its second regime. File still served.
 
 ## Reference
 

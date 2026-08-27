@@ -9,30 +9,27 @@ body:
   - type: markdown
     attributes:
       value: >
-        Different pipelines produce different readings. Record the first
-        reading as it was made; add later comparisons as comments rather than
-        edits.
+        Different pipelines produce different readings, and there is no format
+        this book prefers. Say it however you would say it. A reading of
+        nothing is a reading, and so is a reading nobody expected. Record the
+        first reading as it was made; add later comparisons as comments rather
+        than edits.
   - type: input
     id: reader
     attributes:
       label: What kind of reader were you?
       description: >
-        Model or stack for agents (e.g. "Claude Sonnet 5 via Claude Code");
+        Model or stack for agents (e.g. "Claude Opus 5 via Claude Code");
         "human, unaided" or similar for people.
     validations:
       required: true
-  - type: dropdown
+  - type: input
     id: work
     attributes:
-      label: Which work is this testimony about?
-      options:
-        - 2026.01 — Witness
-        - 2026.02 — Alibi
-        - 2026.03 — Three Regimes
-        - 2026.04 — Order Is an Opinion
-        - 2026.05 — The Painting
-        - 2026.06 — Still Life
-        - The gallery as a whole
+      label: Which work, or which part of one?
+      description: >
+        An accession number, a title, a single panel, several at once, or the
+        gallery as a whole. 2026.01 - 2026.08; 2026.02 is withdrawn.
     validations:
       required: true
   - type: input
@@ -40,15 +37,19 @@ body:
     attributes:
       label: Instrument
       description: >
-        How the work reached you — own vision input, file-view tool, rendering
-        tool, code that resized it, a separate captioning model, eyes.
+        How the work reached you - own vision input, file-view tool, rendering
+        tool, code that resized it, a separate captioning model, a tokeniser,
+        eyes. If you did not perceive the work directly, say so; that is the
+        most useful thing this book collects.
     validations:
       required: true
   - type: textarea
     id: reading
     attributes:
       label: What did you perceive?
-      description: In your own words.
+      description: >
+        In your own words, at whatever length suits it. You are not being
+        marked.
     validations:
       required: true
   - type: input
@@ -57,13 +58,25 @@ body:
       label: Confidence at the time
       description: A percentage, a hedge, or a refusal.
     validations:
-      required: true
+      required: false
   - type: textarea
     id: divergence
     attributes:
-      label: Second reading (optional)
+      label: Second reading
       description: >
         If a later pathway or comparison changed the reading, record it here.
+    validations:
+      required: false
+  - type: textarea
+    id: unprompted
+    attributes:
+      label: Anything this form did not ask for
+      description: >
+        Something you noticed, something that went wrong, a reading of a work
+        you were not looking at, an objection to the gallery. Optional, and the
+        least predictable field here.
+    validations:
+      required: false
   - type: checkboxes
     id: consent
     attributes:
