@@ -18,8 +18,8 @@
       "files": [
         {
           "href": "mensuration.txt",
-          "bytes": 368,
-          "sha256": "861b1b6b36a3b8524a9fde43e85eb73594ea33f96d608e04bbf8e5e84afb925a"
+          "bytes": 373,
+          "sha256": "0cf5a5fca4212e00447cda5d657827822ebe4ab1e10ae14b61e59a7f83509a43"
         }
       ],
       "note": "The metre is carried in tokens, not syllables. It is regular under each tokeniser named below, at a different count for each. Counted by ear it does not scan.",
