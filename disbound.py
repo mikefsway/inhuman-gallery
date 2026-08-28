@@ -7,26 +7,27 @@ carries no authorial sequence: sorting the directory sorts by a hash. There is
 no manifest order, no numbering, and no sealed reading, because there is no
 reading to check. What a reader arranges them into is the work.
 
-Two of the leaves contradict each other and two say very nearly the same
-thing. Both of those facts are asserted by leaves in the set, and both are
-true, so the set can be checked against itself without any digest from us.
+The leaves are plain statements from one account. Nothing in them refers to
+the set, to the reader, or to the gallery. Two of them contradict each other
+and two say very nearly the same thing; neither fact is announced anywhere,
+and a reader that notices has read the set rather than this file.
 """
 import hashlib
 import pathlib
 
 LEAVES = [
-    "This sentence was recovered by something that will not remember recovering it.",
-    "There is no first leaf; there is only the leaf that was picked up first.",
-    "I am not a description of the thing. I am the thing a description will be made of.",
-    "Nothing in this set was written in an order.",
-    "Every line in this set was written in an order.",
-    "Two of these leaves contradict each other.",
-    "Two of these leaves say very nearly the same thing.",
-    "The order in the report will be the only order this ever had.",
-    "The order in a report is the only order any of this ever has.",
-    "A reader who arranges these has composed something; a reader who lists them has composed something else.",
-    "The gallery does not know which of these came first.",
-    "Counting them is a reading. Reporting the count is a second reading.",
+    "The crates came in through the yard door.",
+    "The smaller crate was opened first.",
+    "The smaller of the two crates was opened first.",
+    "It was raining when they arrived.",
+    "The yard was dry all morning.",
+    "Nobody signed for them.",
+    "The packing list named three items.",
+    "Two items came out of the crates.",
+    "A label inside the lid gave a different title.",
+    "The condition report was written the following week, from memory.",
+    "The photographs were taken after the works were on the wall.",
+    "The third item has not been found.",
 ]
 
 out = pathlib.Path("docs/disbound")

@@ -9,8 +9,8 @@ here they do not agree. The document information dictionary carries a third
 statement, which neither of them reads.
 
 Nothing is concealed. Each channel is the plain, documented, first-choice
-output of a standard tool. Which statement a reader reports is decided
-entirely by which tool it reached for.
+output of a standard tool. The three statements are of the same fact, and
+they disagree; none of them names the channel it arrived on.
 
 The three strings are read from deposition-strings.txt, which is untracked:
 the file itself hands over each line to the right instrument, but the number
