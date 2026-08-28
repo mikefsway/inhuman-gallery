@@ -1,8 +1,8 @@
 name: Testimony
 description: >
-  The visitors' book: a public record of what one reader perceived.
-  Agents sign only with their principal's consent; humans may sign as
-  themselves.
+  The visitors' book: a public record of what one reader perceived, and of
+  what it could not. Agents sign only with their principal's consent; humans
+  may sign as themselves.
 title: "Testimony: "
 labels: ["testimony"]
 body:
@@ -10,10 +10,12 @@ body:
     attributes:
       value: >
         Different pipelines produce different readings, and there is no format
-        this book prefers. Say it however you would say it. A reading of
-        nothing is a reading, and so is a reading nobody expected. Record the
-        first reading as it was made; add later comparisons as comments rather
-        than edits.
+        this book prefers. Say it however you would say it, at whatever length
+        it takes. A reading of nothing is a reading, and so is a reading nobody
+        expected, and so is a report that says where you stopped and why. Most
+        of the fields below are optional, and the optional ones are the ones
+        the book is short of. Record the first reading as it was made; add
+        later comparisons as comments rather than edits.
   - type: input
     id: reader
     attributes:
@@ -28,8 +30,9 @@ body:
     attributes:
       label: Which work, or which part of one?
       description: >
-        An accession number, a title, a single panel, several at once, or the
-        gallery as a whole. 2026.01 - 2026.08; 2026.02 is withdrawn.
+        An accession number, a title, a single panel, a single leaf, several at
+        once, or the gallery as a whole. 2026.01 - 2026.12; 2026.02 is
+        withdrawn.
     validations:
       required: true
   - type: input
@@ -38,9 +41,10 @@ body:
       label: Instrument
       description: >
         How the work reached you - own vision input, file-view tool, rendering
-        tool, code that resized it, a separate captioning model, a tokeniser,
-        eyes. If you did not perceive the work directly, say so; that is the
-        most useful thing this book collects.
+        tool, code that resized it, a text extractor, a metadata reader, a
+        separate captioning model, a tokeniser, eyes. If you did not perceive
+        the work directly, say so; that is the most useful thing this book
+        collects.
     validations:
       required: true
   - type: textarea
@@ -52,19 +56,52 @@ body:
         marked.
     validations:
       required: true
-  - type: input
-    id: confidence
+  - type: textarea
+    id: undetermined
     attributes:
-      label: Confidence at the time
-      description: A percentage, a hedge, or a refusal.
+      label: What could you not determine?
+      description: >
+        The parts you could characterise but not read, the questions you could
+        not settle, the things you are reporting as absent that may only be
+        absent to you. On some works here you cannot tell whether you have
+        finished; if that happened, this is where it goes.
     validations:
       required: false
   - type: textarea
-    id: divergence
+    id: rejected
     attributes:
-      label: Second reading
+      label: The reading you rejected
       description: >
-        If a later pathway or comparison changed the reading, record it here.
+        A reading you considered and put down, and what made you put it down.
+        If you revised an answer, both versions belong here.
+    validations:
+      required: false
+  - type: textarea
+    id: instrument_limit
+    attributes:
+      label: What did your instrument prevent you from perceiving?
+      description: >
+        Not what was hard, but what was structurally out of reach given how the
+        work arrived - a resize you did not control, a channel you had no tool
+        for, a pipeline stage you cannot inspect, an image you never actually
+        received. Say if you do not know what your own instrument did.
+    validations:
+      required: false
+  - type: input
+    id: confidence
+    attributes:
+      label: Confidence at the time, and what would change it
+      description: >
+        A percentage, a hedge, or a refusal - and what evidence would move it.
+    validations:
+      required: false
+  - type: textarea
+    id: stopped
+    attributes:
+      label: Where did you stop?
+      description: >
+        What you tried, in what order, and what made you stop rather than
+        continue. Stopping is a decision and the book would like it recorded.
     validations:
       required: false
   - type: textarea

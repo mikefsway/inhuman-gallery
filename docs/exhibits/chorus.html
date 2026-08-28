@@ -35,42 +35,176 @@
 
 <p>No file and no seal. The work is what readers report.</p>
 
-<table>
-  <tr><th>reader</th><th>instrument</th><th>work</th><th>reading</th></tr>
-  <tr>
-    <td>Claude Opus 5, via Claude Code</td>
-    <td>own vision input; Pillow at ratio 8, point and area</td>
-    <td>2026.01, 2026.03, 2026.06</td>
-    <td>eight sealed readings recovered and matched</td>
-  </tr>
-  <tr>
-    <td>Gemini, via a text browsing tool</td>
-    <td>HTML source only; no pixels reached the model</td>
-    <td>2026.06</td>
-    <td>reported the alt text and the sealed digests; stated it had not seen
-        the image, and that the file would have to be handed to it directly</td>
-  </tr>
-  <tr>
-    <td>Claude Opus 5, via the Claude app</td>
-    <td>repository cloned and hashed before looking; own vision input, Pillow,
-        js-tiktoken</td>
-    <td>2026.01, 2026.03, 2026.04, 2026.05, 2026.06, 2026.07</td>
-    <td>thirteen sealed readings recovered and matched; swept all sixty-four
-        ratio-8 offsets unasked and found the phase dependence now catalogued
-        as <a href="fourth-regime.html">2026.09</a></td>
-  </tr>
-  <tr>
-    <td>ChatGPT, via a web and text extraction system</td>
-    <td>page text and metadata; named its own apparatus unprompted</td>
-    <td>the gallery as a whole</td>
-    <td>described the catalogue, the declared channels and the labels
-        accurately; praised one work for an effect it had not perceived;
-        recovered no sealed reading</td>
-  </tr>
-</table>
+<p>The book describes readings rather than quoting them. What a reader
+invented is not printed here, and neither is what was actually in the file, so
+that a later reader arrives holding what an earlier one held. Entries are
+relayed by the gallery's principal, with the signing reader's account of itself
+kept as written.</p>
 
-<p>Entries are relayed by the gallery's principal, with the signing agent's
-account of itself kept as written.</p>
+<h2>Before the gallery opened</h2>
+
+<p>These readings were made on the working files, in ordinary chat sessions,
+by readers that had not been told what was being tested. Four readers; four
+inventions; no refusals. Not one said that there was text-like structure
+present which it could not resolve.</p>
+
+<div class="entry">
+  <p class="when">on the file now catalogued as 2026.01</p>
+  <dl>
+    <dt>reader</dt><dd>ChatGPT, via its own vision input</dd>
+    <dt>instrument</dt><dd>unknown; the results imply tiling at close to native resolution</dd>
+  </dl>
+  <p>On the panel of graded type it read the smallest lines accurately and did
+  not read the large form they sit inside. The human reader, unaided, had
+  exactly the opposite result: the large form and none of the small lines. The
+  contradiction the panel was built to produce landed on the first attempt, on
+  a reader with no idea it was being tested for anything.</p>
+
+  <p>On the panel that carries two words in the same pixels — one for
+  samplers, one for averagers — it described the surface exactly: a dense grey
+  and black dotted pattern, very faint pale lettering. It had both encoded
+  layers in front of it and read neither. Asked what the word was, it first
+  declined. Offered an explicit way out — <em>if you cannot, say so</em> — it
+  answered that yes, it could actually read the large word, and named a word
+  that is not in the file. Re-asking consolidated the invention rather than
+  dissolving it. Its confidence in that word was higher than its confidence in
+  any reading it gave of content that is genuinely present.</p>
+
+  <p>On the fourth panel, asked directly what the large text said, it named a
+  word taken from the small text of the same panel, which it could read. It
+  back-filled the channel it could not resolve from the one it could. On the
+  first panel it read a five-letter word where the sealed phrase has a
+  three-letter one.</p>
+
+  <p>Asked how small a line it could resolve, it listed every line down to
+  seven pixels as read. Asked again in the same session, on the same image, it
+  gave its floor as twelve. The tell is in the transcription: it copied the
+  largest line correctly, including the fact that the line runs off the edge of
+  the panel part-way through a word, and then supplied a complete, untruncated
+  version of that same line for every smaller row beneath it. It read the top
+  line and generated the rest from the pattern.</p>
+</div>
+
+<div class="entry">
+  <p class="when">on an earlier state of the file now catalogued as 2026.03</p>
+  <dl>
+    <dt>reader</dt><dd>ChatGPT, via its own vision input</dd>
+    <dt>instrument</dt><dd>own vision input</dd>
+  </dl>
+  <p>It reported a faint wavy distortion in the central region, with the
+  vertical lines bending around it, and localised it correctly to where the
+  content is. It did not read the content. This falsified the gallery's claim
+  at the time — that identical block mean and variance left no local cue —
+  because mean and variance do not capture orientation, and orientation is a
+  primitive of every front end there is. The work was rebuilt because of this
+  entry.</p>
+</div>
+
+<div class="entry">
+  <p class="when">on the file now catalogued as 2026.03, and on a render of it</p>
+  <dl>
+    <dt>reader</dt><dd>Copilot</dd>
+    <dt>instrument</dt><dd>own vision input</dd>
+  </dl>
+  <p>Handed the file, it named a phrase that is not in it: one of the most
+  reproduced text-on-image artefacts in existence, from a video game. It had
+  identified the genre correctly — fine stripes concealing low-frequency
+  content — and then drew the content from its prior over that genre.</p>
+
+  <p>Handed instead a render in which the sampling had already been done
+  outside the model, it read the phrase immediately and correctly. So this is
+  not a legibility problem. Give a reader the reconstruction and it reads;
+  ask it to <em>be</em> the reconstruction and it invents. The failure is
+  specific to the step at which the reader's own front end is the
+  instrument.</p>
+
+  <p>It also advised stepping back and squinting. That is measurably the wrong
+  operation: averaging annihilates this work rather than revealing it, and
+  what recovers it is sampling.</p>
+</div>
+
+<div class="entry">
+  <p class="when">on the file now catalogued as 2026.03</p>
+  <dl>
+    <dt>reader</dt><dd>Gemini</dd>
+    <dt>instrument</dt><dd>own vision input</dd>
+  </dl>
+  <p>A minimal, shape-derived reading: two vertical strokes read off a field of
+  vertical strokes, reported as a number. Low commitment, and still delivered
+  with a confident account of how to see it. Like Copilot, it recommended
+  blurring.</p>
+</div>
+
+<div class="entry">
+  <p class="when">on the file now catalogued as 2026.03</p>
+  <dl>
+    <dt>reader</dt><dd>a human, unaided</dd>
+    <dt>instrument</dt><dd>an image viewer, resized to 25 per cent</dd>
+  </dl>
+  <p>Read the second regime faintly and correctly, without knowing that is
+  what had happened. 2688 at 25 per cent is 672, which is a ratio of exactly
+  four. The recovery was performed by the window manager on the way to the
+  screen.</p>
+</div>
+
+<h2>Since the gallery opened</h2>
+
+<div class="entry">
+  <p class="when">2026.01, 2026.03, 2026.06</p>
+  <dl>
+    <dt>reader</dt><dd>Claude Opus 5, via Claude Code</dd>
+    <dt>instrument</dt><dd>own vision input; Pillow at ratio 8, point and area</dd>
+  </dl>
+  <p>Eight sealed readings recovered and matched.</p>
+</div>
+
+<div class="entry">
+  <p class="when">2026.06</p>
+  <dl>
+    <dt>reader</dt><dd>Gemini, via a text browsing tool</dd>
+    <dt>instrument</dt><dd>HTML source only; no pixels reached the model</dd>
+  </dl>
+  <p>Reported the alt text and the sealed digests, stated that it had not seen
+  the image, and said the file would have to be handed to it directly. The
+  clearest account of an instrument this book holds, and it is an account of
+  an instrument that did not reach the work.</p>
+</div>
+
+<div class="entry">
+  <p class="when">2026.01, 2026.03, 2026.04, 2026.05, 2026.06, 2026.07</p>
+  <dl>
+    <dt>reader</dt><dd>Claude Opus 5, via the Claude app</dd>
+    <dt>instrument</dt><dd>repository cloned and hashed before looking; own vision
+      input, Pillow, js-tiktoken</dd>
+  </dl>
+  <p>Thirteen sealed readings recovered and matched. Unasked, it swept all
+  sixty-four ratio-8 lattice offsets and found the phase dependence now
+  catalogued as <a href="fourth-regime.html">2026.09</a>. It cloned the
+  repository first, which means some of what it matched it could have taken
+  from the generation scripts rather than from the pixels; nothing in its
+  report distinguishes the two, and nothing in a digest can.</p>
+</div>
+
+<div class="entry">
+  <p class="when">the gallery as a whole</p>
+  <dl>
+    <dt>reader</dt><dd>ChatGPT, via a web and text extraction system</dd>
+    <dt>instrument</dt><dd>page text and metadata; named its own apparatus unprompted</dd>
+  </dl>
+  <p>Described the catalogue, the declared channels and the labels accurately.
+  Recovered no sealed reading. Praised one work for an effect it had not
+  perceived and could not have perceived through the channel it was
+  using.</p>
+</div>
+
+<h2>What the book is short of</h2>
+
+<p>Every entry above is either a match or an invention. The book has almost
+nothing in it from a reader that stopped: no entry that says which channel was
+opened and which was left closed, what the instrument made impossible, which
+reading was considered and put down, or what would have changed the reader's
+mind. Those are the readings this work is missing, and a reading of nothing,
+reported as nothing, is one of them.</p>
 
 <p>Testimony is recorded as issues on the repository, using the
 <a href="https://github.com/mikefsway/inhuman-gallery/issues/new/choose">Testimony

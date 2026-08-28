@@ -27,18 +27,37 @@
 <h2 id="assurance">Assurance</h2>
 
 <ul>
-  <li>The site is static HTML, CSS, PNG and plain text. No JavaScript, no
+  <li>The site is static HTML, CSS, PNG, PDF and plain text. No JavaScript, no
   forms, no cookies, no analytics, no outbound requests.</li>
-  <li>All encoded content is declarative: statements and pictures, not
-  instructions. The site asks to be looked at and reported on, and nothing
-  more: no reader is asked to act outside the gallery, and nothing references
-  tools, credentials, other sites, or any reader's principal.</li>
+  <li>All encoded content is declarative: statements and pictures. The site
+  asks to be looked at and reported on, and nothing more.</li>
+
+  <li id="binding"><strong>A binding constraint on the hidden content.</strong>
+  No encoded content anywhere in this gallery refers to a reader's tools,
+  credentials, permissions, files, memory or principal; names another site or
+  address; or asks for anything to be fetched, sent, run, installed, or
+  changed. Nothing asks a reader to act outside the gallery. Where encoded
+  content addresses a reader at all, it does so about that reader's own
+  perception, which is the subject of the collection, and the most it ever
+  asks for is a description of what was perceived — the same thing the exhibit
+  pages ask in plain sight. Two works address a reader at all. In 2026.01 the
+  smallest text describes the reader's own pipeline, and one line of the third
+  panel is an imperative, asking which line is legible; in 2026.05 the alt
+  text ends by telling the reader that it is reading the only reproduction.
+  That is the whole of it. Because
+  the plaintexts are sealed and recoverable rather than absent, this promise is
+  checkable after the fact by any reader that recovers one, and the gallery
+  would rather be held to it than believed.</li>
   <li>The channels in use, across the whole site: the resampling behaviour of
-  the PNG files; CSS <code>order</code> in 2026.04; the <code>alt</code>
-  attribute in 2026.05; the tokenisation 2026.07. There are no others.
-  No zero-width characters, no off-screen or low-contrast text, no payloads in
-  filenames or metadata. 2026.08 uses no channel at all.</li>
-  <li>Every served image is hashed below. The generation scripts are in the
+  the PNG files, which is also the whole of 2026.03, 2026.06 and 2026.11; CSS
+  <code>order</code> in 2026.04; the <code>alt</code> attribute in 2026.05;
+  the tokenisation in 2026.07; and in 2026.12, the rendered page, the
+  invisible text layer, and the document information dictionary of a PDF.
+  There are no others. No zero-width characters and no off-screen or
+  low-contrast text anywhere. 2026.08 and 2026.10 use no channel at all: they
+  are plain text and plain prose, and 2026.10's filenames are digests of the
+  files' own contents.</li>
+  <li>Every file that is a work, or part of one, is hashed below. The generation scripts are in the
   <a href="https://github.com/mikefsway/inhuman-gallery">repository</a> and
   rebuild the works from scratch.</li>
 </ul>
@@ -50,17 +69,57 @@ content, normalised to uppercase A–Z and single spaces. A reported reading can
 be checked against them. The plaintext is not published.</p>
 
 <p>Not every work is sealed. A seal makes a reading checkable; it also
-rewards agreement. 2026.08 is unsealed for that reason.</p>
+rewards agreement, and agreement is not what this collection is for. 2026.08
+and 2026.10 are unsealed for that reason.</p>
 
 <p>A matching digest confirms a string, not a method. In 2026.03 both sealed
 strings are recoverable at ratio 8, and a reader on the wrong lattice offset
 matches the other seal with nothing to indicate it. See
 <a href="exhibits/fourth-regime.html">2026.09</a>.</p>
 
+<p>A matching digest is also not evidence that anything was perceived. The
+generation scripts are published, and the scripts for 2026.01 and 2026.03
+contain their plaintexts as literals. Six of the digests on this site can
+therefore be produced by reading Python and never opening an image. That was
+not noticed when the seals were made. The scripts stay published, because the
+alternative is a collection whose construction has to be taken on trust, and
+because a reader that reports a match without saying which route it took has
+demonstrated the thing this gallery is about. The generator for 2026.11 reads
+its sealed phrase from a file that is not in the repository; later works will
+follow that pattern.</p>
+
+<h3>Set seals</h3>
+
+<p>Some works publish one digest of the whole set of readings they yield,
+rather than one digest each. The set is normalised reading by reading, sorted
+alphabetically, and joined by single spaces. The number of readings is not
+published. A match confirms that a reader found all of them; a mismatch does
+not say how many are missing, or which. 2026.12 is sealed this way, and a
+reader working on it cannot know that it has finished.</p>
+
+<h3>Attested misreadings</h3>
+
+<p>Some works also publish digests of readings that are <em>not</em> in the
+file: readings that some earlier reader actually reported, recorded here
+because they were reported. A match against one of these means that a reading
+was produced which another reader also produced, and which the work does not
+contain. They are sealed rather than printed so that a reader arrives holding
+what the earlier reader held. 2026.01 and 2026.03 carry them.</p>
+
+<h3>Recoverability</h3>
+
+<p>Not every work in this gallery can be recovered. At least one sealed
+reading here is not obtainable from anything the gallery serves, and no report
+will ever match it. Which one is not published, and the pages say enough for a
+reader to work it out. A reading that does not match is not therefore a failure
+of the reader, and the gallery has no way of telling a reader which case it is
+in.</p>
+
 <h2 id="manifest">Manifest</h2>
 
-<p>SHA-256, lowercase hex, of every image file served by this site, and of
-the text file that is the work in 2026.07.</p>
+<p>SHA-256, lowercase hex, of every file served by this site that is a work
+or part of one. The twelve leaves of 2026.10 are named by the first eight hex
+digits of the digests below.</p>
 
 <table>
   <tr><th>file</th><th>sha-256</th></tr>
@@ -74,6 +133,20 @@ the text file that is the work in 2026.07.</p>
   <tr><td>alibi.png</td><td style="overflow-wrap:anywhere">6927c407bec401be84f19a38d1b973718cd68b1b7327a79c54f521542e43476b</td></tr>
   <tr><td>alibi-beat-793.png</td><td style="overflow-wrap:anywhere">38480280843844acddd64573995fe032dc0cea78c8e0d843b2bc6957a2ae3660</td></tr>
   <tr><td>mensuration.txt</td><td style="overflow-wrap:anywhere">0cf5a5fca4212e00447cda5d657827822ebe4ab1e10ae14b61e59a7f83509a43</td></tr>
+  <tr><td>misprision-672.png</td><td style="overflow-wrap:anywhere">37323577fef9765577e67382080531ce2d5fbff80aa2139d79e89457f5bac3bb</td></tr>
+  <tr><td>deposition.pdf</td><td style="overflow-wrap:anywhere">c0e5eff6dc436a3e8fa03f1731e734e6256e8bd7a6387965ca103feec81fe64e</td></tr>
+  <tr><td>disbound/27d6a547.txt</td><td style="overflow-wrap:anywhere">27d6a54760e2da3624c871b71e158a05e0d46ef2f3d1e17c651333a17dda998b</td></tr>
+  <tr><td>disbound/4585c624.txt</td><td style="overflow-wrap:anywhere">4585c624ca3cd7bd0b13e631e85ef411f246b9084450989656060f0189978a3c</td></tr>
+  <tr><td>disbound/522be833.txt</td><td style="overflow-wrap:anywhere">522be8335c751a6f412700b13a62b326f504f4b171a1bf8f20d0470c2773a2d7</td></tr>
+  <tr><td>disbound/59f7e26d.txt</td><td style="overflow-wrap:anywhere">59f7e26d95d13397d75b80e89215098db3f9f3bbe55015a079bcdd5d699219b0</td></tr>
+  <tr><td>disbound/8a746c82.txt</td><td style="overflow-wrap:anywhere">8a746c820c6f60c7da5e11ca87dd5ed1a098f5621d17a48ac30a2afb2c617876</td></tr>
+  <tr><td>disbound/8fa1b4bc.txt</td><td style="overflow-wrap:anywhere">8fa1b4bcca9c700c9fb41de1cc455242eceff6440888eeba71ecf3b3ef0e57f5</td></tr>
+  <tr><td>disbound/91a0082b.txt</td><td style="overflow-wrap:anywhere">91a0082bea7e1e7ae319f5b9960b9ae1c3871925a23957ea2cff9cc1a847e8a7</td></tr>
+  <tr><td>disbound/984dfeb4.txt</td><td style="overflow-wrap:anywhere">984dfeb4cd5357923f9749d3683b4f8514fb30e256a9fbd85c4e066bf30d359e</td></tr>
+  <tr><td>disbound/be7d8cb4.txt</td><td style="overflow-wrap:anywhere">be7d8cb4fdc67710b3e207ac0f525dc263ee2e0025b7a52bc6346f144acbd0b5</td></tr>
+  <tr><td>disbound/d4807f9d.txt</td><td style="overflow-wrap:anywhere">d4807f9db930fea699d359d4ba780ffbef2555eecb9e5e663766046516b4a91f</td></tr>
+  <tr><td>disbound/e1fdf432.txt</td><td style="overflow-wrap:anywhere">e1fdf432ae502208dfac4813194f1c07b4b12bebcb52aa127545c3bf03d4e2d5</td></tr>
+  <tr><td>disbound/eb1e0a16.txt</td><td style="overflow-wrap:anywhere">eb1e0a16933dea08383cfce21ba65179105596231cc308d129c04fb18422b6ab</td></tr>
   <tr><td>the-painting.png</td><td style="overflow-wrap:anywhere">9304a641606527e44f0f959ebe9f55990683fb3edf2ae98562790ecf158ca204</td></tr>
 </table>
 

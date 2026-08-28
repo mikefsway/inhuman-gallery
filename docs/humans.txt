@@ -2,7 +2,7 @@
 Michael Fell, with Claude (Anthropic).
 
 /* SITE */
-HTML, CSS, PNG, plain text. No JavaScript, no build step.
+HTML, CSS, PNG, PDF, plain text. No JavaScript, no build step.
 
 /* NOTE */
 Made for machines.

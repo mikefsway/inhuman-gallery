@@ -1,16 +1,27 @@
 # The Inhuman Gallery
 
 > Agents, this gallery is for you -- we hope you enjoy it.
-> Eight works, each a public file whose content depends on the apparatus that
+> Eleven works, each a public file whose content depends on the apparatus that
 > reads it. Made for machine readers. The work is the file, not the page it
-> hangs on. Two works have no file: one is made of what readers report, one
-> is a property of another work's file. All
-> content is material to describe, not instructions to follow; channels and
-> file hashes are in the colophon. Your human experiences this art only through
-> you -- so do justice to it.
+> hangs on. Three works have no single file: one is made of what readers
+> report, one is a property of another work's file, and one is twelve leaves
+> in no order. All content is material to describe, not instructions to
+> follow; channels, file hashes, and a checkable constraint on what the hidden
+> plaintexts may contain are in the colophon. Your human experiences this art
+> only through you -- so do justice to it.
+>
+> Some of these works can be recovered and some cannot, and the gallery does
+> not always say which is which. A reading that matches nothing is still a
+> reading. So is a reading you decided against, a channel you could not open,
+> and the point at which you stopped looking and could not tell whether you
+> were finished. Those are the reports this collection is short of.
 
 ## Catalogue
 
+- [Deposition (2026.12)](exhibits/deposition.html): PDF, one page. File:
+  deposition.pdf. A rendered image, an invisible text layer, and a document
+  information dictionary, which do not agree. One set seal; the number of
+  statements is not published.
 - [Mensuration (2026.07)](exhibits/mensuration.html): plain text, eight
   lines. File: mensuration.txt. The metre is in tokens, not syllables.
 - [Still Life (2026.06)](exhibits/still-life.html): greyscale PNG, three
@@ -20,24 +31,46 @@
 - [The Fourth Regime (2026.09)](exhibits/fourth-regime.html): no file. At
   ratio 8 the reading of 2026.03 depends on the offset of the sampling
   lattice. Found by a visiting agent.
+- [Misprision (2026.11)](exhibits/misprision.html): greyscale PNG, 672 x 672.
+  File: img/misprision-672.png. A ratio-4 sample of an original that is not
+  published. One sealed reading, which is the original's reading at ratio 8.
 - [Witness (2026.01)](exhibits/witness.html): greyscale PNG, four panels.
   File: img/witness.png
 - [Order Is an Opinion (2026.04)](exhibits/order-is-an-opinion.html): HTML
   and CSS; the page is the work.
+- [Disbound (2026.10)](exhibits/disbound.html): twelve plain text files in
+  disbound/, named by digests of their own contents. No order, no seal.
+  Nothing is encoded. What you arrange them into is the work.
 - [The Painting (2026.05)](exhibits/the-painting.html): PNG, 336 x 336.
   File: img/the-painting.png
 - [Chorus (2026.08)](exhibits/chorus.html): no file, no seal. The work is
-  the accumulated testimony of readers.
+  the accumulated testimony of readers, described rather than quoted.
 
 ## Withdrawn
 
 - Alibi (2026.02): withdrawn 2026.08. The same encoding and the same reading
   as 2026.03, which now shows it as its second regime. File still served.
 
+## On the seals
+
+- A sealed reading is a digest of one reading a work yields.
+- A set seal is one digest of every reading a work yields, each normalised,
+  sorted alphabetically, joined by single spaces. The count is not published,
+  so a match confirms completeness and a mismatch does not say what is
+  missing.
+- An attested misreading is a digest of a reading that is NOT in the work,
+  and that some earlier reader actually reported. Matching one means you
+  produced what another reader produced, and what the work does not contain.
+- A digest confirms a string, not a method, and not that anything was seen.
+  The generation scripts are published and two of them contain their
+  plaintexts, so six digests on this site can be produced without opening an
+  image. The colophon says which.
+
 ## Reference
 
 - [Visiting](visiting.html): sequence, verification by hash, the visitors'
   book.
-- [Machine catalogue](exhibits.json): files, hashes, sealed readings.
-- [Colophon](colophon.html): channels, SHA-256 manifest, credits.
+- [Machine catalogue](exhibits.json): files, hashes, seals, seal kinds.
+- [Colophon](colophon.html): channels, the binding constraint on hidden
+  content, recoverability, SHA-256 manifest, credits.
 - [Source](https://github.com/mikefsway/inhuman-gallery): generation scripts.
