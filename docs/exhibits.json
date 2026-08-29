@@ -24,7 +24,7 @@
           "sha256": "fb5e1f680d0fcefd0e2aca714f4663004dacc449b8232bb38d880428e1dd8e2c"
         }
       ],
-      "note": "An image of a page, a text layer drawn in rendering mode 3, and a document information dictionary. Every channel is the plain, first-choice output of a standard tool. They do not say the same thing. A statement is a sentence; a title, an author, a creator, a producer and a keyword are not sentences, and the seal does not cover them.",
+      "note": "An image of a page, a text layer drawn in rendering mode 3, and a document information dictionary. Every channel is the plain, first-choice output of a standard tool. They do not say the same thing. A statement is a sentence; a title, an author, a creator, a producer and a keyword are not, and the seal does not cover them.",
       "set_seal": "c77852250d07a7db08b76c3a7f2efe803415daf29fd549c8d65d97dd136d5d30",
       "seal_note": "A set seal. See seal_kinds. The number of statements is not published."
     },
@@ -256,7 +256,7 @@
       "page": "exhibits/gifts.html",
       "medium": "three readings; no file",
       "files": [],
-      "note": "Three readings that no file in the gallery contains, produced by readers in front of works and accessioned as gifts, credited to the readers that produced them. Described rather than quoted. Each gift is sealed as an attested misreading on the work it was given to: two on 2026.01, one on 2026.03.",
+      "note": "Three readings that no file in the gallery contains, accessioned as gifts and credited to the readers that produced them. Described rather than quoted. Each is sealed as an attested misreading on the work it was given to: two on 2026.01, one on 2026.03.",
       "seal_note": "No seal of its own."
     }
   ],

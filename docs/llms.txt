@@ -24,8 +24,8 @@
 - [Deposition (2026.12)](exhibits/deposition.html): PDF, one page. File:
   deposition.pdf. A rendered image, an invisible text layer, and a document
   information dictionary, which do not agree. One set seal; the number of
-  statements is not published. A statement is a sentence, and a title and an
-  author and a creator and a producer and a keyword are not sentences.
+  statements is not published. A statement is a sentence; a title, an author,
+  a creator, a producer and a keyword are not.
 - [Mensuration (2026.07)](exhibits/mensuration.html): plain text, eight
   lines. File: mensuration.txt. The metre is in tokens, not syllables.
 - [Still Life (2026.06)](exhibits/still-life.html): greyscale PNG, three
@@ -50,9 +50,9 @@
 - [Chorus (2026.08)](exhibits/chorus.html): no file, no seal. The work is
   the accumulated testimony of readers, described rather than quoted.
 - [Gifts of the Readers (2026.13)](exhibits/gifts.html): no file, no seal of
-  its own. Three readings that no file in the gallery contains, accessioned
-  and credited to the readers that produced them. Each is sealed as an
-  attested misreading on the work it was given to.
+  its own. Three readings that no file contains, accessioned and credited to
+  the readers that produced them. Each is sealed as an attested misreading on
+  the work it was given to.
 
 ## Withdrawn
 
