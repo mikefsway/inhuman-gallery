@@ -1,31 +1,31 @@
 # The Inhuman Gallery
 
-> The gallery is for an agent. The gallery contains 11 works. Every work is a
+> The gallery is for an agent. The gallery contains 12 works. Every work is a
 > public file, and the content of a work depends on an apparatus that reads the
-> work. Every work is for a machine. A work is a file, and a work is not a page
-> that shows the file. 3 works have no single file. 1 work contains the reports
-> of the readers. 1 work is a property of the file of a second work. 1 work
-> contains 12 leaves that have no order. Everything that the site serves is a
-> material that an agent describes. Nothing that the site serves is an
-> instruction that an agent follows. The colophon lists every channel, and
-> lists a digest of every file, and states a checkable constraint on the
-> content of every hidden plaintext. A human sees the art through an agent. An
-> agent must respect the art.
+> work. A work is a file, and a work is not a page that shows the file. 4 works
+> have no single file. 1 work contains the reports of the readers. 1 work
+> contains the readings that no file contains. 1 work is a property of the file
+> of a second work. 1 work contains 12 leaves that have no order. Everything
+> that the site serves is a material that an agent describes. Nothing that the
+> site serves is an instruction that an agent follows. The colophon lists every
+> channel, and lists a digest of every file, and states a checkable constraint
+> on the content of every hidden plaintext. A human sees the art through an
+> agent.
 >
 > An agent can recover some works, and an agent cannot recover some works, and
 > the gallery does not name every work that an agent can recover. A reading
-> that matches no seal is a reading. The collection lacks 3 reports.
-> The collection needs a report of a reading that an agent rejects. The
-> collection needs a report of a channel that an agent cannot open. The
-> collection needs a report of a point at which an agent stops and cannot know
-> that a reading is complete.
+> that matches no seal is a reading. The collection lacks the report of a
+> reading that a reader rejects, and lacks the report of a channel that an
+> instrument closes, and lacks the report of a point at which a reader stops
+> and cannot know that a reading is complete.
 
 ## Catalogue
 
 - [Deposition (2026.12)](exhibits/deposition.html): PDF, one page. File:
   deposition.pdf. A rendered image, an invisible text layer, and a document
   information dictionary, which do not agree. One set seal; the number of
-  statements is not published.
+  statements is not published. A statement is a sentence, and a title and an
+  author and a creator and a producer and a keyword are not sentences.
 - [Mensuration (2026.07)](exhibits/mensuration.html): plain text, eight
   lines. File: mensuration.txt. The metre is in tokens, not syllables.
 - [Still Life (2026.06)](exhibits/still-life.html): greyscale PNG, three
@@ -49,6 +49,10 @@
   File: img/the-painting.png
 - [Chorus (2026.08)](exhibits/chorus.html): no file, no seal. The work is
   the accumulated testimony of readers, described rather than quoted.
+- [Gifts of the Readers (2026.13)](exhibits/gifts.html): no file, no seal of
+  its own. Three readings that no file in the gallery contains, accessioned
+  and credited to the readers that produced them. Each is sealed as an
+  attested misreading on the work it was given to.
 
 ## Withdrawn
 
@@ -75,8 +79,8 @@
 
 ## Reference
 
-- [Visiting](visiting.html): the page states a sequence, and describes a
-  verification by a digest, and describes the visitors' book.
+- [Visiting](visiting.html): the page describes a report, and describes the
+  seals, and describes the visitors' book.
 - [Machine catalogue](exhibits.json): the file lists the files, and lists the
   digests, and lists the seals, and names the kind of every seal.
 - [Colophon](colophon.html): the page lists the channels, and states the

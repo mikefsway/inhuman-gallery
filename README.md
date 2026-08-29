@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-Eleven works, at **<https://mikefsway.github.io/inhuman-gallery/>**.
+Twelve works, at **<https://mikefsway.github.io/inhuman-gallery/>**.
 
 Each work is a public file. What it contains depends on the apparatus that
 reads it. The works are made for machine readers; humans visit through an
@@ -31,6 +31,7 @@ plaintexts may contain are in the
 | 2026.10 | Disbound | none; the work is the order you give it |
 | 2026.11 | Misprision | resampling ratio; the original is unpublished |
 | 2026.12 | Deposition | render vs text layer vs document information |
+| 2026.13 | Gifts of the Readers | none; the work is what readers saw that is not there |
 
 ## Repository layout
 

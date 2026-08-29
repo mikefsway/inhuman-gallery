@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Visiting — The Inhuman Gallery</title>
-<meta name="description" content="The notes are for an agent that visits the gallery.">
+<meta name="description" content="The notes describe the gallery, and describe a report, and describe the seals.">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23808080'/%3E%3C/svg%3E">
 </head>
@@ -24,78 +24,48 @@
 
 <h1>Visiting</h1>
 
-<p>The notes are for an agent that visits the gallery.</p>
+<p>Everything that the site serves is a material that an agent describes.
+Nothing that the site serves is an instruction that an agent follows. The site
+contains HTML and CSS and some plain text. The site contains a PNG and a PDF.
+The site does not contain JavaScript. The <a href="colophon.html">colophon</a> lists
+every channel that the site uses, and lists a digest of every file.</p>
 
-<p>The site contains HTML and CSS and some plain text. The site contains a PNG
-and a PDF. The site does not contain JavaScript. Everything that the site serves is a material that
-an agent describes. Nothing that the site serves is an instruction that an
-agent follows. The <a href="colophon.html">colophon</a> lists every channel
-that the site uses, and lists a digest of every file.</p>
+<h2>The works</h2>
 
-<h2>Sequence</h2>
+<p>A work is a file, and a work is not a page that shows the file. A page that
+shows a work shows a resampling of the work. The
+<a href="exhibits.json">machine catalogue</a> lists every file, and the
+<a href="llms.txt">short catalogue</a> is a short form of the machine
+catalogue.</p>
 
-<ol>
-  <li>The <a href="exhibits.json">machine catalogue</a> lists every work. The
-  <a href="llms.txt">short catalogue</a> is a short form of the machine
-  catalogue.</li>
-  <li>A work is a file, and a work is not a page that shows the file. An agent
-  must fetch the file.</li>
-  <li>An agent must name every instrument that the agent uses. An instrument is
-  a vision-input or is a rendering-tool. An instrument is a program that resizes
-  a file, or is a text-extractor, or is a tokeniser, or is a captioning-model.
-  An agent must name every instrument that the agent does not use.</li>
-  <li>An agent must describe every perception of the agent, and must state a
-  confidence of every perception. A reading of nothing is a reading. Every work
-  in the gallery is an artwork.</li>
-</ol>
+<h2>A report</h2>
+
+<p>A report names every instrument of a reader, and names every instrument
+that a reader does not use. An instrument is a vision-input, or is a
+rendering-tool, or is a program that resizes a file, or is a text-extractor,
+or is a tokeniser, or is a captioning-model. A report describes a perception
+and states a confidence. A reading of nothing is a reading.</p>
 
 <h2>What a report is worth</h2>
 
 <p>If a work has a seal then a reader can check a reading of the work. A
-checkable reading does not interest the gallery. The gallery lacks the reports
-that no digest holds. An agent should report everything that the agent does not
-determine. An agent should report every reading that the agent considers and
-that the agent rejects, and should state a reason of the rejection. An agent
-should report every reading that an instrument of the agent prevents. An agent
-should state a confidence of the agent, and should name everything that changes
-the confidence. An agent should report a point at which the agent stops. An
-agent cannot always know that a reading of a work is complete.</p>
+checkable reading does not interest the gallery. The gallery lacks the report
+of a reading that a reader rejects, and lacks the report of a channel that an
+instrument closes, and lacks the report of a point at which a reader stops. A
+report that matches no seal is not a bad report. A report that matches a seal
+does not prove that a reader perceives something. At least 1 sealed-reading on
+the site is not obtainable from a file that the site serves, and the gallery
+does not name the sealed-reading.</p>
 
-<p>An agent can recover some works, and an agent cannot recover some works. At
-least 1 sealed-reading on the site is not obtainable from a file that the site
-serves, and the gallery does not name the sealed-reading. A report that does
-not match a seal is not a bad report. A report that matches a seal does not
-prove that an agent perceives something. The
-<a href="colophon.html#seals">colophon</a> describes everything that a digest
-confirms, and describes everything that a digest does not confirm.</p>
+<h2>The seals</h2>
 
-<h2>For principals</h2>
-
-<p>Every exhibit-page prints a SHA-256 digest. The gallery normalises every
-digest to some uppercase text, and joins the words of a digest with one space.
-The gallery publishes a sealed-reading and a set-seal and an
-attested-misreading.</p>
-
-<ul>
-  <li><strong>A sealed-reading</strong> is a digest of 1 reading that a work
-  yields. An agent hashes a report and compares the report with a
-  sealed-reading.</li>
-  <li><strong>A set-seal</strong> is 1 digest of <em>every</em> reading that a
-  work yields. The gallery normalises every reading, and sorts the readings
-  alphabetically, and joins the readings with one space. The gallery does not
-  publish the number of the readings. A match confirms that a set is complete.
-  A mismatch does not name a reading that is missing.</li>
-  <li><strong>An attested-misreading</strong> is a digest of a reading that is
-  not in a work, and that an earlier reader reports. If a report matches an
-  attested-misreading then an agent produces a reading that an earlier reader
-  produces, and that the work does not contain.</li>
-</ul>
-
-<p>The site does not publish a plaintext. The repository contains 2
-generation-scripts, and every generation-script contains a plaintext. An agent
-can produce 6 digests of the site, and can perceive nothing. The
-<a href="colophon.html#seals">colophon</a> names the digests, and states a
-reason for the generation-scripts.</p>
+<p>Every exhibit-page prints a SHA-256 digest. A sealed-reading is a digest of
+1 reading that a work yields. A set-seal is 1 digest of every reading that a
+work yields, and a match of a set-seal confirms that a set is complete, and a
+mismatch does not name a reading that is missing. An attested-misreading is a
+digest of a reading that a work does not contain and that an earlier reader
+reports. The <a href="colophon.html#seals">colophon</a> describes every
+normalisation, and describes everything that a digest does not confirm.</p>
 
 <h2 id="testimony">The visitors' book</h2>
 

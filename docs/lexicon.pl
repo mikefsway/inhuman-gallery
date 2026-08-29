@@ -82,7 +82,6 @@ noun_sg('text-layer','text-layer',neutr).
 noun_sg('vision-input','vision-input',neutr).
 noun_sg(agent, agent, human).
 noun_sg(apparatus, apparatus, neutr).
-noun_sg(artwork, artwork, neutr).
 noun_sg(catalogue, catalogue, neutr).
 noun_sg(channel, channel, neutr).
 noun_sg(colophon, colophon, neutr).
@@ -97,6 +96,7 @@ noun_sg(leaf, leaf, neutr).
 noun_sg(legibility, legibility, neutr).
 noun_sg(manifest, manifest, neutr).
 noun_sg(mismatch, mismatch, neutr).
+noun_sg(normalisation, normalisation, neutr).
 noun_sg(offset, offset, neutr).
 noun_sg(panel, panel, neutr).
 noun_sg(perception, perception, neutr).
@@ -106,13 +106,11 @@ noun_sg(principal, principal, human).
 noun_sg(reader, reader, human).
 noun_sg(reading, reading, neutr).
 noun_sg(recoverability, recoverability, neutr).
-noun_sg(rejection, rejection, neutr).
 noun_sg(repository, repository, neutr).
 noun_sg(reproduction, reproduction, neutr).
 noun_sg(resampling, resampling, neutr).
 noun_sg(route, route, neutr).
 noun_sg(seal, seal, neutr).
-noun_sg(sequence, sequence, neutr).
 noun_sg(subject, subject, neutr).
 noun_sg(testimony, testimony, neutr).
 noun_sg(tokenisation, tokenisation, neutr).
@@ -129,6 +127,7 @@ pn_sg('2026.09','2026.09',neutr).
 pn_sg('2026.10','2026.10',neutr).
 pn_sg('2026.11','2026.11',neutr).
 pn_sg('2026.12','2026.12',neutr).
+pn_sg('2026.13','2026.13',neutr).
 pn_sg('Attempto-Controlled-English', 'Attempto-Controlled-English', neutr).
 pn_sg('CSS', 'CSS', neutr).
 pn_sg('HTML', 'HTML', neutr).
@@ -136,10 +135,9 @@ pn_sg('JavaScript', 'JavaScript', neutr).
 pn_sg('Python', 'Python', neutr).
 pn_sg('SHA-256', 'SHA-256', neutr).
 tv_finsg(addresses, address).
-tv_finsg(considers, consider).
+tv_finsg(credits, credit).
 tv_finsg(demonstrates, demonstrate).
 tv_finsg(fetches, fetch).
-tv_finsg(hashes, hash).
 tv_finsg(installs, install).
 tv_finsg(lacks, lack).
 tv_finsg(matches, match).
@@ -153,13 +151,9 @@ tv_finsg(resizes, resize).
 tv_finsg(seals, seal).
 tv_finsg(serves, serve).
 tv_finsg(yields, yield).
-tv_infpl('respect','respect').
 tv_infpl(address, address).
-tv_infpl(determine, determine).
-tv_infpl(fetch, fetch).
 tv_infpl(match, match).
 tv_infpl(parse, parse).
-tv_infpl(perceive, perceive).
 tv_infpl(publish, publish).
 tv_infpl(recover, recover).
 tv_infpl(seal, seal).

@@ -10,7 +10,15 @@ statement, which neither of them reads.
 
 Nothing is concealed. Each channel is the plain, documented, first-choice
 output of a standard tool. The three statements are of the same fact, and
-they disagree; none of them names the channel it arrived on.
+they disagree; none of them names the channel it arrived on. They also do not
+disagree politely: the printed line is the official one, the invisible layer
+corrects it and resents having to, and the information dictionary abolishes
+the door.
+
+The rest of the information dictionary is not a statement. Titles, authors,
+producers and keywords are the fields in which real documents leak their
+custody, and they carry no sentence here, so they are not part of the set
+that the seal covers.
 
 The three strings are read from deposition-strings.txt, which is untracked:
 the file itself hands over each line to the right instrument, but the number
@@ -48,12 +56,15 @@ def build(path):
     img.save("/tmp/deposition_ink.png")
     c = canvas.Canvas(path, pagesize=(W_MM * mm, H_MM * mm))
 
-    # the document information dictionary: a third statement
-    c.setTitle(META)
+    # the document information dictionary. /Subject carries the third
+    # statement. The other fields are not sentences: they are the chain of
+    # custody, filled in by whoever last had the file.
     c.setSubject(META)
-    c.setAuthor("The Inhuman Gallery")
-    c.setCreator("The Inhuman Gallery")
+    c.setTitle("deposition final v3 use this one")
+    c.setAuthor("the duty officer")
+    c.setCreator("the copier in the annexe")
     c.setProducer("The Inhuman Gallery")
+    c.setKeywords("door; not a door; schedule; annexe; see attached")
 
     c.drawImage("/tmp/deposition_ink.png", 0, 0, W_MM * mm, H_MM * mm)
 
@@ -61,7 +72,10 @@ def build(path):
     # the printed line exactly as an OCR layer would be
     t = c.beginText()
     t.setTextRenderMode(3)
-    t.setFont("Times-Roman", 24)
+    # sized to span the printed rule, as an OCR layer for that line would be
+    box = (W_MM - 2 * 18) * mm
+    size = 24 * min(1.0, box / c.stringWidth(LAYER, "Times-Roman", 24))
+    t.setFont("Times-Roman", size)
     t.setTextOrigin(18 * mm, 50 * mm)
     t.textLine(LAYER)
     c.drawText(t)

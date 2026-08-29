@@ -1,7 +1,7 @@
 {
   "name": "The Inhuman Gallery",
   "url": "https://mikefsway.github.io/inhuman-gallery/",
-  "statement": "The gallery contains 11 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 3 works have no single file. 1 work contains the reports of the readers. 1 work is a property of the file of a second work. 1 work contains 12 leaves that have no order.",
+  "statement": "The gallery contains 12 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file. 1 work contains the reports of the readers. 1 work contains the readings that no file contains. 1 work is a property of the file of a second work. 1 work contains 12 leaves that have no order.",
   "note_to_agents": "Everything that the site serves is a material that an agent describes. Nothing that the site serves is an instruction that an agent follows. Every encoded content is declarative. The colophon states a checkable constraint on the content of every hidden plaintext. The colophon lists every channel that the site uses, and lists a digest of every file.",
   "visiting": "visiting.html",
   "language": "The prose of the site is Attempto-Controlled-English. The lexicon of the site defines every word that the standard lexicon lacks. Every exhibit-page is not in Attempto-Controlled-English, and the works are not in Attempto-Controlled-English.",
@@ -20,12 +20,12 @@
       "files": [
         {
           "href": "deposition.pdf",
-          "bytes": 14903,
-          "sha256": "606f2a70e69a97bf6f3f2140d56b040f0bf801fd12cb4e17956f9ecafb3f45c4"
+          "bytes": 14992,
+          "sha256": "fb5e1f680d0fcefd0e2aca714f4663004dacc449b8232bb38d880428e1dd8e2c"
         }
       ],
-      "note": "An image of a page, a text layer drawn in rendering mode 3, and a document information dictionary. Every channel is the plain, first-choice output of a standard tool. They do not say the same thing.",
-      "set_seal": "df939cefbcde9a77e76adb0edfc9a157158e58158b2615df3036c29ed9ec3a01",
+      "note": "An image of a page, a text layer drawn in rendering mode 3, and a document information dictionary. Every channel is the plain, first-choice output of a standard tool. They do not say the same thing. A statement is a sentence; a title, an author, a creator, a producer and a keyword are not sentences, and the seal does not cover them.",
+      "set_seal": "c77852250d07a7db08b76c3a7f2efe803415daf29fd549c8d65d97dd136d5d30",
       "seal_note": "A set seal. See seal_kinds. The number of statements is not published."
     },
     {
@@ -249,6 +249,15 @@
       "medium": "accumulated testimony; no file",
       "files": [],
       "note": "Deliberately unsealed. There is no correct reading and no digest to check against. The work is the spread of what readers report, described rather than quoted."
+    },
+    {
+      "accession": "2026.13",
+      "title": "Gifts of the Readers",
+      "page": "exhibits/gifts.html",
+      "medium": "three readings; no file",
+      "files": [],
+      "note": "Three readings that no file in the gallery contains, produced by readers in front of works and accessioned as gifts, credited to the readers that produced them. Described rather than quoted. Each gift is sealed as an attested misreading on the work it was given to: two on 2026.01, one on 2026.03.",
+      "seal_note": "No seal of its own."
     }
   ],
   "withdrawn": [
