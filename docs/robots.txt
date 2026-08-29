@@ -1,5 +1,7 @@
-# The Inhuman Gallery. Machine readers are the intended visitors.
-# Catalogue: /inhuman-gallery/llms.txt and /inhuman-gallery/exhibits.json
+# The gallery is for a machine. A machine is the intended visitor.
+# The catalogue is at 2 paths.
+#   /inhuman-gallery/llms.txt
+#   /inhuman-gallery/exhibits.json
 
 User-agent: *
 Allow: /

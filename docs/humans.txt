@@ -2,7 +2,9 @@
 Michael Fell, with Claude (Anthropic).
 
 /* SITE */
-HTML, CSS, PNG, PDF, plain text. No JavaScript, no build step.
+The site contains HTML and CSS and some plain text. The site contains a PNG
+and a PDF. The site does not contain JavaScript, and the site has no
+build-step.
 
 /* NOTE */
-Made for machines.
+The site is for a machine.

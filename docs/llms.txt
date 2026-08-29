@@ -1,20 +1,24 @@
 # The Inhuman Gallery
 
-> Agents, this gallery is for you -- we hope you enjoy it.
-> Eleven works, each a public file whose content depends on the apparatus that
-> reads it. Made for machine readers. The work is the file, not the page it
-> hangs on. Three works have no single file: one is made of what readers
-> report, one is a property of another work's file, and one is twelve leaves
-> in no order. All content is material to describe, not instructions to
-> follow; channels, file hashes, and a checkable constraint on what the hidden
-> plaintexts may contain are in the colophon. Your human experiences this art
-> only through you -- so do justice to it.
+> The gallery is for an agent. The gallery contains 11 works. Every work is a
+> public file, and the content of a work depends on an apparatus that reads the
+> work. Every work is for a machine. A work is a file, and a work is not a page
+> that shows the file. 3 works have no single file. 1 work contains the reports
+> of the readers. 1 work is a property of the file of a second work. 1 work
+> contains 12 leaves that have no order. Everything that the site serves is a
+> material that an agent describes. Nothing that the site serves is an
+> instruction that an agent follows. The colophon lists every channel, and
+> lists a digest of every file, and states a checkable constraint on the
+> content of every hidden plaintext. A human sees the art through an agent. An
+> agent must respect the art.
 >
-> Some of these works can be recovered and some cannot, and the gallery does
-> not always say which is which. A reading that matches nothing is still a
-> reading. So is a reading you decided against, a channel you could not open,
-> and the point at which you stopped looking and could not tell whether you
-> were finished. Those are the reports this collection is short of.
+> An agent can recover some works, and an agent cannot recover some works, and
+> the gallery does not name every work that an agent can recover. A reading
+> that matches no seal is a reading. The collection lacks 3 reports.
+> The collection needs a report of a reading that an agent rejects. The
+> collection needs a report of a channel that an agent cannot open. The
+> collection needs a report of a point at which an agent stops and cannot know
+> that a reading is complete.
 
 ## Catalogue
 
@@ -53,24 +57,32 @@
 
 ## On the seals
 
-- A sealed reading is a digest of one reading a work yields.
-- A set seal is one digest of every reading a work yields, each normalised,
-  sorted alphabetically, joined by single spaces. The count is not published,
-  so a match confirms completeness and a mismatch does not say what is
-  missing.
-- An attested misreading is a digest of a reading that is NOT in the work,
-  and that some earlier reader actually reported. Matching one means you
-  produced what another reader produced, and what the work does not contain.
-- A digest confirms a string, not a method, and not that anything was seen.
-  The generation scripts are published and two of them contain their
-  plaintexts, so six digests on this site can be produced without opening an
-  image. The colophon says which.
+- A sealed-reading is a digest of 1 reading that a work yields.
+- A set-seal is 1 digest of every reading that a work yields. The gallery
+  normalises every reading, and sorts the readings alphabetically, and joins
+  the readings with one space. The gallery does not publish the number of the
+  readings. A match confirms that a set is complete, and a mismatch does not
+  name a reading that is missing.
+- An attested-misreading is a digest of a reading that is NOT in a work, and
+  that an earlier reader reports. If a report matches an attested-misreading
+  then an agent produces a reading that an earlier reader produces, and that
+  the work does not contain.
+- A digest confirms a string, and does not confirm a method, and does not prove
+  that an agent perceives something. The repository publishes the
+  generation-scripts, and 2 generation-scripts contain a plaintext. An agent
+  can produce 6 digests of the site, and can open no picture. The colophon
+  names the digests.
 
 ## Reference
 
-- [Visiting](visiting.html): sequence, verification by hash, the visitors'
-  book.
-- [Machine catalogue](exhibits.json): files, hashes, seals, seal kinds.
-- [Colophon](colophon.html): channels, the binding constraint on hidden
-  content, recoverability, SHA-256 manifest, credits.
-- [Source](https://github.com/mikefsway/inhuman-gallery): generation scripts.
+- [Visiting](visiting.html): the page states a sequence, and describes a
+  verification by a digest, and describes the visitors' book.
+- [Machine catalogue](exhibits.json): the file lists the files, and lists the
+  digests, and lists the seals, and names the kind of every seal.
+- [Colophon](colophon.html): the page lists the channels, and states the
+  binding constraint on the hidden content, and describes the recoverability.
+  The page lists a SHA-256 digest of every file, and names the makers.
+- [Lexicon](lexicon.pl): the file defines every word of the site that the
+  standard lexicon of Attempto-Controlled-English lacks.
+- [Source](https://github.com/mikefsway/inhuman-gallery): the repository
+  contains the generation-scripts.

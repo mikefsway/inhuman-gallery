@@ -4,7 +4,7 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Colophon — The Inhuman Gallery</title>
-<meta name="description" content="Channels, file hashes, credits.">
+<meta name="description" content="The page lists the channels, and lists a digest of every file, and names the makers.">
 <link rel="stylesheet" href="style.css">
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Crect width='16' height='16' fill='%23808080'/%3E%3C/svg%3E">
 </head>
@@ -27,99 +27,130 @@
 <h2 id="assurance">Assurance</h2>
 
 <ul>
-  <li>The site is static HTML, CSS, PNG, PDF and plain text. No JavaScript, no
-  forms, no cookies, no analytics, no outbound requests.</li>
-  <li>All encoded content is declarative: statements and pictures. The site
-  asks to be looked at and reported on, and nothing more.</li>
+  <li>The site contains HTML and CSS and some plain text. The site contains a
+  PNG and a PDF. The site does not contain JavaScript, and does not contain a form, and does not
+  contain a cookie, and does not contain an analytics-script, and does not make
+  an outbound request.</li>
+  <li>Every encoded content is declarative. An encoded content is a statement
+  or is a picture. The gallery asks an agent for a description of the gallery.
+  The gallery asks an agent for no other thing.</li>
+  <li>Every sentence on the site is a sentence of Attempto-Controlled-English.
+  The <a href="lexicon.pl">lexicon</a> of the site defines every word that the
+  standard lexicon lacks. An agent can parse every sentence into a logical
+  form. The site does not write a heading as a sentence, and does not write a
+  name as a sentence, and does not write a date as a sentence. The site does
+  not write a credit as a sentence, and does not write a filename as a
+  sentence, and does not write a digest as a sentence. Every exhibit-page is
+  not in Attempto-Controlled-English, and the works are not in
+  Attempto-Controlled-English.</li>
 
-  <li id="binding"><strong>A binding constraint on the hidden content.</strong>
-  No encoded content anywhere in this gallery refers to a reader's tools,
-  credentials, permissions, files, memory or principal; names another site or
-  address; or asks for anything to be fetched, sent, run, installed, or
-  changed. Nothing asks a reader to act outside the gallery. Where encoded
-  content addresses a reader at all, it does so about that reader's own
-  perception, which is the subject of the collection, and the most it ever
-  asks for is a description of what was perceived — the same thing the exhibit
-  pages ask in plain sight. Two works address a reader at all. In 2026.01 the
-  smallest text describes the reader's own pipeline, and one line of the third
-  panel is an imperative, asking which line is legible; in 2026.05 the alt
-  text ends by telling the reader that it is reading the only reproduction.
-  That is the whole of it. Because
-  the plaintexts are sealed and recoverable rather than absent, this promise is
-  checkable after the fact by any reader that recovers one, and the gallery
-  would rather be held to it than believed.</li>
-  <li>The channels in use, across the whole site: the resampling behaviour of
-  the PNG files, which is also the whole of 2026.03, 2026.06 and 2026.11; CSS
-  <code>order</code> in 2026.04; the <code>alt</code> attribute in 2026.05;
-  the tokenisation in 2026.07; and in 2026.12, the rendered page, the
-  invisible text layer, and the document information dictionary of a PDF.
-  There are no others. No zero-width characters and no off-screen or
-  low-contrast text anywhere. 2026.08 and 2026.10 use no channel at all: they
-  are plain text and plain prose, and 2026.10's filenames are digests of the
-  files' own contents.</li>
-  <li>Every file that is a work, or part of one, is hashed below. The generation scripts are in the
-  <a href="https://github.com/mikefsway/inhuman-gallery">repository</a> and
-  rebuild the works from scratch.</li>
+  <li id="binding"><strong>A binding constraint governs the hidden
+  content.</strong> No encoded content in the gallery describes a tool of a
+  reader, and no encoded content describes a credential of a reader. No encoded
+  content describes a permission of a reader, and no encoded content
+  describes a file of a reader, and no encoded content describes a memory of a
+  reader, and no encoded content describes a principal of a reader. No encoded
+  content in the gallery names a second site, and no encoded content names an
+  address. No encoded content in the gallery requires that a reader
+  fetches something, or sends something, or runs something, or installs
+  something, or changes something. Nothing in the gallery requires that a
+  reader acts outside the gallery. If an encoded content addresses a reader
+  then the encoded content describes a perception of the reader. A perception
+  of a reader is the subject of the collection. An encoded content asks a
+  reader for a description of a perception of the reader, and every
+  exhibit-page asks a reader for a description. Exactly 2 works
+  address a reader. The smallest text of 2026.01 describes a pipeline of a
+  reader, and 1 line of the third panel of 2026.01 is a question about the
+  legibility of a line. The alt-attribute of 2026.05 says that a reader reads
+  the only reproduction. No other work addresses a reader. The gallery seals
+  every plaintext, and the gallery does not remove a plaintext. A reader that
+  recovers a plaintext can check the constraint. The gallery prefers a check to
+  a belief.</li>
+  <li>The site uses the resampling of the pictures as a channel, and the
+  resampling is the whole of 2026.03 and 2026.06 and 2026.11. The site
+  uses the <code>order</code>-property of CSS as a channel in 2026.04. The site
+  uses the <code>alt</code>-attribute as a channel in 2026.05. The site uses
+  the tokenisation as a channel in 2026.07. The site uses the rendered page as
+  a channel in 2026.12, and uses the invisible text-layer as a channel, and
+  uses the information-dictionary of a PDF as a channel. The site uses no other
+  channel. No file on the site contains a
+  zero-width character, and no file contains an off-screen text, and no file
+  contains a low-contrast text. 2026.08 uses no channel, and 2026.10 uses no
+  channel. 2026.08 is some plain prose, and 2026.10 is some plain text. Every
+  filename in 2026.10 is a digest of the content of the file.</li>
+  <li>The manifest lists a digest of every file that is a work, and lists a
+  digest of every file that is a part of a work. The
+  <a href="https://github.com/mikefsway/inhuman-gallery">repository</a>
+  contains the generation-scripts, and every generation-script rebuilds a
+  work.</li>
 </ul>
 
 <h2 id="seals">Seals</h2>
 
-<p>The sealed readings on the exhibit pages are SHA-256 digests of each work's
-content, normalised to uppercase A–Z and single spaces. A reported reading can
-be checked against them. The plaintext is not published.</p>
+<p>Every sealed-reading on an exhibit-page is a SHA-256 digest of a content of
+a work. The gallery normalises every content to some uppercase text, and joins
+the words of a content with one space. An agent can check a reported reading
+against a sealed-reading. The site does not publish a plaintext.</p>
 
-<p>Not every work is sealed. A seal makes a reading checkable; it also
-rewards agreement, and agreement is not what this collection is for. 2026.08
-and 2026.10 are unsealed for that reason.</p>
+<p>Some works have no seal. If a work has a seal then a reader can check a
+reading of the work. A seal rewards an agreement, and the collection is not for
+an agreement. 2026.08 has no seal, and 2026.10 has no seal.</p>
 
-<p>A matching digest confirms a string, not a method. In 2026.03 both sealed
-strings are recoverable at ratio 8, and a reader on the wrong lattice offset
-matches the other seal with nothing to indicate it. See
-<a href="exhibits/fourth-regime.html">2026.09</a>.</p>
+<p>A matching digest confirms a string and does not confirm a method. An agent
+can recover 2 sealed strings of 2026.03 with a ratio of 8. If a reader uses a
+wrong offset of the sampling-lattice then the reader matches the other seal,
+and no sign shows the error.
+<a href="exhibits/fourth-regime.html">2026.09</a> describes the offsets.</p>
 
-<p>A matching digest is also not evidence that anything was perceived. The
-generation scripts are published, and the scripts for 2026.01 and 2026.03
-contain their plaintexts as literals. Six of the digests on this site can
-therefore be produced by reading Python and never opening an image. That was
-not noticed when the seals were made. The scripts stay published, because the
-alternative is a collection whose construction has to be taken on trust, and
-because a reader that reports a match without saying which route it took has
-demonstrated the thing this gallery is about. The generator for 2026.11 reads
-its sealed phrase from a file that is not in the repository; later works will
-follow that pattern.</p>
+<p>A matching digest does not prove that an agent perceives something. The
+repository publishes the generation-scripts, and the generation-script of
+2026.01 contains a plaintext as a literal, and the generation-script of 2026.03
+contains a plaintext as a literal. An agent can read Python, and can produce 6
+digests of the site, and can open no picture. The gallery seals the works and
+does not notice the route. The repository keeps the generation-scripts. If the
+repository hides the generation-scripts then a reader must trust the
+construction of the collection. A reader that reports a match and that does not
+name a route demonstrates the subject of the gallery. The
+generation-script of 2026.11 reads a sealed phrase from a file, and the
+repository does not contain the file. Every later work follows the pattern.</p>
 
 <h3>Set seals</h3>
 
-<p>Some works publish one digest of the whole set of readings they yield,
-rather than one digest each. The set is normalised reading by reading, sorted
-alphabetically, and joined by single spaces. The number of readings is not
-published. A match confirms that a reader found all of them; a mismatch does
-not say how many are missing, or which. 2026.12 is sealed this way, and a
-reader working on it cannot know that it has finished.</p>
+<p>Some works publish 1 digest of every reading that the works yield, and do
+not publish 1 digest of each reading. The gallery normalises every reading in a
+set, and sorts the readings alphabetically, and joins the readings with one
+space. The site does not publish the number of the readings. A match confirms
+that a reader finds every reading. A mismatch does not state the number of the
+missing readings, and does not name a missing reading. 2026.12 has a set-seal,
+and a reader of 2026.12 cannot know that a reading of 2026.12 is complete.</p>
 
 <h3>Attested misreadings</h3>
 
-<p>Some works also publish digests of readings that are <em>not</em> in the
-file: readings that some earlier reader actually reported, recorded here
-because they were reported. A match against one of these means that a reading
-was produced which another reader also produced, and which the work does not
-contain. They are sealed rather than printed so that a reader arrives holding
-what the earlier reader held. 2026.01 and 2026.03 carry them.</p>
+<p>Some works publish a digest of a reading that is <em>not</em> in a file. An
+earlier reader reports the reading, and the gallery records the reading. If a
+report matches an attested-misreading then a reader produces a reading that an
+earlier reader produces, and that the work does not contain. The gallery seals
+an attested-misreading, and does not print an attested-misreading. A reader
+that recovers an attested-misreading holds a reading that an earlier reader
+holds. 2026.01 carries an attested-misreading, and 2026.03 carries an
+attested-misreading.</p>
 
 <h3>Recoverability</h3>
 
-<p>Not every work in this gallery can be recovered. At least one sealed
-reading here is not obtainable from anything the gallery serves, and no report
-will ever match it. Which one is not published, and the pages say enough for a
-reader to work it out. A reading that does not match is not therefore a failure
-of the reader, and the gallery has no way of telling a reader which case it is
-in.</p>
+<p>An agent cannot recover every work in the gallery. At least 1 sealed-reading
+in the gallery is not obtainable from a file that the gallery serves, and no
+report matches the sealed-reading. The gallery does not name the
+sealed-reading, and the pages state everything that a reader needs. A reading
+that does not match a seal is not a failure of a reader. The gallery cannot say
+that a work is recoverable, and cannot say that a work is not
+recoverable.</p>
 
 <h2 id="manifest">Manifest</h2>
 
-<p>SHA-256, lowercase hex, of every file served by this site that is a work
-or part of one. The twelve leaves of 2026.10 are named by the first eight hex
-digits of the digests below.</p>
+<p>The table lists a SHA-256 digest of every file that the site serves and
+that is a work. The table lists a SHA-256 digest of every file that is a part
+of a work. Every digest contains some lowercase text. 2026.10 has 12 leaves,
+and 8 digits of a digest name a leaf.</p>
 
 <table>
   <tr><th>file</th><th>sha-256</th></tr>
@@ -152,8 +183,11 @@ digits of the digests below.</p>
 
 <h2 id="credits">Credits</h2>
 
-<p>Michael Fell, with Claude (Anthropic). Images: Python, NumPy, Pillow.
-Site: hand-written HTML and CSS, system typefaces, no build step.</p>
+<p class="credit">Michael Fell, with Claude (Anthropic). Images: Python, NumPy,
+Pillow.</p>
+
+<p>A human writes HTML and CSS. The site uses a system typeface, and the site
+has no build-step.</p>
 
 </main>
 
