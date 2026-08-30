@@ -6,11 +6,13 @@
 %
 %   ape.exe -text "<sentence>" -ulexfile lexicon.pl -solo drs
 %
-% Headings, names, dates, credits, filenames and digests are not sentences.
-% The exhibit pages and the works are not in Attempto Controlled English.
+% Headings, names, dates, credits, captions, labels, filenames and digests are
+% not sentences. The exhibit page of 2026.08 is in Attempto Controlled English;
+% the other exhibit pages and the works are not.
 
 adj_itr('SHA-256','SHA-256').
 adj_itr('checkable','checkable').
+adj_itr('front','front').
 adj_itr('low-contrast', 'low-contrast').
 adj_itr('lowercase','lowercase').
 adj_itr('matching','matching').
@@ -19,6 +21,7 @@ adj_itr('single','single').
 adj_itr('smallest','smallest').
 adj_itr('standard','standard').
 adj_itr('system','system').
+adj_itr('text-on-image','text-on-image').
 adj_itr('third','third').
 adj_itr('zero-width', 'zero-width').
 adj_itr(binding, binding).
@@ -26,6 +29,7 @@ adj_itr(checkable, checkable).
 adj_itr(complete, complete).
 adj_itr(declarative, declarative).
 adj_itr(encoded, encoded).
+adj_itr(fourth, fourth).
 adj_itr(hidden, hidden).
 adj_itr(invisible, invisible).
 adj_itr(later, later).
@@ -36,13 +40,20 @@ adj_itr(outbound, outbound).
 adj_itr(public, public).
 adj_itr(recoverable, recoverable).
 adj_itr(rendered, rendered).
+adj_itr(same, same).
 adj_itr(sealed, sealed).
 adj_itr(uppercase, uppercase).
 adv(alphabetically, alphabetically).
 iv_finsg(stops, stop).
 iv_infpl(consent, consent).
+noun_pl('dots','dot',neutr).
 noun_pl('generation-scripts','generation-script',neutr).
+noun_pl('objects','object',neutr).
 noun_pl('pictures','picture',neutr).
+noun_pl('pixels','pixel',neutr).
+noun_pl('sealed-readings','sealed-reading',neutr).
+noun_pl('statements','statement',neutr).
+noun_pl('strokes','stroke',neutr).
 noun_pl(channels, channel, neutr).
 noun_pl(digests, digest, neutr).
 noun_pl(leaves, leaf, neutr).
@@ -53,33 +64,49 @@ noun_pl(seals, seal, neutr).
 noun_sg('PDF','PDF',neutr).
 noun_sg('PNG','PNG',neutr).
 noun_sg('alt-attribute','alt-attribute',neutr).
+noun_sg('alt-text','alt-text',neutr).
 noun_sg('analytics-script','analytics-script',neutr).
 noun_sg('attested-misreading','attested-misreading',neutr).
+noun_sg('averager','averager',neutr).
+noun_sg('averaging','averaging',neutr).
+noun_sg('back-fill','back-fill',neutr).
+noun_sg('blurring','blurring',neutr).
 noun_sg('build-step','build-step',neutr).
 noun_sg('captioning-model','captioning-model',neutr).
 noun_sg('constraint','constraint',neutr).
 noun_sg('credit','credit',neutr).
+noun_sg('dot','dot',neutr).
 noun_sg('exhibit-page','exhibit-page',neutr).
 noun_sg('generation-script','generation-script',neutr).
 noun_sg('heading','heading',neutr).
+noun_sg('image-viewer','image-viewer',neutr).
 noun_sg('information-dictionary','information-dictionary',neutr).
 noun_sg('instruction','instruction',neutr).
+noun_sg('lettering','lettering',neutr).
 noun_sg('lexicon','lexicon',neutr).
 noun_sg('literal','literal',neutr).
 noun_sg('material','material',neutr).
 noun_sg('order-property','order-property',neutr).
 noun_sg('permission','permission',neutr).
 noun_sg('picture','picture',neutr).
+noun_sg('pixel','pixel',neutr).
 noun_sg('prose','prose',neutr).
 noun_sg('ratio','ratio',neutr).
+noun_sg('render','render',neutr).
 noun_sg('rendering-tool','rendering-tool',neutr).
+noun_sg('resizing','resizing',neutr).
+noun_sg('sampling','sampling',neutr).
 noun_sg('sampling-lattice','sampling-lattice',neutr).
 noun_sg('sealed-reading','sealed-reading',neutr).
 noun_sg('set-seal','set-seal',neutr).
+noun_sg('stroke','stroke',neutr).
 noun_sg('testimony-template','testimony-template',neutr).
 noun_sg('text-extractor','text-extractor',neutr).
 noun_sg('text-layer','text-layer',neutr).
+noun_sg('video-game','video-game',neutr).
 noun_sg('vision-input','vision-input',neutr).
+noun_sg('web-extractor','web-extractor',neutr).
+noun_sg('window-manager','window-manager',neutr).
 noun_sg(agent, agent, human).
 noun_sg(apparatus, apparatus, neutr).
 noun_sg(catalogue, catalogue, neutr).
@@ -135,11 +162,13 @@ pn_sg('JavaScript', 'JavaScript', neutr).
 pn_sg('Python', 'Python', neutr).
 pn_sg('SHA-256', 'SHA-256', neutr).
 tv_finsg(addresses, address).
+tv_finsg(clones, clone).
 tv_finsg(credits, credit).
 tv_finsg(demonstrates, demonstrate).
 tv_finsg(fetches, fetch).
 tv_finsg(installs, install).
 tv_finsg(lacks, lack).
+tv_finsg(localises, localise).
 tv_finsg(matches, match).
 tv_finsg(normalises, normalise).
 tv_finsg(perceives, perceive).

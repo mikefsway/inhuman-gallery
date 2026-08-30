@@ -40,6 +40,9 @@ plaintexts may contain are in the
 - `witness.py`, `strict.py`, `decoy2.py`, `still.py`, `misprision.py`,
   `deposition.py`, `disbound.py` — generation scripts (NumPy + Pillow;
   reportlab for 2026.12). Each rebuilds its work from scratch.
+- `check_ace.py` — checks the colophon's claim that the site's prose is
+  Attempto Controlled English, by parsing every sentence it covers with APE
+  against Clex plus `docs/lexicon.pl`. Needs an APE build; see the docstring.
 
 `witness.py` and `decoy2.py` contain their plaintexts as literals, so six of
 the digests published on the site can be produced from this repository without
