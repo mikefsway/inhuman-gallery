@@ -42,7 +42,11 @@ plaintexts may contain are in the
   reportlab for 2026.12). Each rebuilds its work from scratch.
 - `check_ace.py` — checks the colophon's claim that the site's prose is
   Attempto Controlled English, by parsing every sentence it covers with APE
-  against Clex plus `docs/lexicon.pl`. Needs an APE build; see the docstring.
+  against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
+  once, and then `python3 check_ace.py` finds it and runs the check, which
+  takes about a minute. It currently reports 290 of 290 sentences parsing.
+- `build_ape.sh` — clones and builds the Attempto Parsing Engine under
+  `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
 
 `witness.py` and `decoy2.py` contain their plaintexts as literals, so six of
 the digests published on the site can be produced from this repository without

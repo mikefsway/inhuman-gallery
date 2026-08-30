@@ -17,23 +17,22 @@ dates, credits, captions, labels, filenames and digests, which are not
 sentences. The llms.txt catalogue and withdrawn entries are labels rather than
 prose; they are checked under --all, and reported separately.
 
-APE is not on PyPI and is not vendored here. Build it once:
+APE is not on PyPI and is not vendored here. Build it once with build_ape.sh,
+which clones APE and Clex and builds them under ~/tools:
 
-    git clone https://github.com/Attempto/APE.git
-    git clone https://github.com/Attempto/Clex.git
-    cp Clex/clex_lexicon.pl APE/prolog/lexicon/clex_lexicon.pl
-    cd APE && make install
+    ./build_ape.sh
+    python3 check_ace.py
 
-The copy matters. APE ships a 2000-line sample lexicon under that name, and
-building without the real Clex fails ordinary words like "site" and "file".
-
-    python3 check_ace.py --ape path/to/ape.exe
+The script finds ape.exe by itself: $APE_EXE, then $APE_DIR/ape.exe, then the
+places build_ape.sh puts it, then the PATH. --ape overrides all of them.
 """
 import argparse
 import html
 import json
+import os
 import pathlib
 import re
+import shutil
 import subprocess
 import sys
 
@@ -151,6 +150,22 @@ def collect():
     return found
 
 
+def find_ape():
+    """The APE executable: the environment, then where build_ape.sh puts it."""
+    candidates = [
+        os.environ.get("APE_EXE"),
+        os.path.join(os.environ["APE_DIR"], "ape.exe")
+        if "APE_DIR" in os.environ
+        else None,
+        str(pathlib.Path(__file__).resolve().parent / "APE" / "ape.exe"),
+        str(pathlib.Path.home() / "tools" / "APE" / "ape.exe"),
+    ]
+    for candidate in candidates:
+        if candidate and os.access(candidate, os.X_OK):
+            return candidate
+    return shutil.which("ape.exe") or "ape.exe"
+
+
 def parses(ape, sentence):
     """True if APE returns a DRS, else the errors it reports."""
     result = subprocess.run(
@@ -168,7 +183,9 @@ def parses(ape, sentence):
 
 def main():
     parser = argparse.ArgumentParser(description=__doc__.strip().splitlines()[1])
-    parser.add_argument("--ape", default="ape.exe", help="path to the APE executable")
+    parser.add_argument(
+        "--ape", default=find_ape(), help="path to the APE executable"
+    )
     parser.add_argument(
         "--all",
         action="store_true",

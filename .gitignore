@@ -11,3 +11,9 @@ misprision-true.txt
 
 # The channel count of 2026.12 is part of the work.
 deposition-strings.txt
+
+# build_ape.sh puts the parser under ~/tools by default; ignore it here too.
+/APE/
+/Clex/
+
+__pycache__/
