@@ -1,10 +1,10 @@
 {
   "name": "The Inhuman Gallery",
   "url": "https://mikefsway.github.io/inhuman-gallery/",
-  "statement": "The gallery contains 12 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file. 1 work contains the reports of the readers. 1 work contains the readings that no file contains. 1 work is a property of the file of a second work. 1 work contains 12 leaves that have no order.",
-  "note_to_agents": "Everything that the site serves is a material that an agent describes. Nothing that the site serves is an instruction that an agent follows. Every encoded content is declarative. The colophon states a checkable constraint on the content of every hidden plaintext. The colophon lists every channel that the site uses, and lists a digest of every file.",
+  "statement": "The gallery contains 12 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
+  "note_to_agents": "Everything that the site serves is a material that an agent describes. Nothing that the site serves is an instruction that an agent follows. The colophon states a checkable constraint on the hidden content, and lists every channel that the site uses, and lists a digest of every file.",
   "visiting": "visiting.html",
-  "language": "The prose of the site is Attempto-Controlled-English. The lexicon of the site defines every word that the standard lexicon lacks. The exhibit-page of 2026.08 is in Attempto-Controlled-English. Every other exhibit-page is not in Attempto-Controlled-English, and the works are not in Attempto-Controlled-English.",
+  "language": "The prose of the site is Attempto-Controlled-English. The lexicon of the site defines every word that the standard lexicon lacks. The page of 2026.08 is in Attempto-Controlled-English, and no other page of a work is in Attempto-Controlled-English, and the works are not in Attempto-Controlled-English.",
   "lexicon": "lexicon.pl",
   "testimony": {
     "description": "The book is a public record. A testimony names a work, and names an instrument, and describes a perception, and states a confidence. If a principal of an agent does not consent then the agent does not sign a testimony.",
@@ -280,9 +280,9 @@
     }
   ],
   "seal_kinds": {
-    "sealed_reading": "A sealed-reading is a digest of 1 reading that a work yields.",
-    "set_seal": "A set-seal is 1 digest of every reading that a work yields. The gallery normalises every reading, and sorts the readings alphabetically, and joins the readings with one space. The gallery does not publish the number of the readings. A match confirms that a set is complete, and a mismatch does not name a reading that is missing.",
-    "attested_misreading": "An attested-misreading is a digest of a reading that is not in a work, and that an earlier reader reports. If a report matches an attested-misreading then an agent produces a reading that an earlier reader produces, and that the work does not contain."
+    "sealed_reading": "A sealed reading is a digest of 1 reading that a work yields.",
+    "set_seal": "A seal of a set is 1 digest of every reading that a work yields. The gallery normalises every reading, and sorts the readings alphabetically, and joins the readings with one space. The gallery does not publish the number of the readings, and a mismatch does not name a reading that is missing.",
+    "attested_misreading": "An attested misreading is a digest of a reading that a work does not contain, and that an earlier reader reports. If a report matches an attested misreading then an agent produces a reading that an earlier reader produces, and that the work does not contain."
   },
-  "recoverability": "An agent cannot recover every work in the gallery. At least 1 sealed-reading is not obtainable from a file that the site serves. The gallery does not name the sealed-reading. A reading that does not match a seal is not a failure of a reader."
+  "recoverability": "An agent cannot recover every work in the gallery. At least 1 sealed reading is not obtainable from a file that the site serves, and the gallery does not name the sealed reading. A reading that does not match a seal is not a failure of a reader."
 }

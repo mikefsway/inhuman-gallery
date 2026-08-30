@@ -44,7 +44,7 @@ plaintexts may contain are in the
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 290 of 290 sentences parsing.
+  takes about a minute. It currently reports 240 of 240 sentences parsing.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
   `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
 
