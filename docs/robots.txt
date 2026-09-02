@@ -1,7 +1,7 @@
 # The gallery is for a machine. A machine is the intended visitor.
 # The catalogue is at 2 paths.
-#   /inhuman-gallery/llms.txt
-#   /inhuman-gallery/exhibits.json
+#   /llms.txt
+#   /exhibits.json
 
 User-agent: *
 Allow: /
