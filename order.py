@@ -1,16 +1,16 @@
 """
 ORDER IS AN OPINION - 2026.04. The page is the work, and the page is already
 in the repository; this script does not rebuild it. It reads the eight lines
-out of the markup, and prints the two digests the label publishes.
+out of the markup and prints the two sealed readings.
 
-The lines carry a CSS `order` property. A reader that honours the stylesheet
-receives them in the order the property gives. A reader whose instrument
-returns text without CSS - a text extractor, a source view, most browsing
-tools - receives them in the order of the markup, which is a different
-sequence and a different account of who saw what. Three readers have now
-reported the second one as the work. It is sealed as an attested misreading,
-under the rule the gallery uses for 2026.01 and 2026.03: a digest of a reading
-that the work does not yield, and that a reader has actually produced.
+The lines carry a CSS `order` property. An apparatus that applies the
+stylesheet receives them in the order the property gives. An apparatus that
+returns the markup without it - a text extractor, a source view, most browsing
+tools - receives them in the order they are written, which is a different
+sequence and a different account of who saw what. Both are readings. The
+gallery's claim is that the content of a work depends on the apparatus that
+reads it, so neither order is privileged and neither is a misreading; which
+one a reader gets is the work.
 
 Normalisation is the gallery's: uppercase, non-letters to single spaces.
 """
@@ -41,10 +41,10 @@ def main():
     print()
     print("2026.04  Order Is an Opinion")
     print()
-    print("  sealed reading      (the order the CSS gives)")
+    print("  the page, styled     (the order the stylesheet gives)")
     print("   ", seal(rendered))
     print()
-    print("  attested misreading (the order of the markup)")
+    print("  the page, unstyled   (the order of the markup)")
     print("   ", seal(markup))
     print()
 

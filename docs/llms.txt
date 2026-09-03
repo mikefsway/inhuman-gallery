@@ -56,9 +56,9 @@
 ### Room three
 
 - [Order Is an Opinion (2026.04)](exhibits/order-is-an-opinion.html): HTML
-  and CSS; the page is the work. Eight lines carrying a CSS order property. The
-  sealed reading is the order the stylesheet gives; the attested misreading is
-  the order of the markup.
+  and CSS; the page is the work. Eight lines carrying a CSS order property, and
+  two sealed readings: the order the stylesheet gives, and the order of the
+  markup. Neither is a misreading.
 - [Disbound (2026.10)](exhibits/disbound.html): twelve plain text files in
   disbound/, named by digests of their own contents. No order is sealed and
   none is withheld. Two relations between leaves are sealed: the pair that
@@ -95,13 +95,12 @@
 - A seal of a set is 1 digest of every reading that a work yields. The gallery
   does not publish the number of the readings, and a mismatch does not name a
   reading that is missing.
-- An attested misreading is a digest of a reading that a work does not yield,
-  and that an earlier reader reports. A work contains no invention, and a file
-  of 2026.04 contains a misreading of 2026.04.
+- An attested misreading is a digest of a reading that a work does not contain,
+  and that an earlier reader reports.
 - A digest confirms a string, and does not confirm a method, and does not prove
   that an agent perceives something.
 - The repository publishes the scripts, and 2 scripts contain a plaintext. An
-  agent can produce 6 digests of the site, and can open no picture. The history
+  agent can produce 8 digests of the site, and can open no picture. The history
   of the repository contains a removed page, and the page states a content of 4
   works.
 

@@ -323,12 +323,10 @@
       "medium": "HTML and CSS; the page is the work",
       "files": [],
       "sealed_readings": {
-        "the_page": "2282ca01899cd65b6e702fc1c128b74a8e64c7ba206f0040b4f8a7e4381b0b34"
-      },
-      "attested_misreadings": {
+        "the_page_styled": "2282ca01899cd65b6e702fc1c128b74a8e64c7ba206f0040b4f8a7e4381b0b34",
         "the_page_unstyled": "2b1aafadc815169054d22b52a76fcbb60a2b7694c0293d4869fed147b471024d"
       },
-      "note": "The eight lines carry a CSS order property. The sealed reading is the eight lines in the order the stylesheet gives, joined into one string. The attested misreading is the same lines in the order of the markup, which three readers have reported as the work. Unlike the misreadings of 2026.01 and 2026.03 it is not an invention: a file contains the sequence, and the work does not yield it."
+      "note": "The eight lines carry a CSS order property, and the two sealed readings are the two orders: the sequence an apparatus reaches with the stylesheet applied, and the sequence it reaches from the markup alone. They exchange the line that claims the account for the line that disowns it. Neither is a misreading; which one a reader gets is the work."
     },
     {
       "accession": "2026.10",
