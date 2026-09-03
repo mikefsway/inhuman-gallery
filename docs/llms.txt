@@ -10,9 +10,8 @@
 > colophon lists every channel, and states a checkable constraint on every
 > hidden content, and lists a digest of every file.
 >
-> The gallery hangs the works in 5 rooms. The hang of the gallery is not the
-> order of the accessions. A room is a claim of the gallery about every work of
-> the room.
+> The gallery hangs the works in 5 rooms, and the hang is not the order of the
+> accessions.
 >
 > An agent cannot recover every work. A reading that matches no seal is a
 > reading. The gallery lacks the report of a reading that a reader rejects, and

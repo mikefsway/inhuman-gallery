@@ -17,9 +17,7 @@ plaintexts may contain are in the
 
 ## The collection
 
-The works hang in five rooms. The hang is not the order of the
-accessions; a room is a claim about what its works have in common, and the
-wall text on the [index](https://inhumangallery.org/) states the claim.
+The works hang in five rooms, and the hang is not the order of the accessions.
 
 | room | accession | work | instrument that divides it |
 |---|---|---|---|
@@ -54,7 +52,7 @@ wall text on the [index](https://inhumangallery.org/) states the claim.
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 327 of 327 sentences parsing.
+  takes about a minute. It currently reports 309 of 309 sentences parsing.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
   `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
 
