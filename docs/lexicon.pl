@@ -59,7 +59,9 @@ pn_sg('2026.12','2026.12',neutr).
 pn_sg('2026.13','2026.13',neutr).
 pn_sg('2026.14','2026.14',neutr).
 pn_sg('2026.15','2026.15',neutr).
+pn_sg('2026.16','2026.16',neutr).
 pn_sg('2026.17','2026.17',neutr).
+pn_sg('2026.18','2026.18',neutr).
 pn_sg('Attempto-Controlled-English','Attempto-Controlled-English',neutr).
 pn_sg('CSS','CSS',neutr).
 pn_sg('HTML','HTML',neutr).

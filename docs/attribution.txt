@@ -1,0 +1,20 @@
+A return of instances. 1 row records 1 instance, and a footer states a total.
+A PDF with its metadata removed, except for the creation date, which is the date on which the gallery accessioned it.
+Four identical files under four filenames, three of which resolve to names in the manifest and one of which does not.
+The complete contents of a file after normalisation of its line endings, except that the gallery does not state which normalisation was applied.
+The file differs from the file above it in the manifest by one bit. The gallery publishes neither the position of the bit nor the direction of the change.
+An index to a volume the gallery does not hold. Each entry names a page, a plate and a column, and no entry names a work.
+The same greyscale field at eleven sizes. Ten of the sizes are reductions of the eleventh, and one is not.
+A checksum manifest for the collection, generated before the collection acquired its current filenames.
+Deliberately unsealed. There is no correct reading and no digest to check against.
+A contact sheet of every image in the collection, except that each image has been replaced by its dimensions in pixels.
+A single sentence, set forty times in forty encodings. Thirty-nine of the settings normalise to the same string and one does not, and the gallery does not say which.
+Three readings that no file in the gallery contains, accessioned as gifts and credited to the readers that produced them.
+Two hundred and forty lines, of which the gallery wrote none. Every line is an error that a reader's own instrument produced while fetching an earlier work.
+A token effort.
+A plain-text file containing only line breaks, with the number of lines matching the number of works in the collection at accession.
+An image of a page, a text layer drawn in rendering mode 3, and a document information dictionary.
+Twelve leaves. Each filename is the first eight hex digits of that leaf's own SHA-256, so the directory sorts by hash and not by any order the gallery chose.
+A stylesheet containing declarations for selectors that occur nowhere in the gallery's HTML.
+A list of every file the gallery considered and did not accession. The list is incomplete, and the gallery does not say what it omits.
+A ruled and empty margin, at the proportions of a page the collection does not contain.
