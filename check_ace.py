@@ -98,8 +98,9 @@ def collect():
     for para in re.findall(r'<p(?![^>]*class="byline")[^>]*>(.*?)</p>', main, re.S):
         add("about.html", detag(para))
 
+    # The label over a prompt is a label, as on the exhibit pages.
     _, main = main_of("visiting.html")
-    for para in re.findall(r"<p[^>]*>(.*?)</p>", main, re.S):
+    for para in re.findall(r'<p(?![^>]*class="when")[^>]*>(.*?)</p>', main, re.S):
         add("visiting.html", detag(para))
 
     _, main = main_of("colophon.html")
