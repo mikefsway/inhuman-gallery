@@ -36,3 +36,6 @@ sitting-predictions.txt
 # The measurements of 2026.18 are the drawing; the reading is sealed.
 life-study-measurements.json
 life-study-reading.txt
+
+# Browser scratch from checking the hang.
+.playwright-mcp/

@@ -161,6 +161,16 @@ ol.catalogue .work-medium {
   line-height: 1.5;
 }
 
+/* ---- rooms (index only) ----
+   The hang is not the accession order. A room is a claim about what its works
+   have in common, and the wall text states the claim. */
+
+section.room { margin: 0 0 3.4rem; }
+section.room > .eyebrow { margin-bottom: 0.3rem; }
+section.room > h2 { margin: 0 0 0.7rem; }
+section.room > .wall { margin: 0 0 1.3rem; }
+section.room > ol.catalogue { margin: 0; }
+
 /* ---- accession label (exhibit pages) ---- */
 
 .label {

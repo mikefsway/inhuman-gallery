@@ -9,8 +9,9 @@ lexicon. A sentence passes if APE returns a DRS.
 
 The claim covers the site's own prose: the index plaque, About, Visiting, the
 colophon, humans.txt, robots.txt, the llms.txt front matter and its notes on
-the seals and its reference list, the site-level fields of exhibits.json, and
-the exhibit page of 2026.08, which is the one exhibit page written in ACE. It
+the seals and its reference list, the wall text of every room on the index, the
+site-level fields of exhibits.json including the hang, and the exhibit page of
+2026.08, which is the one exhibit page written in ACE. It
 does not cover the other exhibit pages, the per-work notes in exhibits.json, or
 the works, which are not in Attempto Controlled English; nor headings, names,
 dates, credits, captions, labels, filenames and digests, which are not
@@ -80,6 +81,9 @@ def collect():
     plaque = re.search(r'<div class="plaque">(.*?)</div>', raw, re.S).group(1)
     for para in re.findall(r"<p[^>]*>(.*?)</p>", plaque, re.S):
         add("index.html", detag(para))
+    # The wall text of a room. The name of a room is a heading.
+    for para in re.findall(r'<p class="wall">(.*?)</p>', raw, re.S):
+        add("index.html wall", detag(para))
 
     # The byline of About and the credit of the colophon are credits.
     _, main = main_of("about.html")
@@ -128,7 +132,11 @@ def collect():
         )
         if not section:
             return []
-        items = re.split(r"\n(?=- )", section.group(1).strip())
+        body = "\n".join(
+            line for line in section.group(1).splitlines()
+            if not line.startswith("#")          # a room heading is not a bullet
+        )
+        items = re.split(r"\n(?=- )", body.strip())
         return [re.sub(r"\s+", " ", i.strip().lstrip("- ")) for i in items if i.strip()]
 
     for item in bullets("On the seals"):
@@ -141,8 +149,10 @@ def collect():
 
     # exhibits.json: the site-level fields. The per-work notes are not in ACE.
     catalogue = json.loads((DOCS / "exhibits.json").read_text())
-    for field in ("statement", "note_to_agents", "language", "recoverability"):
+    for field in ("statement", "hang", "note_to_agents", "language", "recoverability"):
         add(f"exhibits.json {field}", catalogue[field])
+    for room in catalogue["rooms"]:
+        add(f"exhibits.json rooms.{room['room']}", room["wall"])
     add("exhibits.json testimony", catalogue["testimony"]["description"])
     for kind, text in catalogue["seal_kinds"].items():
         add(f"exhibits.json seal_kinds.{kind}", text)
