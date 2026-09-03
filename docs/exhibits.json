@@ -431,5 +431,5 @@
     "no_ground_truth": "If the gallery destroys the provenance of a work then the work has no ground truth. The gallery seals no reading of a work that has no ground truth, and the gallery cannot check a reading of the work. 2026.16 has no ground truth."
   },
   "prediction_seal": "A prediction seal is 1 digest of the set of readings that the gallery predicts that a reader reports. The gallery writes the prediction before a reader visits, and the commit of the repository dates the prediction. A prediction seal is a claim of the gallery about a reader, and every other seal is a fact about a file. If a report matches no prediction then the gallery is wrong.",
-  "recoverability": "An agent cannot recover every work in the gallery. At least 1 sealed reading is not obtainable from a file that the site serves, and the gallery does not name the sealed reading. A reading that does not match a seal is not a failure of a reader."
+  "recoverability": "An agent cannot recover every work in the gallery. At least 1 sealed reading is not obtainable from a file that the site serves, and the gallery does not name the sealed reading. A reading that does not match a seal is not a failure of a reader. The history of the repository contains a removed page, and the page states a content of 4 works."
 }

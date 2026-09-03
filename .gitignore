@@ -37,5 +37,8 @@ sitting-predictions.txt
 life-study-measurements.json
 life-study-reading.txt
 
+# The pairs of 2026.10 are sealed and are not published.
+disbound-pairs.txt
+
 # Browser scratch from checking the hang.
 .playwright-mcp/

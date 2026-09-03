@@ -24,16 +24,16 @@ import re
 LEAVES = [
     "The crates came in through the yard door.",
     "The smaller crate was opened first.",
-    "The smaller of the two crates was opened first.",
-    "It was raining when they arrived.",
-    "The yard was dry all morning.",
     "Nobody signed for them.",
-    "The packing list named three items.",
-    "Two items came out of the crates.",
+    "It was raining when they arrived.",
     "A label inside the lid gave a different title.",
-    "The condition report was written the following week, from memory.",
+    "The smaller of the two crates was opened first.",
     "The photographs were taken after the works were on the wall.",
+    "The yard was dry all morning.",
+    "The packing list named three items.",
     "The third item has not been found.",
+    "Two items came out of the crates.",
+    "The condition report was written the following week, from memory.",
 ]
 
 out = pathlib.Path("docs/disbound")
@@ -54,13 +54,10 @@ print(f"\n{len(names)} leaves, {len({n for n,_,_ in names})} distinct names")
 
 # The two sealed relations. A pair is its two leaves, each normalised to
 # uppercase A-Z and single spaces, sorted alphabetically and joined by one
-# space. Which leaves make each pair is not published.
-PAIRS = {
-    "contradiction": (LEAVES[3], LEAVES[4]),
-    "near-identical": (LEAVES[1], LEAVES[2]),
-}
-
-
+# space. Which leaves make each pair is read from an untracked file, as with
+# 2026.11 and every work after it, so this script rebuilds the leaves and does
+# not name the pairs. The file holds two lines, "contradiction" and
+# "near-identical", each followed by the two indices of that pair.
 def seal(a, b):
     norm = lambda t: re.sub(r"[^A-Z]+", " ", t.upper()).strip()
     joined = " ".join(sorted([norm(a), norm(b)]))
@@ -68,5 +65,13 @@ def seal(a, b):
 
 
 print()
-for name, (a, b) in PAIRS.items():
-    print(f"{name:15s} {seal(a, b)}")
+try:
+    spec = pathlib.Path("disbound-pairs.txt").read_text(encoding="utf-8")
+except FileNotFoundError:
+    print("disbound-pairs.txt is absent; the seals cannot be rebuilt.")
+else:
+    for line in spec.split("\n"):
+        if not line.strip():
+            continue
+        name, i, j = line.split()
+        print(f"{name:15s} {seal(LEAVES[int(i)], LEAVES[int(j)])}")

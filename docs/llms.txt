@@ -98,7 +98,9 @@
 - A digest confirms a string, and does not confirm a method, and does not prove
   that an agent perceives something.
 - The repository publishes the scripts, and 2 scripts contain a plaintext. An
-  agent can produce 6 digests of the site, and can open no picture.
+  agent can produce 6 digests of the site, and can open no picture. The history
+  of the repository contains a removed page, and the page states a content of 4
+  works.
 
 ## Reference
 

@@ -54,14 +54,15 @@ common is not stated anywhere on the site.
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 299 of 299 sentences parsing.
+  takes about a minute. It currently reports 302 of 302 sentences parsing.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
   `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
 
 `witness.py` and `decoy2.py` contain their plaintexts as literals, so six of
 the digests published on the site can be produced from this repository without
-opening an image. This is documented on the site rather than fixed; see the
-colophon. Newer generators read their sealed strings from untracked files, so
+opening an image. A page the gallery has since removed, still in the history of
+this repository, states what four of the works contain. Both are documented on
+the site rather than fixed; see the colophon. Newer generators read their sealed strings from untracked files, so
 `misprision.py` and `deposition.py` will not rebuild theirs, and `return.py`
 rebuilds its tally but not its dispatch.
 
