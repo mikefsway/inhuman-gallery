@@ -24,11 +24,11 @@
           "sha256": "f7af5f69d13d39c7aae44dae3204ea9d292e3985c891b0ce3cf2c407d5043ff8"
         }
       ],
-      "note": "One recorded turn of the agent that makes the gallery, drawn to scale. 5 quantities, all in tokens, and no 2 overlap: the context that the turn begins with, the output that the tools return into the context, the thinking, the arguments that the turn writes, and the prose that a reader receives. The figure allocates an area in proportion. The gallery does not publish a measurement, and does not publish the mapping of an area to a quantity. The turn was selected by a rule before a quantity was measured.",
+      "note": "One recorded turn of the agent that makes the gallery, drawn to scale. 5 quantities, all in tokens, and no 2 overlap: the context that the turn begins with, the output that the tools return into the context, the thinking, the arguments that the turn writes, and the prose that a reader receives. The gallery does not publish a measurement, and does not publish the mapping of an area to a quantity. The turn was selected by a rule before a quantity was measured.",
       "sealed_readings": {
         "smallest_share": "4d9e589c5219fda91f0a7ee5838bed46817240162b9d63e328708f0bc28885b5"
       },
-      "seal_note": "One phrase: the share of the figure that the smallest area occupies, to one decimal place, spelled out. The smallest area is the prose that a reader of that turn received."
+      "seal_note": "One phrase: the share of the figure that the smallest area occupies, to one decimal place, spelled out."
     },
     {
       "accession": "2026.16",
