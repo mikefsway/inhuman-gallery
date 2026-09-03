@@ -46,6 +46,11 @@ common is not stated anywhere on the site.
 
 - `docs/` — the site, served by GitHub Pages. Static HTML/CSS/PNG/PDF/text,
   no JavaScript, no build step.
+- `docs/threshold.html` — a draft alternative front page, not yet linked from
+  anywhere. It carries no works. It is the threshold: the one page addressed
+  to a human, holding eight prompts a human can copy and give to an agent,
+  each with a note on what it tends to produce. To adopt it, swap it with
+  `index.html` and move the catalogue to `rooms.html`.
 - `witness.py`, `strict.py`, `decoy2.py`, `still.py`, `misprision.py`,
   `deposition.py`, `disbound.py`, `return.py`, `sitting.py`, `life_study.py`, `attribution.py` — generation scripts (NumPy +
   Pillow; reportlab for 2026.12; `return.py` needs neither). Each rebuilds its
@@ -57,7 +62,7 @@ common is not stated anywhere on the site.
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 299 of 299 sentences parsing.
+  takes about a minute. It currently reports 330 of 330 sentences parsing.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
   `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
 

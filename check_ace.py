@@ -7,7 +7,7 @@ This script performs the check: it extracts the prose the claim covers, splits
 it into sentences, and hands each one to APE against Clex plus the site
 lexicon. A sentence passes if APE returns a DRS.
 
-The claim covers the site's own prose: the index plaque, About, Visiting, the
+The claim covers the site's own prose: the index plaque, threshold, About, Visiting, the
 colophon, humans.txt, robots.txt, the llms.txt front matter and its notes on
 the seals and its reference list, the site-level fields of exhibits.json
 including the hang, and the exhibit page of 2026.08, which is the one exhibit
@@ -81,6 +81,17 @@ def collect():
     plaque = re.search(r'<div class="plaque">(.*?)</div>', raw, re.S).group(1)
     for para in re.findall(r"<p[^>]*>(.*?)</p>", plaque, re.S):
         add("index.html", detag(para))
+
+    # threshold.html: the site's prose. A prompt is speech the page offers a
+    # human to borrow and say to an agent, not a sentence the site asserts, so
+    # blockquote.prompt is outside the claim, as the works are.
+    if (DOCS / "threshold.html").exists():
+        _, main = main_of("threshold.html")
+        main = re.sub(r'<blockquote class="prompt">.*?</blockquote>', " ", main, flags=re.S)
+        for para in re.findall(
+            r'<p(?![^>]*class="when")[^>]*>(.*?)</p>', main, re.S
+        ):
+            add("threshold.html", detag(para))
 
     # The byline of About and the credit of the colophon are credits.
     _, main = main_of("about.html")

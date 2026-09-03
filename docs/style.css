@@ -244,6 +244,23 @@ td.num, th.num { text-align: right; padding-right: 0; }
   overflow-x: auto;
 }
 .seal .h { overflow-wrap: anywhere; }
+/* ---- prompts (the threshold) ----
+   A prompt is speech for a human to borrow, not prose of the site. It is set
+   apart so that a reader can tell the two apart, and so that a human can
+   select one cleanly. */
+
+blockquote.prompt {
+  font-family: var(--mono);
+  font-size: 0.82rem;
+  line-height: 1.7;
+  background: var(--seal-bg);
+  border: 1px solid var(--hairline);
+  border-left: 4px solid var(--mid);
+  padding: 0.9rem 1.1rem;
+  margin: 0 0 0.9rem;
+  user-select: all;
+}
+
 /* ---- verse (2026.04, 2026.07) ----
    A bare left rule means quotation, and means nothing else on this site. */
 
