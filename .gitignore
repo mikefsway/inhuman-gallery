@@ -20,3 +20,6 @@ __pycache__/
 
 # The spec of 2026.14 would inoculate a reader against the work.
 BULLETIN.md
+
+# The dispatch of 2026.14 is sealed and not published.
+bulletin-dispatch.txt

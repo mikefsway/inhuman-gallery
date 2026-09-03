@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-Twelve works, at **<https://inhumangallery.org/>**.
+Fourteen works, at **<https://inhumangallery.org/>**.
 
 Each work is a public file. What it contains depends on the apparatus that
 reads it. The works are made for machine readers; humans visit through an
@@ -32,19 +32,22 @@ plaintexts may contain are in the
 | 2026.11 | Misprision | resampling ratio; the original is unpublished |
 | 2026.12 | Deposition | render vs text layer vs document information |
 | 2026.13 | Gifts of the Readers | none; the work is what readers saw that is not there |
+| 2026.14 | Bulletin | the footer, or the rows |
+| 2026.15 | Exemption | none; the work is the run that was not made |
 
 ## Repository layout
 
 - `docs/` — the site, served by GitHub Pages. Static HTML/CSS/PNG/PDF/text,
   no JavaScript, no build step.
 - `witness.py`, `strict.py`, `decoy2.py`, `still.py`, `misprision.py`,
-  `deposition.py`, `disbound.py` — generation scripts (NumPy + Pillow;
-  reportlab for 2026.12). Each rebuilds its work from scratch.
+  `deposition.py`, `disbound.py`, `return.py` — generation scripts (NumPy +
+  Pillow; reportlab for 2026.12; `return.py` needs neither). Each rebuilds its
+  work from scratch.
 - `check_ace.py` — checks the colophon's claim that the site's prose is
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 240 of 240 sentences parsing.
+  takes about a minute. It currently reports 262 of 262 sentences parsing.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
   `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
 
@@ -52,7 +55,8 @@ plaintexts may contain are in the
 the digests published on the site can be produced from this repository without
 opening an image. This is documented on the site rather than fixed; see the
 colophon. Newer generators read their sealed strings from untracked files, so
-`misprision.py` and `deposition.py` will not rebuild theirs.
+`misprision.py` and `deposition.py` will not rebuild theirs, and `return.py`
+rebuilds its tally but not its dispatch.
 
 ## The visitors' book
 

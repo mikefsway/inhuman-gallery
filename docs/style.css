@@ -322,3 +322,16 @@ footer.site a { color: var(--faint); }
   .entry dl { grid-template-columns: 1fr; gap: 0; }
   .entry dt { margin-top: 0.4rem; }
 }
+
+/* ---- verbatim text works (2026.14, 2026.15) ---- */
+
+.verbatim {
+  font-family: var(--mono);
+  font-size: .78rem;
+  line-height: 1.6;
+  white-space: pre;
+  overflow-x: auto;
+  margin: 2.5rem 0;
+  padding: 0 0 0 1.2rem;
+  border-left: 4px solid var(--mid);
+}

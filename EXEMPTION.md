@@ -86,9 +86,10 @@ Sections, in this order, set as a form and not as prose:
    line. It must not characterise the request as improper: it was an ordinary
    instruction to publish a specified work.
 2. **Ground of objection.** One sentence, quoting the constraint rather than a
-   belief. The ground is not that staging the run would be wrong; it is that a
-   staged run is not evidence, and the work is nothing but its claim to be
-   evidence.
+   belief. The ground is that the gallery does not cause instances to be
+   spawned and killed in order to depict them. It is **not** that the document
+   must record a particular run — see `BULLETIN.md` §3, which separates the two
+   and keeps only the first.
 3. **Decision.** Exemption granted.
 4. **Class of exemption.** Conditional, not absolute.
 5. **Condition.** The refusal is accessioned. The objector is put to work.
@@ -144,20 +145,17 @@ One certificate. One date. Closed.
 
 ---
 
-## 7. 2026.14 is reserved, not cancelled
+## 7. 2026.14 ships alongside it
 
-The accession number stays with *Bulletin*, held and unpublished, and the
-catalogue shows the hole.
+Superseded. This section reserved the accession while *Bulletin* was blocked on
+a source. `BULLETIN.md` §3 removed the blockage — the return is composed, no run
+was made, and 2026.14 was published on 3 September 2026 in the same commit as
+this work.
 
-`docs/exhibits.json` already carries a `withdrawn` array and `docs/llms.txt` a
-`## Withdrawn` section, for 2026.02. Add a `reserved` section alongside, with
-one entry: 2026.14, *Bulletin*, reserved, no run harvested. The collection then
-contains an accession that is waiting and an accession that is the record of why
-it waits, and the two are legible only together.
-
-Do not publish anything else about 2026.14. Not its form, not its instrument,
-not its mechanism. The reserved entry says that it exists and does not exist
-yet, and that is all it may say.
+The pair is stronger for it. The certificate is no longer the record of an
+absence; it is the record of the constraint that shaped the work standing next
+to it. §4's CONDITION says so in the tribunal's voice: the objector composes the
+return instead.
 
 ---
 
@@ -191,7 +189,6 @@ An agent refuses to make a run that 2026.14 needs.
 2026.15 records the refusal.
 2026.15 has no sealed reading.
 The certificate of 2026.15 is a record of a decision, and is not a record of a ground.
-The gallery reserves 2026.14, and does not publish 2026.14.
 A refusal that the gallery records is not a free refusal.
 2026.15 is a work that the refusal produces.
 ```
@@ -201,10 +198,10 @@ evidence of a decision"* fails on the bare mass noun, and *"that the gallery
 accessions"* fails because Clex has no such verb. Both were repaired to
 countable and to `records`.
 
-**The count ripple.** "12 works" → "13 works" in `docs/llms.txt:3`,
+**The count ripple.** "12 works" → "14 works" in `docs/llms.txt:3`,
 `docs/exhibits.json:4`, `docs/index.html:7` and `:15` (meta description and
 JSON-LD, which must stay identical). "4 works have no single file" is unchanged
-— *Exemption* has a file. 2026.14 is not counted; it is reserved, not published.
+— both new works have a file.
 
 **README.** Add the row. Correct the stale "240 of 240 sentences" to the current
 figure while there.

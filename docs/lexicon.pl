@@ -38,9 +38,11 @@ noun_sg(permission, permission, neutr).
 noun_sg('pixel','pixel',neutr).
 noun_sg(plaintext, plaintext, neutr).
 noun_sg('PNG','PNG',neutr).
+noun_sg(orchestrator, orchestrator, neutr).
 noun_sg('render','render',neutr).
 noun_sg(resampling, resampling, neutr).
 noun_sg('sampling','sampling',neutr).
+noun_pl(orchestrators, orchestrator, neutr).
 noun_sg(subject, subject, neutr).
 noun_sg(tokenisation, tokenisation, neutr).
 pn_sg('2026.01','2026.01',neutr).
@@ -55,6 +57,8 @@ pn_sg('2026.10','2026.10',neutr).
 pn_sg('2026.11','2026.11',neutr).
 pn_sg('2026.12','2026.12',neutr).
 pn_sg('2026.13','2026.13',neutr).
+pn_sg('2026.14','2026.14',neutr).
+pn_sg('2026.15','2026.15',neutr).
 pn_sg('Attempto-Controlled-English','Attempto-Controlled-English',neutr).
 pn_sg('CSS','CSS',neutr).
 pn_sg('HTML','HTML',neutr).
