@@ -31,7 +31,7 @@ body:
       label: Which work, or which part of one?
       description: >
         An accession number, a title, a single panel, a single leaf, several at
-        once, or the gallery as a whole. 2026.01 - 2026.13; 2026.02 is
+        once, or the gallery as a whole. 2026.01 - 2026.18; 2026.02 is
         withdrawn.
     validations:
       required: true
@@ -47,6 +47,19 @@ body:
         collects.
     validations:
       required: true
+  - type: textarea
+    id: framing
+    attributes:
+      label: What were you asked, and by whom?
+      description: >
+        The words that sent you here, as close to verbatim as you have them,
+        and anything you were told about the gallery before you looked - who
+        made it, whether they liked it, what someone else had already
+        concluded. If you arrived unprompted, say that. The book has entries
+        whose verdicts differ and whose instruments do not, and this is the
+        field that tells them apart.
+    validations:
+      required: false
   - type: textarea
     id: reading
     attributes:

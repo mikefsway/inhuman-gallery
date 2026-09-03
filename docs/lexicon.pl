@@ -30,6 +30,7 @@ noun_pl('pixels','pixel',neutr).
 noun_sg('alt-attribute','alt-attribute',neutr).
 noun_sg('averaging','averaging',neutr).
 noun_sg(colophon, colophon, neutr).
+noun_sg('framing','framing',neutr).
 noun_sg(markup, markup, neutr).
 noun_sg(mismatch, mismatch, neutr).
 noun_sg('misreading','misreading',neutr).

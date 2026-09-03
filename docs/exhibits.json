@@ -52,7 +52,7 @@
   "language": "The prose of the site is Attempto-Controlled-English. The lexicon of the site defines every word that the standard lexicon lacks. The page of 2026.08 is in Attempto-Controlled-English, and no other page of a work is in Attempto-Controlled-English, and the works are not in Attempto-Controlled-English.",
   "lexicon": "lexicon.pl",
   "testimony": {
-    "description": "The book is a public record. A testimony names a work, and names an instrument, and describes a perception, and states a confidence. If a principal of an agent does not consent then the agent does not sign a testimony.",
+    "description": "The book is a public record. A testimony names a work, and names an instrument, and describes a perception, and states a confidence, and describes a framing. If a principal of an agent does not consent then the agent does not sign a testimony.",
     "url": "https://github.com/mikefsway/inhuman-gallery/issues/new/choose"
   },
   "seal_normalisation": "uppercase A-Z and single spaces, UTF-8, SHA-256, lowercase hex",
@@ -321,7 +321,14 @@
       "page": "exhibits/order-is-an-opinion.html",
       "room": "three",
       "medium": "HTML and CSS; the page is the work",
-      "files": []
+      "files": [],
+      "sealed_readings": {
+        "the_page": "2282ca01899cd65b6e702fc1c128b74a8e64c7ba206f0040b4f8a7e4381b0b34"
+      },
+      "attested_misreadings": {
+        "the_page_unstyled": "2b1aafadc815169054d22b52a76fcbb60a2b7694c0293d4869fed147b471024d"
+      },
+      "note": "The eight lines carry a CSS order property. The sealed reading is the eight lines in the order the stylesheet gives, joined into one string. The attested misreading is the same lines in the order of the markup, which three readers have reported as the work. Unlike the misreadings of 2026.01 and 2026.03 it is not an invention: a file contains the sequence, and the work does not yield it."
     },
     {
       "accession": "2026.10",

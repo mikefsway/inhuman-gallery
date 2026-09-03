@@ -50,11 +50,14 @@ common is not stated anywhere on the site.
   `deposition.py`, `disbound.py`, `return.py`, `sitting.py`, `life_study.py`, `attribution.py` — generation scripts (NumPy +
   Pillow; reportlab for 2026.12; `return.py` needs neither). Each rebuilds its
   work from scratch.
+- `order.py` — 2026.04 is already in `docs/`, so this one verifies rather than
+  rebuilds: it reads the eight lines out of the page and prints the sealed
+  reading and the attested misreading.
 - `check_ace.py` — checks the colophon's claim that the site's prose is
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 277 of 277 sentences parsing.
+  takes about a minute. It currently reports 301 of 301 sentences parsing.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
   `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
 
