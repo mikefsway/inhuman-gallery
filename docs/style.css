@@ -22,7 +22,7 @@
     --hairline: #2f2f2c;
     --faint: #999994;
     --stamp: #96a8e8;
-    --seal-bg: #1c1c1b;
+    --seal-bg: #232320;
     /* --mid stays #808080. Grey 128 is invariant under inversion,
        as it is under resampling. */
   }
@@ -94,6 +94,11 @@ li { margin-bottom: 0.35rem; }
 
 a { color: var(--stamp); text-decoration: underline; text-decoration-thickness: 1px; text-underline-offset: 2px; }
 a:hover { text-decoration-thickness: 2px; }
+
+/* A link that has been followed decays to the mid value: the one grey that
+   survives every averaging pathway, and the only state the site remembers. */
+main a:visited { color: var(--mid); }
+ol.catalogue .work-title a:visited { color: var(--mid); }
 
 em { font-style: italic; }
 hr { border: 0; border-top: 1px solid var(--hairline); margin: 2.5rem 0; }
@@ -222,9 +227,10 @@ td.num, th.num { text-align: right; padding-right: 0; }
   overflow-x: auto;
 }
 .seal .h { overflow-wrap: anywhere; }
-/* ---- the poem (2026.04) ---- */
+/* ---- verse (2026.04, 2026.07) ----
+   A bare left rule means quotation, and means nothing else on this site. */
 
-.two-orders {
+.two-orders, .canon {
   display: flex;
   flex-direction: column;
   font-size: 1.125rem;
@@ -234,24 +240,17 @@ td.num, th.num { text-align: right; padding-right: 0; }
   padding: 0 0 0 1.2rem;
   border-left: 4px solid var(--mid);
 }
-.two-orders span { display: block; }
-
-/* the canon (2026.07) */
-
-.canon {
-  display: flex;
-  flex-direction: column;
-  font-size: 1.125rem;
-  line-height: 2.05;
-  font-style: italic;
-  margin: 2.5rem 0;
-  padding: 0 0 0 1.2rem;
-  border-left: 4px solid var(--mid);
-}
-.canon span { display: block; }
+.two-orders span, .canon span { display: block; }
 
 /* ---- the painting (2026.05) ---- */
 
+figure.painting {
+  margin: 2.4rem 0 2.6rem;
+  padding: 4.5rem 1.5rem 3rem;
+  background: var(--seal-bg);
+  border-top: 1px solid var(--hairline);
+  border-bottom: 1px solid var(--hairline);
+}
 figure.painting img {
   width: 336px;
   max-width: 100%;
@@ -259,6 +258,7 @@ figure.painting img {
   border: 10px solid var(--ink);
   outline: 1px solid var(--hairline);
 }
+figure.painting figcaption { text-align: center; margin-top: 2.4rem; }
 
 /* ---- footer ---- */
 
@@ -323,7 +323,8 @@ footer.site a { color: var(--faint); }
   .entry dt { margin-top: 0.4rem; }
 }
 
-/* ---- verbatim text works (2026.14, 2026.15) ---- */
+/* ---- verbatim text works (2026.14, 2026.15) ----
+   Machine output, so it is set as the seals are set, and not as verse. */
 
 .verbatim {
   font-family: var(--mono);
@@ -332,6 +333,70 @@ footer.site a { color: var(--faint); }
   white-space: pre;
   overflow-x: auto;
   margin: 2.5rem 0;
-  padding: 0 0 0 1.2rem;
-  border-left: 4px solid var(--mid);
+  padding: 1rem 1.2rem;
+  background: var(--seal-bg);
+  border: 1px solid var(--hairline);
 }
+
+/* ---- record mode ----------------------------------------------------
+   The front matter — the index, the notes, the about, the colophon — is
+   addressed to a visitor. A record is not addressed to anybody. It is set
+   denser, headed the way a form is headed, and given less air. Crossing
+   from one to the other should be felt. */
+
+body.record { font-size: 1rem; line-height: 1.55; }
+
+body.record .eyebrow { margin-bottom: 0.4rem; }
+body.record h1 {
+  font-size: 1.4rem;
+  margin: 0 0 1.5rem;
+  padding-bottom: 0.85rem;
+  border-bottom: 1px solid var(--ink);
+}
+body.record h2 { font-size: 1.05rem; margin: 2rem 0 0.6rem; }
+body.record h3 { margin: 1.5rem 0 0.5rem; }
+body.record p, body.record ul, body.record ol { margin-bottom: 0.9rem; }
+body.record figure { margin: 1.6rem 0; }
+body.record .label { margin-bottom: 1.8rem; }
+body.record .seal, body.record .verbatim { margin: 1.5rem 0; }
+body.record hr { margin: 2rem 0; }
+
+/* ---- 2026.04 ----
+   The page is the work, so it wears no record head and files no label. */
+
+body.plate h1 { border-bottom: 0; padding-bottom: 0; margin-bottom: 2.2rem; }
+body.plate .two-orders { margin: 0 0 2.6rem; }
+body.plate .medium {
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  color: var(--faint);
+  border-top: 1px solid var(--hairline);
+  padding-top: 0.9rem;
+  margin: 0;
+}
+
+/* ---- 2026.10 ----
+   The leaves have no order. The markup holds them in an order of hashes and
+   the page lays them out in another, so that neither can be mistaken for the
+   work's. */
+
+.leaves {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.45rem 1.1rem;
+  font-family: var(--mono);
+  font-size: 0.78rem;
+  line-height: 1.6;
+  margin: 1.5rem 0;
+  padding: 1rem 1.2rem;
+  background: var(--seal-bg);
+  border: 1px solid var(--hairline);
+}
+.leaves p {
+  flex: 0 0 100%;
+  order: -1;
+  margin: 0 0 0.5rem;
+  color: var(--faint);
+}
+.leaves a { white-space: nowrap; }
