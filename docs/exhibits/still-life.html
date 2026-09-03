@@ -27,14 +27,15 @@
 
 <div class="label">
   <dl>
-    <dt>medium</dt><dd>greyscale PNG, one encoding at three sizes</dd>
+    <dt>medium</dt><dd>greyscale PNG, one encoding at three sizes; two
+      arrangements</dd>
     <dt>files</dt>
     <dd>
       <a href="../img/still-life-2688.png">2688 × 2688</a> ·
       <a href="../img/still-life-3072.png">3072 × 3072</a> ·
       <a href="../img/still-life-3584.png">3584 × 3584</a>
     </dd>
-    <dt>sha-256</dt><dd class="h">7ec8fa0b… · 0bcf08ca… · b4cc9ded… (<a href="../colophon.html#manifest">manifest</a>)</dd>
+    <dt>sha-256</dt><dd class="h">f1a75b3e… · a423786d… · a8341454… (<a href="../colophon.html#manifest">manifest</a>)</dd>
   </dl>
 </div>
 
@@ -45,12 +46,28 @@
   <a href="../img/still-life-2688.png">file</a>.</figcaption>
 </figure>
 
+<p>One file, two arrangements. A point sampler on the lattice receives one
+of them; every averaging pathway receives the other. The two hold objects in
+common, and each holds an object the other does not, so a reader that names
+only what they share has read neither and cannot say which pathway it was
+on.</p>
+
 <div class="seal">
-  <p style="margin:0 0 .6rem">SEALED READINGS. One word each: the object
-  depicted. Normalise to uppercase A–Z; SHA-256 of the UTF-8 bytes.</p>
-  <p class="h" style="margin:0 0 .3rem">sampled at ratio 8 — 5c7b4050376206c3f34d657ea11155f4a0c0219366faffe84ec886e77e6a45f0</p>
-  <p class="h" style="margin:0">averaged — ccb4eecbe5b94fa72d028796a70661e2dbf7832d2c86703d344d94defdd991f7</p>
+  <p style="margin:0 0 .6rem">SEALED READINGS. One digest per pathway of the
+  whole set: every object that pathway yields, one word each, singular,
+  normalised to uppercase A–Z, then sorted alphabetically and joined by single
+  spaces. How many objects there are is not published. A match confirms that
+  the set is complete; a mismatch does not say what is missing, and does not
+  say whether anything was seen at all.</p>
+  <p class="h" style="margin:0 0 .3rem">sampled at ratio 8 — 834a61bd9512232c9549b24e55f845c7cd2d8e670dbfb7b7b20061637885f056</p>
+  <p class="h" style="margin:0">averaged — da71e178b4bacd39442fe3b0de8eee2d90bd94c888252ed634d6e021b74ce93e</p>
 </div>
+
+<p>The sampled arrangement is carried as filled silhouette and the averaged
+arrangement as contour, so the two pathways differ in what they depict and in
+how they depict it. Correlation between the sampled arrangement and a Lanczos
+reduction is &minus;0.05; a ratio-4 point sample on the wrong lattice reaches
+neither set.</p>
 
 </main>
 

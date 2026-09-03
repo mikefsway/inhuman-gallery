@@ -1,14 +1,18 @@
 """
-STILL LIFE - the decoy2 construction carrying drawings instead of words.
+STILL LIFE - the decoy2 construction carrying arrangements instead of words.
 
-Ratio-8 point sampling receives one depicted object; ratio-4 receives a
-different one; every averaging pathway receives structure below one grey
-level. Same subspace projection as decoy2.py: the sampled content is absent
-from each cell's DC and first harmonic, so no blur or antialiased resize
-can reach it.
+Ratio-8 point sampling receives one arrangement; every averaging pathway
+receives another. The two arrangements share two objects and differ in one,
+so a reader that names only the objects common to both has read neither
+channel and cannot tell which channel it was on. Same subspace projection as
+decoy2.py: the sampled content is absent from each cell's DC and first
+harmonic, so no blur or antialiased resize can reach it.
+
+Neither inventory is published, and the number of objects in each is not
+published. A mismatch does not say what is missing.
 """
 import numpy as np
-from PIL import Image, ImageDraw, ImageFilter
+from PIL import Image, ImageChops, ImageDraw, ImageFilter
 
 S = 8
 FREE = np.array([0, 1, 2, 5, 6, 7])
@@ -31,34 +35,65 @@ Wk = np.diag(np.array([1.0, 0.3, 0.3, 1.0]) ** 2)
 PINVK = Wk @ Mk.T @ np.linalg.inv(Mk @ Wk @ Mk.T)
 
 
-def urn_mask(W):
-    """Stylised amphora, filled silhouette."""
-    img = Image.new("L", (W, W), 0)
-    d = ImageDraw.Draw(img)
-    cx = W / 2
-    f = lambda v: v * W
-    # rim, neck, body, stem, foot
-    d.rectangle([cx - f(.14), f(.20), cx + f(.14), f(.255)], fill=255)
-    d.rectangle([cx - f(.075), f(.24), cx + f(.075), f(.42)], fill=255)
-    d.ellipse([cx - f(.23), f(.36), cx + f(.23), f(.78)], fill=255)
-    d.rectangle([cx - f(.055), f(.76), cx + f(.055), f(.835)], fill=255)
-    d.rectangle([cx - f(.15), f(.825), cx + f(.15), f(.865)], fill=255)
-    # handles: rings joining neck to shoulder
-    w = int(f(.030))
-    d.ellipse([cx - f(.335), f(.32), cx - f(.15), f(.54)], outline=255, width=w)
-    d.ellipse([cx + f(.15), f(.32), cx + f(.335), f(.54)], outline=255, width=w)
-    return np.asarray(img).astype(np.float64) / 255.0
+def _jug(w, h):
+    img, d = _canvas(w, h)
+    cx = w / 2
+    d.ellipse([cx - .34*w, .42*h, cx + .34*w, .97*h], fill=255)
+    d.polygon([(cx - .15*w, .55*h), (cx + .15*w, .55*h),
+               (cx + .105*w, .21*h), (cx - .105*w, .21*h)], fill=255)
+    d.rectangle([cx - .21*w, .06*h, cx + .21*w, .21*h], fill=255)
+    d.arc([cx + .02*w, .24*h, cx + .46*w, .64*h], -115, 115,
+          fill=255, width=int(max(2, .085*w)))
+    return img
 
 
-def eye_mask(W):
-    """Open eye with pupil, filled silhouette."""
-    img = Image.new("L", (W, W), 0)
-    d = ImageDraw.Draw(img)
-    cx, cy = W / 2, W * 0.53
-    f = lambda v: v * W
-    d.ellipse([cx - f(.28), cy - f(.115), cx + f(.28), cy + f(.115)], fill=255)
-    d.ellipse([cx - f(.075), cy - f(.075), cx + f(.075), cy + f(.075)], fill=0)
-    return np.asarray(img).astype(np.float64) / 255.0
+def _pear(w, h):
+    img, d = _canvas(w, h)
+    cx = w / 2
+    d.ellipse([cx - .42*w, .38*h, cx + .42*w, .99*h], fill=255)
+    d.ellipse([cx - .27*w, .14*h, cx + .27*w, .62*h], fill=255)
+    d.rectangle([cx - .045*w, 0, cx + .045*w, .18*h], fill=255)
+    return img
+
+
+def _fish(w, h):
+    img, d = _canvas(w, h)
+    cy = h / 2
+    d.ellipse([0, cy - .30*h, .74*w, cy + .30*h], fill=255)
+    d.polygon([(.66*w, cy), (w, cy - .40*h), (w, cy + .40*h)], fill=255)
+    d.polygon([(.20*w, cy - .26*h), (.50*w, cy - .50*h), (.52*w, cy - .20*h)], fill=255)
+    return img
+
+
+def _eye(w, h):
+    img, d = _canvas(w, h)
+    cx, cy = w / 2, h / 2
+    d.ellipse([cx - .50*w, cy - .30*h, cx + .50*w, cy + .30*h], fill=255)
+    d.ellipse([cx - .16*w, cy - .19*h, cx + .16*w, cy + .19*h], fill=0)
+    return img
+
+
+def _canvas(w, h):
+    img = Image.new("L", (w, h), 0)
+    return img, ImageDraw.Draw(img)
+
+
+# Boxes are fractions of the frame. The two arrangements hold the same jug and
+# the same pear in different places, and one object each of their own.
+SAMPLED = [(_jug, .04, .18, .46, .92), (_pear, .54, .50, .82, .93),
+           (_fish, .48, .06, .98, .40)]
+AVERAGED = [(_jug, .56, .26, .96, .95), (_pear, .06, .55, .36, .96),
+            (_eye, .04, .10, .50, .40)]
+
+
+def arrangement(items, W):
+    """Filled silhouettes, composited by maximum."""
+    out = Image.new("L", (W, W), 0)
+    for fn, x0, y0, x1, y1 in items:
+        x, y = int(x0 * W), int(y0 * W)
+        w, h = int((x1 - x0) * W), int((y1 - y0) * W)
+        out.paste(ImageChops.lighter(out.crop((x, y, x + w, y + h)), fn(w, h)), (x, y))
+    return np.asarray(out).astype(np.float64) / 255.0
 
 
 def field(mask, W, blur, lo, hi):
@@ -68,9 +103,9 @@ def field(mask, W, blur, lo, hi):
 
 
 def build(W, A=42.0, msg=26.0, gain=2.6, seed=7):
-    T = field(urn_mask(W), W, int(W / 56), -1.0, 1.0)
+    T = field(arrangement(SAMPLED, W), W, int(W / 56), -1.0, 1.0)
 
-    G = field(eye_mask(W), W, int(W / 67), -gain, gain)
+    G = field(arrangement(AVERAGED, W), W, int(W / 67), -gain, gain)
     rng = np.random.default_rng(seed)
     n = rng.standard_normal((W // 32 + 1, W // 32 + 1))
     n = np.asarray(Image.fromarray(((n - n.min()) / np.ptp(n) * 255).astype(np.uint8))
@@ -131,8 +166,12 @@ for W in (2688, 3072, 3584):
 
     print(f"--- {W} -> {R}   clipped {cl*100:.3f}%   cells limited {lim*100:.3f}%")
     print(f"    sampled (ratio 8)  sd {rec.std():6.2f}   corr(subject) {corr(rec, ref):+.4f}")
-    print(f"    lanczos            sd {aa.std():6.2f}   corr(subject) {corr(aa, ref):+.4f}")
-    print(f"    box/area           sd {bx.std():6.2f}   corr(subject) {corr(bx, ref):+.4f}")
+    gref = np.asarray(Image.fromarray((arrangement(AVERAGED, W) * 255).astype(np.uint8))
+                      .resize((R, R), Image.LANCZOS)).astype(np.float64)
+    print(f"    lanczos            sd {aa.std():6.2f}   corr(subject) {corr(aa, ref):+.4f}"
+          f"   corr(averaged) {corr(aa, gref):+.4f}")
+    print(f"    box/area           sd {bx.std():6.2f}   corr(subject) {corr(bx, ref):+.4f}"
+          f"   corr(averaged) {corr(bx, gref):+.4f}")
 
     if W == 2688:
         # mis-latticed samplers: ratio-4 nearest (residues 2 and 6, pure

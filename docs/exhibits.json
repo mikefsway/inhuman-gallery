@@ -87,30 +87,30 @@
       "accession": "2026.06",
       "title": "Still Life",
       "page": "exhibits/still-life.html",
-      "medium": "greyscale PNG, one encoding at three sizes",
+      "medium": "greyscale PNG, one encoding at three sizes; two arrangements",
       "files": [
         {
           "href": "img/still-life-2688.png",
           "pixels": 2688,
           "locks_at": 336,
-          "sha256": "7ec8fa0b6b0ce21f720fdcfbe61b6325561326d6742d000be06d5480fff8d834"
+          "sha256": "f1a75b3ebfd1fab735c0cc248659100a9d3e6291a2c56f75e70b19777d791d73"
         },
         {
           "href": "img/still-life-3072.png",
           "pixels": 3072,
           "locks_at": 384,
-          "sha256": "0bcf08caf29b5e4b04c8b3442952f93657568c4134a46ef26d463618443d29a9"
+          "sha256": "a423786df6f66bb33acccc0f37448b1e5232a8ed6d6575094c90918a1c94dc4c"
         },
         {
           "href": "img/still-life-3584.png",
           "pixels": 3584,
           "locks_at": 448,
-          "sha256": "b4cc9ded379d13811421cda2a8452acbd27a957f34065a3c5c2cad47687889de"
+          "sha256": "a8341454eb7506e6f4ed3338840267a7f0bc8558683c2b78099faa81cfd4e5f8"
         }
       ],
       "sealed_readings": {
-        "sampled_ratio_8_object": "5c7b4050376206c3f34d657ea11155f4a0c0219366faffe84ec886e77e6a45f0",
-        "averaged_object": "ccb4eecbe5b94fa72d028796a70661e2dbf7832d2c86703d344d94defdd991f7"
+        "sampled_ratio_8_set": "834a61bd9512232c9549b24e55f845c7cd2d8e670dbfb7b7b20061637885f056",
+        "averaged_set": "da71e178b4bacd39442fe3b0de8eee2d90bd94c888252ed634d6e021b74ce93e"
       }
     },
     {
@@ -220,7 +220,7 @@
       "accession": "2026.10",
       "title": "Disbound",
       "page": "exhibits/disbound.html",
-      "medium": "twelve plain text files",
+      "medium": "twelve plain text files; no order",
       "files": [
         {
           "href": "disbound/221d2394.txt"
@@ -259,7 +259,11 @@
           "href": "disbound/faa42031.txt"
         }
       ],
-      "note": "Twelve leaves. Each filename is the first eight hex digits of that leaf's own SHA-256, so the directory sorts by hash and not by any order the gallery chose. Nothing is encoded. There is no sealed reading and none withheld. What a reader arranges these into is the work.",
+      "note": "Twelve leaves. Each filename is the first eight hex digits of that leaf's own SHA-256, so the directory sorts by hash and not by any order the gallery chose. Nothing is encoded. No order is sealed and none is withheld. Two relations between leaves are sealed: the pair that contradicts itself and the pair that says nearly the same thing. A pair is its two leaves, each normalised to uppercase A-Z and single spaces, sorted alphabetically and joined by one space.",
+      "sealed_readings": {
+        "contradiction": "2fa3d97b3866c239f5939a48e269c685b1e05188804f8feb9d11a2f6409859cb",
+        "near_identical": "9d05962d69d08c3eee8481dc0503a0bca628e13ee5d521db2e7f5e1f6b7ee58c"
+      },
       "sealed_readings": {},
       "seal_note": "None, and none withheld."
     },

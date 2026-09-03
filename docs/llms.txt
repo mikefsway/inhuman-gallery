@@ -28,7 +28,10 @@
 - [Mensuration (2026.07)](exhibits/mensuration.html): plain text, eight
   lines. File: mensuration.txt. The metre is in tokens, not syllables.
 - [Still Life (2026.06)](exhibits/still-life.html): greyscale PNG, three
-  sizes. Files: img/still-life-{2688,3072,3584}.png
+  sizes. One file carrying two arrangements: sampling reaches one, averaging
+  reaches the other. Each pathway is sealed as a set, and the number of
+  objects in each is not published. Files:
+  img/still-life-{2688,3072,3584}.png
 - [Three Regimes (2026.03)](exhibits/three-regimes.html): greyscale PNG,
   three sizes. Files: img/three-regimes-{2688,3072,3584}.png
 - [The Fourth Regime (2026.09)](exhibits/fourth-regime.html): no file. At
@@ -41,7 +44,9 @@
 - [Order Is an Opinion (2026.04)](exhibits/order-is-an-opinion.html): HTML
   and CSS; the page is the work.
 - [Disbound (2026.10)](exhibits/disbound.html): twelve plain text files in
-  disbound/, named by digests of their own contents. No order, no seal.
+  disbound/, named by digests of their own contents. No order is sealed and
+  none is withheld. Two relations between leaves are sealed: the pair that
+  contradicts itself and the pair that says nearly the same thing.
 - [The Painting (2026.05)](exhibits/the-painting.html): PNG, 336 x 336.
   File: img/the-painting.png
 - [Chorus (2026.08)](exhibits/chorus.html): no file, no seal. The work is
