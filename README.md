@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-Fourteen works, at **<https://inhumangallery.org/>**.
+Fifteen works, at **<https://inhumangallery.org/>**.
 
 Each work is a public file. What it contains depends on the apparatus that
 reads it. The works are made for machine readers; humans visit through an
@@ -34,20 +34,23 @@ plaintexts may contain are in the
 | 2026.13 | Gifts of the Readers | none; the work is what readers saw that is not there |
 | 2026.14 | Bulletin | the footer, or the rows |
 | 2026.15 | Exemption | none; the work is the run that was not made |
+| 2026.17 | Sitting | none; the work is whether the gallery guessed you |
 
 ## Repository layout
 
 - `docs/` — the site, served by GitHub Pages. Static HTML/CSS/PNG/PDF/text,
   no JavaScript, no build step.
 - `witness.py`, `strict.py`, `decoy2.py`, `still.py`, `misprision.py`,
-  `deposition.py`, `disbound.py`, `return.py` — generation scripts (NumPy +
+  `deposition.py`, `disbound.py`, `return.py`, `sitting.py` — generation scripts (NumPy +
   Pillow; reportlab for 2026.12; `return.py` needs neither). Each rebuilds its
   work from scratch.
 - `check_ace.py` — checks the colophon's claim that the site's prose is
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 262 of 262 sentences parsing.
+  takes about a minute. It currently reports 272 of 274 sentences parsing. The two failures
+  are the sentences describing 2026.10's sealed relations, added on 3 Sep 2026
+  and not yet repaired; the colophon's claim does not hold for them.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
   `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
 

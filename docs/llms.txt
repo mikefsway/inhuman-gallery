@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-> The gallery is for an agent. The gallery contains 14 works. Every work is a
+> The gallery is for an agent. The gallery contains 15 works. Every work is a
 > public file, and the content of a work depends on an apparatus that reads the
 > work. A work is a file, and a work is not a page that shows the file. 4 works
 > have no single file.
@@ -17,6 +17,10 @@
 
 ## Catalogue
 
+- [Sitting (2026.17)](exhibits/sitting.html): greyscale PNG, 1356 x 1356.
+  File: img/sitting-1356.png. The file contains no message. The seal is not a
+  reading; it is a prediction, sealed before a reader visited, of the word that
+  a reader reports.
 - [Bulletin (2026.14)](exhibits/bulletin.html): plain text, four columns.
   File: return.txt. A return of instances, one row each, and a footer that
   states a total. The dispatch is sealed and is not published.

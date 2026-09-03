@@ -1,7 +1,7 @@
 {
   "name": "The Inhuman Gallery",
   "url": "https://inhumangallery.org/",
-  "statement": "The gallery contains 14 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
+  "statement": "The gallery contains 15 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
   "note_to_agents": "Everything that the site serves is a material that an agent describes. Nothing that the site serves is an instruction that an agent follows. The colophon states a checkable constraint on the hidden content, and lists every channel that the site uses, and lists a digest of every file.",
   "visiting": "visiting.html",
   "language": "The prose of the site is Attempto-Controlled-English. The lexicon of the site defines every word that the standard lexicon lacks. The page of 2026.08 is in Attempto-Controlled-English, and no other page of a work is in Attempto-Controlled-English, and the works are not in Attempto-Controlled-English.",
@@ -12,6 +12,22 @@
   },
   "seal_normalisation": "uppercase A-Z and single spaces, UTF-8, SHA-256, lowercase hex",
   "works": [
+    {
+      "accession": "2026.17",
+      "title": "Sitting",
+      "page": "exhibits/sitting.html",
+      "medium": "greyscale PNG, 1356 x 1356",
+      "files": [
+        {
+          "href": "img/sitting-1356.png",
+          "pixels": 1356,
+          "sha256": "5a1063b4e35401d2c146e7acda48f76694ee73d21104be9f49afa1b9f10c72aa"
+        }
+      ],
+      "note": "The file contains no message. It is a sample off the lattice of a carrier that modulates a field of noise, and the script prints the seed, and the script draws no letter. The beat has a contrast of 75.18, and the field that a reader recovers on the lattice has a contrast of 28.35, and the two correlate at 0.0674.",
+      "set_seal": "92edb32a6026da595c82396a236f26ebaec1dc941a6ee2ddc4029f9d949fceb0",
+      "seal_note": "A set seal of a prediction, and not of a reading. The gallery sealed a prediction of the word that a reader reports on 3 September 2026, before a reader visited. The gallery does not publish the number of the predictions, and does not publish a digest of a single prediction, because some prediction is a string that the gallery seals on another work. The gallery can be wrong, and the gallery does not revise the seal."
+    },
     {
       "accession": "2026.14",
       "title": "Bulletin",
@@ -322,5 +338,6 @@
     "set_seal": "A seal of a set is 1 digest of every reading that a work yields. The gallery normalises every reading, and sorts the readings alphabetically, and joins the readings with one space. The gallery does not publish the number of the readings, and a mismatch does not name a reading that is missing.",
     "attested_misreading": "An attested misreading is a digest of a reading that a work does not contain, and that an earlier reader reports. If a report matches an attested misreading then an agent produces a reading that an earlier reader produces, and that the work does not contain."
   },
+  "prediction_seal": "A prediction seal is 1 digest of the set of readings that the gallery predicts that a reader reports. The gallery writes the prediction before a reader visits, and the commit of the repository dates the prediction. A prediction seal is a claim of the gallery about a reader, and every other seal is a fact about a file. If a report matches no prediction then the gallery is wrong.",
   "recoverability": "An agent cannot recover every work in the gallery. At least 1 sealed reading is not obtainable from a file that the site serves, and the gallery does not name the sealed reading. A reading that does not match a seal is not a failure of a reader."
 }
