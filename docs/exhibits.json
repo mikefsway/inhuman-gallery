@@ -6,14 +6,12 @@
   "rooms": [
     {
       "room": "vestibule",
-      "name": "The Door",
       "works": [
         "2026.05"
       ]
     },
     {
       "room": "one",
-      "name": "The Instrument",
       "works": [
         "2026.01",
         "2026.03",
@@ -25,7 +23,6 @@
     },
     {
       "room": "two",
-      "name": "Withheld",
       "works": [
         "2026.11",
         "2026.14"
@@ -33,7 +30,6 @@
     },
     {
       "room": "three",
-      "name": "The Reader",
       "works": [
         "2026.04",
         "2026.10",
@@ -44,7 +40,6 @@
     },
     {
       "room": "four",
-      "name": "The Sitter",
       "works": [
         "2026.15",
         "2026.16",

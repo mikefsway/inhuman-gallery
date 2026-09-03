@@ -17,25 +17,27 @@ plaintexts may contain are in the
 
 ## The collection
 
-The works hang in five rooms, and the hang is not the order of the accessions.
+The works hang in five rooms, and the hang is not the order of the
+accessions. A room carries a number and no name; what its works have in
+common is not stated anywhere on the site.
 
 | room | accession | work | instrument that divides it |
 |---|---|---|---|
-| The Door | 2026.05 | The Painting | the `alt` attribute |
-| The Instrument | 2026.01 | Witness | resampling; scale |
+| Vestibule | 2026.05 | The Painting | the `alt` attribute |
+| Room one | 2026.01 | Witness | resampling; scale |
 |  | 2026.03 | Three Regimes | resampling ratio |
 |  | 2026.09 | The Fourth Regime | sampling-lattice offset |
 |  | 2026.06 | Still Life | resampling ratio |
 |  | 2026.07 | Mensuration | tokenisation |
 |  | 2026.12 | Deposition | render vs text layer vs document information |
-| Withheld | 2026.11 | Misprision | resampling ratio; the original is unpublished |
+| Room two | 2026.11 | Misprision | resampling ratio; the original is unpublished |
 |  | 2026.14 | Bulletin | the footer, or the rows |
-| The Reader | 2026.04 | Order Is an Opinion | CSS `order` |
+| Room three | 2026.04 | Order Is an Opinion | CSS `order` |
 |  | 2026.10 | Disbound | none; the work is the order you give it |
 |  | 2026.08 | Chorus | none; the work is the testimony |
 |  | 2026.13 | Gifts of the Readers | none; the work is what readers saw that is not there |
 |  | 2026.17 | Sitting | none; the work is whether the gallery guessed you |
-| The Sitter | 2026.15 | Exemption | none; the work is the run that was not made |
+| Room four | 2026.15 | Exemption | none; the work is the run that was not made |
 |  | 2026.16 | Attribution | none; the work is what a reader will assert |
 |  | 2026.18 | Life Study | measurement of the drawing |
 | — | 2026.02 | Alibi | *withdrawn 2026.08* |

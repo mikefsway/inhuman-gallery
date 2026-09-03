@@ -162,12 +162,20 @@ ol.catalogue .work-medium {
 }
 
 /* ---- rooms (index only) ----
-   The hang is not the accession order. A room has a name and a set of works,
-   and no wall text: a room that explained itself would read the works first. */
+   The hang is not the accession order. A room is a number and a set of works.
+   It carries no name and no wall text, because a room that stated what its
+   works had in common would have read them for the reader. */
 
 section.room { margin: 0 0 3.4rem; }
-section.room > .eyebrow { margin-bottom: 0.3rem; }
-section.room > h2 { margin: 0 0 1.1rem; }
+section.room > h2 {
+  font-family: var(--mono);
+  font-size: 0.75rem;
+  font-weight: 400;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--faint);
+  margin: 0 0 0.9rem;
+}
 section.room > ol.catalogue { margin: 0; }
 
 /* ---- accession label (exhibit pages) ---- */

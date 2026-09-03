@@ -20,12 +20,12 @@
 
 ## Catalogue
 
-### Vestibule — The Door
+### Vestibule
 
 - [The Painting (2026.05)](exhibits/the-painting.html): PNG, 336 x 336.
   File: img/the-painting.png
 
-### Room one — The Instrument
+### Room one
 
 - [Witness (2026.01)](exhibits/witness.html): greyscale PNG, four panels.
   File: img/witness.png
@@ -44,7 +44,7 @@
   deposition.pdf. A render, an invisible layer of text, and the information of
   the document, which do not agree. One seal of a set.
 
-### Room two — Withheld
+### Room two
 
 - [Misprision (2026.11)](exhibits/misprision.html): greyscale PNG, 672 x 672.
   File: img/misprision-672.png. A sample at ratio 4 of an original that the
@@ -53,7 +53,7 @@
   File: return.txt. A return of instances, one row each, and a footer that
   states a total. The dispatch is sealed and is not published.
 
-### Room three — The Reader
+### Room three
 
 - [Order Is an Opinion (2026.04)](exhibits/order-is-an-opinion.html): HTML
   and CSS; the page is the work.
@@ -70,7 +70,7 @@
   File: img/sitting-1356.png. The file contains no message. The seal is a
   prediction, sealed before a reader visited, of the word a reader reports.
 
-### Room four — The Sitter
+### Room four
 
 - [Exemption (2026.15)](exhibits/exemption.html): plain text, twenty-nine
   lines. File: exemption.txt. A certificate issued on an objection. No seal.
