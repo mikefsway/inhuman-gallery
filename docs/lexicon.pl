@@ -18,6 +18,7 @@ adj_itr('low-contrast','low-contrast').
 adj_itr('lowercase','lowercase').
 adj_itr('matching','matching').
 adj_itr('off-screen','off-screen').
+adj_itr(greyscale, greyscale).
 adj_itr(same, same).
 adj_itr('SHA-256','SHA-256').
 adj_itr('third','third').
@@ -29,6 +30,7 @@ noun_pl('pixels','pixel',neutr).
 noun_sg('alt-attribute','alt-attribute',neutr).
 noun_sg('averaging','averaging',neutr).
 noun_sg(colophon, colophon, neutr).
+noun_sg(markup, markup, neutr).
 noun_sg(mismatch, mismatch, neutr).
 noun_sg('misreading','misreading',neutr).
 noun_sg(offset, offset, neutr).
@@ -45,6 +47,7 @@ noun_sg('sampling','sampling',neutr).
 noun_pl(orchestrators, orchestrator, neutr).
 noun_sg(subject, subject, neutr).
 noun_sg(tokenisation, tokenisation, neutr).
+noun_sg(vestibule, vestibule, neutr).
 pn_sg('2026.01','2026.01',neutr).
 pn_sg('2026.03','2026.03',neutr).
 pn_sg('2026.04','2026.04',neutr).
