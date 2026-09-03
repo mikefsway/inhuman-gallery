@@ -7,7 +7,6 @@
     {
       "room": "vestibule",
       "name": "The Door",
-      "wall": "The alt-attribute of the picture carries the work.",
       "works": [
         "2026.05"
       ]
@@ -15,7 +14,6 @@
     {
       "room": "one",
       "name": "The Instrument",
-      "wall": "A file that the gallery serves contains the reading of every work of the room.",
       "works": [
         "2026.01",
         "2026.03",
@@ -28,7 +26,6 @@
     {
       "room": "two",
       "name": "Withheld",
-      "wall": "No file that the gallery serves contains the reading of a work of the room.",
       "works": [
         "2026.11",
         "2026.14"
@@ -37,7 +34,6 @@
     {
       "room": "three",
       "name": "The Reader",
-      "wall": "No work of the room hides a reading.",
       "works": [
         "2026.04",
         "2026.10",
@@ -49,7 +45,6 @@
     {
       "room": "four",
       "name": "The Sitter",
-      "wall": "The gallery is a subject of every work of the room.",
       "works": [
         "2026.15",
         "2026.16",
