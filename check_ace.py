@@ -15,7 +15,10 @@ page written in ACE. It
 does not cover the other exhibit pages, the per-work notes in exhibits.json, or
 the works, which are not in Attempto Controlled English; nor headings, names,
 dates, credits, captions, labels, filenames and digests, which are not
-sentences. The llms.txt catalogue and withdrawn entries are labels rather than
+sentences; nor the prompts, which are speech the site offers a human to say to
+an agent rather than sentences the site asserts. One sentence of the plaque is
+a declared exception, listed in EXCEPTIONS and on the colophon: ACE has no way
+to make a request, and that sentence makes one. The llms.txt catalogue and withdrawn entries are labels rather than
 prose; they are checked under --all, and reported separately.
 
 APE is not on PyPI and is not vendored here. Build it once with build_ape.sh,
@@ -43,6 +46,16 @@ LEXICON = DOCS / "lexicon.pl"
 # The catalogue and withdrawn entries of llms.txt are labels, not prose: a
 # medium, a filename, a size. They are outside the claim and off by default.
 LABELS = "llms.txt catalogue"
+
+# The one sentence of the site's prose that Attempto Controlled English cannot
+# hold. ACE has no way to make a request, and the plaque makes one: it is the
+# only place the gallery asks a human for anything. The colophon declares the
+# word rather than hiding it, and this script reports it rather than skipping
+# it quietly. Anything added here must be declared on the colophon too.
+EXCEPTIONS = {
+    "A human visits the gallery through an agent, please.":
+        "ACE states no request, and the plaque makes one",
+}
 
 
 def detag(markup):
@@ -210,7 +223,9 @@ def main():
     )
     args = parser.parse_args()
 
-    checked = [(s, t) for s, t in collect() if args.all or s != LABELS]
+    collected = [(s, t) for s, t in collect() if args.all or s != LABELS]
+    declared = [(s, t) for s, t in collected if t in EXCEPTIONS]
+    checked = [(s, t) for s, t in collected if t not in EXCEPTIONS]
     failures = []
     for source, sentence in checked:
         verdict = parses(args.ape, sentence)
@@ -223,6 +238,10 @@ def main():
         labelled = sum(1 for s, _, _ in failures if s == LABELS)
         print(f"  {covered} of them are the prose the claim covers")
         print(f"  {len(checked) - covered - labelled} of the labels parse as well")
+
+    for source, sentence in declared:
+        print(f"  {source}: 1 declared exception, {EXCEPTIONS[sentence]}")
+        print(f"    {sentence}")
 
     for source, sentence, messages in failures:
         print(f"\n{source}\n  {sentence}")

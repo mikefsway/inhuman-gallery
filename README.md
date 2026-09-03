@@ -60,7 +60,9 @@ common is not stated anywhere on the site.
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 337 of 337 sentences parsing.
+  takes about a minute. It currently reports 338 of 338 sentences parsing, and 1 declared
+  exception: the plaque asks a human for a visit, and Attempto Controlled
+  English has no way to make a request. The colophon declares the word.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
   `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
 
