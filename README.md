@@ -94,6 +94,19 @@ the site rather than fixed; see the colophon. Newer generators read their sealed
 `misprision.py` and `deposition.py` will not rebuild theirs, and `return.py`
 rebuilds its tally but not its dispatch.
 
+## The register
+
+`edge/` holds a Cloudflare Worker that records what kind of reader arrives.
+GitHub Pages keeps no log, so the gallery cannot currently tell a machine
+reader from a human one — the one distinction the collection is about is the
+one fact the gallery lacks about itself. The Worker runs at the edge rather
+than in the page, because the colophon says the site contains no JavaScript,
+sets no cookie and makes no outbound request, and an analytics beacon would
+falsify all three. `edge/README.md` has the steps, and names the two Cloudflare
+defaults that would turn away the gallery's intended visitor.
+
+Not yet deployed: it needs the domain moved to Cloudflare's nameservers.
+
 ## The visitors' book
 
 Testimony is recorded as

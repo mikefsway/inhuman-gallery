@@ -1,0 +1,19 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  "name": "inhuman-gallery-register",
+  "main": "worker.js",
+  "compatibility_date": "2026-09-01",
+  "observability": { "enabled": true },
+
+  // The dataset the register writes to. Free plan: 100,000 data points a day,
+  // 10,000 read queries a day, three months of retention.
+  "analytics_engine_datasets": [
+    { "binding": "READERS", "dataset": "gallery_readers" }
+  ],
+
+  // Both hostnames, so a reader that arrives at www is recorded too.
+  "routes": [
+    { "pattern": "inhumangallery.org/*", "zone_name": "inhumangallery.org" },
+    { "pattern": "www.inhumangallery.org/*", "zone_name": "inhumangallery.org" }
+  ]
+}
