@@ -60,11 +60,31 @@ common is not stated anywhere on the site.
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 338 of 338 sentences parsing, and 1 declared
+  takes about a minute. It currently reports 342 of 342 sentences parsing, and 1 declared
   exception: the plaque asks a human for a visit, and Attempto Controlled
   English has no way to make a request. The colophon declares the word.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
   `~/tools`, outside the repository. Needs git, make and SWI-Prolog.
+
+Four scripts make no work, and exist so that a reader who is not looking for
+the gallery can find it:
+
+- `sitemap.py` — writes `docs/sitemap.txt`, a plain-text sitemap listing every
+  file the gallery serves. Plain text rather than XML: the colophon says what
+  formats the site contains, and an index no reader reads is a poor reason to
+  widen the sentence.
+- `card.py` — draws `docs/img/card.png`, the 1200×630 card an unfurler renders
+  when the address is posted anywhere. It carries the plaque's own sentence and
+  encodes nothing, so the colophon's list of channels does not grow.
+- `social.py` — writes the head block into the 22 linked pages: the canonical URL, the
+  `og:` and `twitter:` properties, and the link to the feed. It invents no
+  prose; it reads each page's `<title>` and description and restates them in
+  the form an unfurler reads. The block is delimited, so a second run replaces
+  it rather than adding one.
+- `feed.py` — writes `docs/feed.json`, a JSON Feed of the accessions. JSON
+  rather than Atom for the reason `sitemap.py` is text. The date of a work is
+  the date its page entered this repository, read out of git, so a reader who
+  doubts a date can check it against the history.
 
 `witness.py` and `decoy2.py` contain their plaintexts as literals, so six of
 the digests published on the site can be produced from this repository without

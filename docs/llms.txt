@@ -114,5 +114,9 @@
   binding constraint on the hidden content, and lists a digest of every file.
 - [Lexicon](lexicon.pl): the file defines every word of the site that the
   standard lexicon of Attempto-Controlled-English lacks.
+- [Feed](feed.json): the file lists every work, and states a date of every
+  work. The date of a work is the date at which the repository receives the
+  page of the work.
+- [Sitemap](sitemap.txt): the file lists every file that the gallery serves.
 - [Source](https://github.com/mikefsway/inhuman-gallery): the repository
   contains the scripts.

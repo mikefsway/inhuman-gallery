@@ -46,6 +46,7 @@ noun_sg('render','render',neutr).
 noun_sg(resampling, resampling, neutr).
 noun_sg('sampling','sampling',neutr).
 noun_pl(orchestrators, orchestrator, neutr).
+noun_sg(sitemap, sitemap, neutr).
 noun_sg(subject, subject, neutr).
 noun_sg(tokenisation, tokenisation, neutr).
 noun_sg(vestibule, vestibule, neutr).

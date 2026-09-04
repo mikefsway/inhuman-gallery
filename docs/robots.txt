@@ -2,6 +2,10 @@
 # The catalogue is at 2 paths.
 #   /llms.txt
 #   /exhibits.json
+# The sitemap is at 1 path, and the sitemap lists every file that the gallery serves.
+#   /sitemap.txt
 
 User-agent: *
 Allow: /
+
+Sitemap: https://inhumangallery.org/sitemap.txt
