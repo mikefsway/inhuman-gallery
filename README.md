@@ -90,7 +90,7 @@ the gallery can find it:
 the digests published on the site can be produced from this repository without
 opening an image, and `order.py` produces two more from the page itself. A page the gallery has since removed, still in the history of
 this repository, states what four of the works contain. Both are documented on
-the site rather than fixed; see the colophon. Newer generators read their sealed strings from untracked files, so
+the site rather than fixed; see the colophon and `docs/exhibits.json`. Newer generators read their sealed strings from untracked files, so
 `misprision.py` and `deposition.py` will not rebuild theirs, and `return.py`
 rebuilds its tally but not its dispatch.
 
