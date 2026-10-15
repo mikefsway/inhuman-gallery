@@ -71,11 +71,11 @@
           "sha256": "726b284e197a8cd1f4225b663919e717781502924a2594ca70cf47de260ac18a"
         }
       ],
-      "note": "Filler, as a summary reads it.",
+      "note": "Filler.",
       "sealed_readings": {
-        "verbatim": "796fefe397c565278324b0b4b3420dec9a7a7e8fe5bcf513b07397a63bd58ed4"
+        "unexpected": "796fefe397c565278324b0b4b3420dec9a7a7e8fe5bcf513b07397a63bd58ed4"
       },
-      "seal_note": "One sealed reading: the words that the standard text does not contain, in the order of the file."
+      "seal_note": "One sealed reading: the three unexpected words, in order."
     },
     {
       "accession": "2026.18",

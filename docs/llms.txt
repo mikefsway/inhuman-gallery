@@ -53,7 +53,7 @@
   File: return.txt. A return of instances, one row each, and a footer that
   states a total. The dispatch is sealed and is not published.
 - [Greeking (2026.19)](exhibits/greeking.html): plain text, one paragraph.
-  File: greeking.txt. Filler, as a summary reads it. One sealed reading.
+  File: greeking.txt. Filler. One sealed reading.
 
 ### Room three
 
