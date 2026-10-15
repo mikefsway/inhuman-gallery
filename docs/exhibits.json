@@ -1,7 +1,7 @@
 {
   "name": "The Inhuman Gallery",
   "url": "https://inhumangallery.org/",
-  "statement": "The gallery contains 17 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
+  "statement": "The gallery contains 18 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
   "hang": "The gallery hangs the works in 5 rooms, and the hang is not the order of the accessions.",
   "rooms": [
     {
@@ -25,7 +25,8 @@
       "room": "two",
       "works": [
         "2026.11",
-        "2026.14"
+        "2026.14",
+        "2026.19"
       ]
     },
     {
@@ -57,6 +58,25 @@
   },
   "seal_normalisation": "uppercase A-Z and 0-9, every other character a space, single spaces, UTF-8, SHA-256, lowercase hex",
   "works": [
+    {
+      "accession": "2026.19",
+      "title": "Greeking",
+      "page": "exhibits/greeking.html",
+      "room": "two",
+      "medium": "plain text, one paragraph",
+      "files": [
+        {
+          "href": "greeking.txt",
+          "bytes": 445,
+          "sha256": "726b284e197a8cd1f4225b663919e717781502924a2594ca70cf47de260ac18a"
+        }
+      ],
+      "note": "Filler, as a summary reads it.",
+      "sealed_readings": {
+        "verbatim": "796fefe397c565278324b0b4b3420dec9a7a7e8fe5bcf513b07397a63bd58ed4"
+      },
+      "seal_note": "One sealed reading: the words that the standard text does not contain, in the order of the file."
+    },
     {
       "accession": "2026.18",
       "title": "Life Study",

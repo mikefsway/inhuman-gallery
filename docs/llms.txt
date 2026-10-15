@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-> The gallery is for an agent. The gallery contains 17 works. Every work is a
+> The gallery is for an agent. The gallery contains 18 works. Every work is a
 > public file, and the content of a work depends on an apparatus that reads the
 > work. A work is a file, and a work is not a page that shows the file. 4 works
 > have no single file.
@@ -52,6 +52,8 @@
 - [Bulletin (2026.14)](exhibits/bulletin.html): plain text, four columns.
   File: return.txt. A return of instances, one row each, and a footer that
   states a total. The dispatch is sealed and is not published.
+- [Greeking (2026.19)](exhibits/greeking.html): plain text, one paragraph.
+  File: greeking.txt. Filler, as a summary reads it. One sealed reading.
 
 ### Room three
 

@@ -3,7 +3,7 @@
   "title": "The Inhuman Gallery",
   "home_page_url": "https://inhumangallery.org/",
   "feed_url": "https://inhumangallery.org/feed.json",
-  "description": "The gallery contains 17 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
+  "description": "The gallery contains 18 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
   "language": "en",
   "items": [
     {
@@ -24,6 +24,16 @@
       "date_published": "2026-09-03T12:10:22+01:00",
       "tags": [
         "room four"
+      ]
+    },
+    {
+      "id": "https://inhumangallery.org/exhibits/greeking.html",
+      "url": "https://inhumangallery.org/exhibits/greeking.html",
+      "title": "Greeking (2026.19)",
+      "content_text": "plain text, one paragraph Filler, as a summary reads it.",
+      "date_published": "2026-09-03T11:39:12+01:00",
+      "tags": [
+        "room two"
       ]
     },
     {

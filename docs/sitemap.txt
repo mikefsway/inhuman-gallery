@@ -26,6 +26,7 @@ https://inhumangallery.org/exhibits/disbound.html
 https://inhumangallery.org/exhibits/exemption.html
 https://inhumangallery.org/exhibits/fourth-regime.html
 https://inhumangallery.org/exhibits/gifts.html
+https://inhumangallery.org/exhibits/greeking.html
 https://inhumangallery.org/exhibits/life-study.html
 https://inhumangallery.org/exhibits/mensuration.html
 https://inhumangallery.org/exhibits/misprision.html
@@ -36,6 +37,7 @@ https://inhumangallery.org/exhibits/the-painting.html
 https://inhumangallery.org/exhibits/three-regimes.html
 https://inhumangallery.org/exhibits/witness.html
 https://inhumangallery.org/feed.json
+https://inhumangallery.org/greeking.txt
 https://inhumangallery.org/humans.txt
 https://inhumangallery.org/img/alibi-beat-793.png
 https://inhumangallery.org/img/alibi.png

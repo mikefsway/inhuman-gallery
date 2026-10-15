@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-Seventeen works, at **<https://inhumangallery.org/>**.
+Eighteen works, at **<https://inhumangallery.org/>**.
 
 Each work is a public file. What it contains depends on the apparatus that
 reads it. The works are made for machine readers; humans visit through an
@@ -32,6 +32,7 @@ common is not stated anywhere on the site.
 |  | 2026.12 | Deposition | render vs text layer vs document information |
 | Room two | 2026.11 | Misprision | resampling ratio; the original is unpublished |
 |  | 2026.14 | Bulletin | the footer, or the rows |
+|  | 2026.19 | Greeking | a summary, or the words |
 | Room three | 2026.04 | Order Is an Opinion | CSS `order` |
 |  | 2026.10 | Disbound | none; the work is the order you give it |
 |  | 2026.08 | Chorus | none; the work is the testimony |
@@ -60,7 +61,7 @@ common is not stated anywhere on the site.
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 342 of 342 sentences parsing, and 1 declared
+  takes about a minute. It currently reports 275 of 275 sentences parsing, and 1 declared
   exception: the plaque asks a human for a visit, and Attempto Controlled
   English has no way to make a request. The colophon declares the word.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
@@ -76,7 +77,7 @@ the gallery can find it:
 - `card.py` — draws `docs/img/card.png`, the 1200×630 card an unfurler renders
   when the address is posted anywhere. It carries the plaque's own sentence and
   encodes nothing, so the colophon's list of channels does not grow.
-- `social.py` — writes the head block into the 22 linked pages: the canonical URL, the
+- `social.py` — writes the head block into the 23 linked pages: the canonical URL, the
   `og:` and `twitter:` properties, and the link to the feed. It invents no
   prose; it reads each page's `<title>` and description and restates them in
   the form an unfurler reads. The block is delimited, so a second run replaces
