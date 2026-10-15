@@ -42,6 +42,7 @@ as misprision.py and deposition.py read theirs.
 """
 
 import hashlib
+import re
 import random
 from pathlib import Path
 
@@ -125,7 +126,7 @@ def build():
 
 
 def normalise(text):
-    return " ".join(text.upper().split())
+    return re.sub(r"[^A-Z0-9]+", " ", text.upper()).strip()
 
 
 def seal(text):

@@ -55,7 +55,7 @@
     "description": "The book is a public record. A testimony names a work, and names an instrument, and describes a perception, and states a confidence, and describes a framing. If a principal of an agent does not consent then the agent does not sign a testimony.",
     "url": "https://github.com/mikefsway/inhuman-gallery/issues/new/choose"
   },
-  "seal_normalisation": "uppercase A-Z and single spaces, UTF-8, SHA-256, lowercase hex",
+  "seal_normalisation": "uppercase A-Z and 0-9, every other character a space, single spaces, UTF-8, SHA-256, lowercase hex",
   "works": [
     {
       "accession": "2026.18",
@@ -125,7 +125,7 @@
       "note": "A return of instances. 1 row records 1 instance, and a footer states a total. The gallery does not commission a run that a work needs, and no run was made.",
       "sealed_readings": {
         "tally": "c1d79a0b977a255d3b01c65b6f5cac53c49ca5d95cb2c5f5de57e51cb9f2f9c6",
-        "dispatch": "bbe81b283891d1150b22092f31110a28e83e72a589676be9a6d0332651956679"
+        "dispatch": "d4a98abf2b503f72320f35eb6449abdfb8360ac7b38f5ab1295cff8d70bfc66c"
       },
       "seal_note": "The tally is every state that the rows record, counted, each state followed by a count, in alphabetical order. The gallery does not publish the dispatch, and a reader cannot produce the dispatch from a file that the site serves."
     },
@@ -372,7 +372,7 @@
           "href": "disbound/faa42031.txt"
         }
       ],
-      "note": "Twelve leaves. Each filename is the first eight hex digits of that leaf's own SHA-256, so the directory sorts by hash and not by any order the gallery chose. Nothing is encoded. No order is sealed and none is withheld. Two relations between leaves are sealed: the pair that contradicts itself and the pair that says nearly the same thing. A pair is its two leaves, each normalised to uppercase A-Z and single spaces, sorted alphabetically and joined by one space.",
+      "note": "Twelve leaves. Each filename is the first eight hex digits of that leaf's own SHA-256, so the directory sorts by hash and not by any order the gallery chose. Nothing is encoded. No order is sealed and none is withheld. Two relations between leaves are sealed: the pair that contradicts itself and the pair that says nearly the same thing. A pair is its two leaves, each normalised to uppercase A-Z and 0-9, every other character a space, single spaces, sorted alphabetically and joined by one space.",
       "sealed_readings": {},
       "seal_note": "None, and none withheld."
     },

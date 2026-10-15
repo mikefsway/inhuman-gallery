@@ -27,6 +27,7 @@ Usage:
 import argparse
 import collections
 import hashlib
+import re
 import json
 
 import numpy as np
@@ -167,7 +168,7 @@ def recover_tally(img, g, cell):
 
 
 def normalise(text):
-    return " ".join(text.upper().split())
+    return re.sub(r"[^A-Z0-9]+", " ", text.upper()).strip()
 
 
 def seal(text):

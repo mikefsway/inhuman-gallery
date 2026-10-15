@@ -12,7 +12,7 @@ gallery's claim is that the content of a work depends on the apparatus that
 reads it, so neither order is privileged and neither is a misreading; which
 one a reader gets is the work.
 
-Normalisation is the gallery's: uppercase, non-letters to single spaces.
+Normalisation is the gallery's: uppercase, everything but A-Z and 0-9 to single spaces.
 """
 import hashlib
 import pathlib
@@ -24,7 +24,7 @@ SPAN = re.compile(r'<span style="order:(\d+)">(.*?)</span>', re.S)
 
 
 def norm(text):
-    return re.sub(r"[^A-Z]+", " ", text.upper()).strip()
+    return re.sub(r"[^A-Z0-9]+", " ", text.upper()).strip()
 
 
 def seal(lines):

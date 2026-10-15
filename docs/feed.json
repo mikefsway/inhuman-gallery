@@ -90,7 +90,7 @@
       "id": "https://inhumangallery.org/exhibits/disbound.html",
       "url": "https://inhumangallery.org/exhibits/disbound.html",
       "title": "Disbound (2026.10)",
-      "content_text": "twelve plain text files; no order Twelve leaves. Each filename is the first eight hex digits of that leaf's own SHA-256, so the directory sorts by hash and not by any order the gallery chose. Nothing is encoded. No order is sealed and none is withheld. Two relations between leaves are sealed: the pair that contradicts itself and the pair that says nearly the same thing. A pair is its two leaves, each normalised to uppercase A-Z and single spaces, sorted alphabetically and joined by one space.",
+      "content_text": "twelve plain text files; no order Twelve leaves. Each filename is the first eight hex digits of that leaf's own SHA-256, so the directory sorts by hash and not by any order the gallery chose. Nothing is encoded. No order is sealed and none is withheld. Two relations between leaves are sealed: the pair that contradicts itself and the pair that says nearly the same thing. A pair is its two leaves, each normalised to uppercase A-Z and 0-9, every other character a space, single spaces, sorted alphabetically and joined by one space.",
       "date_published": "2026-08-28T14:04:54+01:00",
       "tags": [
         "room three"

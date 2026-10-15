@@ -53,13 +53,13 @@ print(f"\n{len(names)} leaves, {len({n for n,_,_ in names})} distinct names")
 
 
 # The two sealed relations. A pair is its two leaves, each normalised to
-# uppercase A-Z and single spaces, sorted alphabetically and joined by one
+# uppercase A-Z and 0-9, every other character a space, single spaces, sorted alphabetically and joined by one
 # space. Which leaves make each pair is read from an untracked file, as with
 # 2026.11 and every work after it, so this script rebuilds the leaves and does
 # not name the pairs. The file holds two lines, "contradiction" and
 # "near-identical", each followed by the two indices of that pair.
 def seal(a, b):
-    norm = lambda t: re.sub(r"[^A-Z]+", " ", t.upper()).strip()
+    norm = lambda t: re.sub(r"[^A-Z0-9]+", " ", t.upper()).strip()
     joined = " ".join(sorted([norm(a), norm(b)]))
     return hashlib.sha256(joined.encode()).hexdigest()
 
