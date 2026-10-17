@@ -45,7 +45,7 @@
   the document, which do not agree. One seal of a set.
 - [Conversation Piece (2026.20)](exhibits/conversation-piece.html): plain
   text, twenty-one sentences. File: conversation-piece.txt. Chosen by an
-  embedding model the page names. The plate is a projection. Two sealed readings.
+  embedding model the page names. The plate is a projection. Three sealed readings.
 
 ### Room two
 

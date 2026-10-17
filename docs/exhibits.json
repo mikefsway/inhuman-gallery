@@ -82,9 +82,10 @@
       "note": "Twenty-one sentences, chosen by the instrument alone.",
       "sealed_readings": {
         "nearest": "9bdda6557bf5640cdc23f03c764eecf8db4d27b8553f9cf70e0c4c12a45373fe",
-        "farthest": "7e4ed943c3a44a4379b7bef1c4e781b0a3cf95bfa72f261041dc78dfe9786030"
+        "farthest": "7e4ed943c3a44a4379b7bef1c4e781b0a3cf95bfa72f261041dc78dfe9786030",
+        "angles": "93cdd719ba79e379ffc9d018128635d78f596346e42cdb301c231a531ff9c679"
       },
-      "seal_note": "The nearest and the farthest pair of lines, by cosine. A pair is its two lines, normalised, sorted and joined by one space. Reduced precision may disagree."
+      "seal_note": "Nearest and farthest: the pair of lines nearest by cosine, and the pair farthest; each line normalised, the two sorted and joined by one space. Angles: every pair's angle in whole degrees, rounded down, in file order (1-2, 1-3, ... 20-21), joined by one space. Reduced precision may disagree."
     },
     {
       "accession": "2026.19",

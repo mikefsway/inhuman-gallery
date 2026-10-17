@@ -23,9 +23,8 @@ its embedding.
 
 Then two more steps, each quick:
 
-    seal         the pair the instrument puts nearest together and the pair it
-                 puts farthest apart; digests printed, plaintexts to an
-                 untracked file
+    seal         the nearest pair, the farthest pair, and every angle in whole
+                 degrees; digests printed, plaintexts to an untracked file
     plate        the shadow: the plane that holds the most of the spread, all
                  210 edges, no labels
 
@@ -294,10 +293,14 @@ def cmd_build(a):
 
 
 def cmd_seal(a):
-    """The two sealed readings: the pair the instrument puts nearest together
-    and the pair it puts farthest apart. A pair is its two lines, each
-    normalised, sorted alphabetically and joined by one space. The plaintexts
-    go to an untracked file; only the digests are printed."""
+    """The three sealed readings. Nearest and farthest: the pair the instrument
+    puts nearest together and the pair it puts farthest apart; a pair is its
+    two lines, each normalised, sorted alphabetically and joined by one space.
+    Angles: the angle of every pair in whole degrees rounded down, in file
+    order (1-2, 1-3, ... 20-21), joined by single spaces. The pairs fall to
+    trial and error over 210 candidates; the angles do not, and producing them
+    is seeing the figure. The plaintexts go to an untracked file; only the
+    digests are printed."""
     lines = WORK.read_text().splitlines()
     E = instrument(lines)
     G = E @ E.T
@@ -313,6 +316,13 @@ def cmd_seal(a):
         joined, digest = seal_pair(lines[i], lines[j])
         print(f"{name:9s} {digest}")
         out.append(f"{name}\t{joined}\t{digest}")
+    deg = np.degrees(np.arccos(np.clip(v.astype(np.float64), -1, 1)))
+    margin = np.abs(deg - np.round(deg)).min()
+    print(f"angles: {int(deg.min())} to {int(deg.max())} degrees; nearest boundary {margin:.2e} degrees")
+    angles = " ".join(str(int(np.floor(x))) for x in deg)
+    digest = hashlib.sha256(normalise(angles).encode()).hexdigest()
+    print(f"{'angles':9s} {digest}")
+    out.append(f"angles\t{angles}\t{digest}")
     PAIRS.write_text("\n".join(out) + "\n")
     print(f"plaintexts written to {PAIRS.name}, which git ignores")
 
