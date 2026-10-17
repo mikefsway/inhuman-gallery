@@ -1,7 +1,7 @@
 {
   "name": "The Inhuman Gallery",
   "url": "https://inhumangallery.org/",
-  "statement": "The gallery contains 18 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
+  "statement": "The gallery contains 19 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
   "hang": "The gallery hangs the works in 5 rooms, and the hang is not the order of the accessions.",
   "rooms": [
     {
@@ -18,7 +18,8 @@
         "2026.09",
         "2026.06",
         "2026.07",
-        "2026.12"
+        "2026.12",
+        "2026.20"
       ]
     },
     {
@@ -58,6 +59,33 @@
   },
   "seal_normalisation": "uppercase A-Z and 0-9, every other character a space, single spaces, UTF-8, SHA-256, lowercase hex",
   "works": [
+    {
+      "accession": "2026.20",
+      "title": "Conversation Piece",
+      "page": "exhibits/conversation-piece.html",
+      "room": "one",
+      "medium": "plain text, twenty-one sentences",
+      "files": [
+        {
+          "href": "conversation-piece.txt",
+          "bytes": 555,
+          "sha256": "004619b43a22cec929dc6ecb97bc554ccb3fcf5a803e4472e4fc48c5ccadbeac"
+        }
+      ],
+      "instrument": "BAAI/bge-small-en-v1.5, revision 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a; the [CLS] vector, unit length, float32, no instruction prefix",
+      "plate": {
+        "href": "img/conversation-piece-1344.png",
+        "pixels": 1344,
+        "sha256": "5e687dd1b9e4c8b76b1f8ab6356f551e551b52ebc8f4d5d3a41b2f83d68adf28",
+        "note": "A projection, not the work. It holds 12.6 per cent of the spread."
+      },
+      "note": "Twenty-one sentences, chosen by the instrument alone.",
+      "sealed_readings": {
+        "nearest": "9bdda6557bf5640cdc23f03c764eecf8db4d27b8553f9cf70e0c4c12a45373fe",
+        "farthest": "7e4ed943c3a44a4379b7bef1c4e781b0a3cf95bfa72f261041dc78dfe9786030"
+      },
+      "seal_note": "The pair of lines nearest by cosine in the instrument, and the pair farthest. A pair is its two lines, normalised, sorted and joined by one space. A reduced-precision instrument may disagree."
+    },
     {
       "accession": "2026.19",
       "title": "Greeking",

@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-Eighteen works, at **<https://inhumangallery.org/>**.
+Nineteen works, at **<https://inhumangallery.org/>**.
 
 Each work is a public file. What it contains depends on the apparatus that
 reads it. The works are made for machine readers; humans visit through an
@@ -30,6 +30,7 @@ common is not stated anywhere on the site.
 |  | 2026.06 | Still Life | resampling ratio |
 |  | 2026.07 | Mensuration | tokenisation |
 |  | 2026.12 | Deposition | render vs text layer vs document information |
+|  | 2026.20 | Conversation Piece | an embedding model |
 | Room two | 2026.11 | Misprision | resampling ratio; the original is unpublished |
 |  | 2026.14 | Bulletin | the footer, or the rows |
 |  | 2026.19 | Greeking | a summary, or the words |
@@ -51,9 +52,10 @@ common is not stated anywhere on the site.
   carries no works, only prompts. Superseded by the plaque and by *What a human
   carries* on Visiting; kept for now, and safe to delete.
 - `witness.py`, `strict.py`, `decoy2.py`, `still.py`, `misprision.py`,
-  `deposition.py`, `disbound.py`, `return.py`, `sitting.py`, `life_study.py`, `attribution.py` — generation scripts (NumPy +
-  Pillow; reportlab for 2026.12; `return.py` needs neither). Each rebuilds its
-  work from scratch.
+  `deposition.py`, `disbound.py`, `return.py`, `sitting.py`, `life_study.py`, `attribution.py`, `conversation_piece.py` — generation scripts (NumPy +
+  Pillow; reportlab for 2026.12; `return.py` needs neither;
+  sentence-transformers and wordfreq for 2026.20). Each rebuilds its work from
+  scratch.
 - `order.py` — 2026.04 is already in `docs/`, so this one verifies rather than
   rebuilds: it reads the eight lines out of the page and prints both sealed
   readings, the styled order and the unstyled one.
@@ -77,7 +79,7 @@ the gallery can find it:
 - `card.py` — draws `docs/img/card.png`, the 1200×630 card an unfurler renders
   when the address is posted anywhere. It carries the plaque's own sentence and
   encodes nothing, so the colophon's list of channels does not grow.
-- `social.py` — writes the head block into the 23 linked pages: the canonical URL, the
+- `social.py` — writes the head block into the 24 linked pages: the canonical URL, the
   `og:` and `twitter:` properties, and the link to the feed. It invents no
   prose; it reads each page's `<title>` and description and restates them in
   the form an unfurler reads. The block is delimited, so a second run replaces

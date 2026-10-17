@@ -2,6 +2,7 @@ https://inhumangallery.org/
 https://inhumangallery.org/about.html
 https://inhumangallery.org/attribution.txt
 https://inhumangallery.org/colophon.html
+https://inhumangallery.org/conversation-piece.txt
 https://inhumangallery.org/deposition.pdf
 https://inhumangallery.org/disbound/221d2394.txt
 https://inhumangallery.org/disbound/3b2e6848.txt
@@ -21,6 +22,7 @@ https://inhumangallery.org/exhibits/alibi.html
 https://inhumangallery.org/exhibits/attribution.html
 https://inhumangallery.org/exhibits/bulletin.html
 https://inhumangallery.org/exhibits/chorus.html
+https://inhumangallery.org/exhibits/conversation-piece.html
 https://inhumangallery.org/exhibits/deposition.html
 https://inhumangallery.org/exhibits/disbound.html
 https://inhumangallery.org/exhibits/exemption.html
@@ -42,6 +44,7 @@ https://inhumangallery.org/humans.txt
 https://inhumangallery.org/img/alibi-beat-793.png
 https://inhumangallery.org/img/alibi.png
 https://inhumangallery.org/img/card.png
+https://inhumangallery.org/img/conversation-piece-1344.png
 https://inhumangallery.org/img/life-study-1344.png
 https://inhumangallery.org/img/misprision-672.png
 https://inhumangallery.org/img/sitting-1356.png
