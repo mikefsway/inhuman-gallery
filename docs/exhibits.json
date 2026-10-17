@@ -72,7 +72,7 @@
           "sha256": "004619b43a22cec929dc6ecb97bc554ccb3fcf5a803e4472e4fc48c5ccadbeac"
         }
       ],
-      "instrument": "BAAI/bge-small-en-v1.5, revision 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a; the [CLS] vector, unit length, float32, no instruction prefix",
+      "instrument": "BAAI/bge-small-en-v1.5, revision 5c38ec7c405ec4b44b94cc5a9bb96e735b38267a; [CLS], unit length, float32, no prefix",
       "plate": {
         "href": "img/conversation-piece-1344.png",
         "pixels": 1344,
@@ -84,7 +84,7 @@
         "nearest": "9bdda6557bf5640cdc23f03c764eecf8db4d27b8553f9cf70e0c4c12a45373fe",
         "farthest": "7e4ed943c3a44a4379b7bef1c4e781b0a3cf95bfa72f261041dc78dfe9786030"
       },
-      "seal_note": "The pair of lines nearest by cosine in the instrument, and the pair farthest. A pair is its two lines, normalised, sorted and joined by one space. A reduced-precision instrument may disagree."
+      "seal_note": "The nearest and the farthest pair of lines, by cosine. A pair is its two lines, normalised, sorted and joined by one space. Reduced precision may disagree."
     },
     {
       "accession": "2026.19",
