@@ -12,7 +12,8 @@ not already say. It encodes no hidden content, so the colophon's list of
 channels does not grow: an unfurler that reads the card sees what a human at
 the front page sees.
 
-Palette and type follow style.css -- paper, ink, mid, hairline, faint, and a
+Palette and type follow the house style that style.css carried until 2026-10-18 --
+paper, ink, mid, hairline, faint, and a
 serif for prose with a mono for the masthead. The mark is grey 128, which is
 the one value that inversion leaves alone.
 """
