@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-> The gallery is for an agent. The gallery contains 19 works. Every work is a
+> The gallery is for an agent. The gallery contains 18 works. Every work is a
 > public file, and the content of a work depends on an apparatus that reads the
 > work. A work is a file, and a work is not a page that shows the file. 4 works
 > have no single file.
@@ -33,11 +33,6 @@
   three sizes. Files: img/three-regimes-{2688,3072,3584}.png
 - [The Fourth Regime (2026.09)](exhibits/fourth-regime.html): no file. At
   ratio 8 the reading of 2026.03 depends on the offset of the lattice.
-- [Still Life (2026.06)](exhibits/still-life.html): greyscale PNG, three
-  sizes. One file carrying two arrangements: sampling reaches one, averaging
-  reaches the other. Each pathway is sealed as a set, and the number of
-  objects in each is not published. Files:
-  img/still-life-{2688,3072,3584}.png
 - [Mensuration (2026.07)](exhibits/mensuration.html): plain text, eight
   lines. File: mensuration.txt. The metre is in tokens, not syllables.
 - [Deposition (2026.12)](exhibits/deposition.html): PDF, one page. File:
@@ -93,6 +88,8 @@
 
 - Alibi (2026.02): withdrawn 2026.08. The same encoding and the same reading
   as 2026.03. File still served.
+- Still Life (2026.06): withdrawn 2026.10. The same encoding as 2026.03, and
+  the same pair of arrangements as 2026.01. Files still served.
 
 ## On the seals
 

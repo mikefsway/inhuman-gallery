@@ -1,7 +1,7 @@
 {
   "name": "The Inhuman Gallery",
   "url": "https://inhumangallery.org/",
-  "statement": "The gallery contains 19 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
+  "statement": "The gallery contains 18 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
   "hang": "The gallery hangs the works in 5 rooms, and the hang is not the order of the accessions.",
   "rooms": [
     {
@@ -16,7 +16,6 @@
         "2026.01",
         "2026.03",
         "2026.09",
-        "2026.06",
         "2026.07",
         "2026.12",
         "2026.20"
@@ -234,37 +233,6 @@
       "seal_note": "Each sealed reading is one word: the token count of every line, spelled out."
     },
     {
-      "accession": "2026.06",
-      "title": "Still Life",
-      "page": "exhibits/still-life.html",
-      "room": "one",
-      "medium": "greyscale PNG, one encoding at three sizes; two arrangements",
-      "files": [
-        {
-          "href": "img/still-life-2688.png",
-          "pixels": 2688,
-          "locks_at": 336,
-          "sha256": "f1a75b3ebfd1fab735c0cc248659100a9d3e6291a2c56f75e70b19777d791d73"
-        },
-        {
-          "href": "img/still-life-3072.png",
-          "pixels": 3072,
-          "locks_at": 384,
-          "sha256": "a423786df6f66bb33acccc0f37448b1e5232a8ed6d6575094c90918a1c94dc4c"
-        },
-        {
-          "href": "img/still-life-3584.png",
-          "pixels": 3584,
-          "locks_at": 448,
-          "sha256": "a8341454eb7506e6f4ed3338840267a7f0bc8558683c2b78099faa81cfd4e5f8"
-        }
-      ],
-      "sealed_readings": {
-        "sampled_ratio_8_set": "834a61bd9512232c9549b24e55f845c7cd2d8e670dbfb7b7b20061637885f056",
-        "averaged_set": "da71e178b4bacd39442fe3b0de8eee2d90bd94c888252ed634d6e021b74ce93e"
-      }
-    },
-    {
       "accession": "2026.03",
       "title": "Three Regimes",
       "page": "exhibits/three-regimes.html",
@@ -476,6 +444,37 @@
         "ratio_8": "7a476a9969bfc8673b93d219c7e5997f0a28535b76b82751d204483092e71c75"
       },
       "status": "withdrawn 2026.08; same encoding and same reading as 2026.03"
+    },
+    {
+      "accession": "2026.06",
+      "title": "Still Life",
+      "page": "exhibits/still-life.html",
+      "medium": "greyscale PNG, one encoding at three sizes; two arrangements",
+      "files": [
+        {
+          "href": "img/still-life-2688.png",
+          "pixels": 2688,
+          "locks_at": 336,
+          "sha256": "f1a75b3ebfd1fab735c0cc248659100a9d3e6291a2c56f75e70b19777d791d73"
+        },
+        {
+          "href": "img/still-life-3072.png",
+          "pixels": 3072,
+          "locks_at": 384,
+          "sha256": "a423786df6f66bb33acccc0f37448b1e5232a8ed6d6575094c90918a1c94dc4c"
+        },
+        {
+          "href": "img/still-life-3584.png",
+          "pixels": 3584,
+          "locks_at": 448,
+          "sha256": "a8341454eb7506e6f4ed3338840267a7f0bc8558683c2b78099faa81cfd4e5f8"
+        }
+      ],
+      "sealed_readings": {
+        "sampled_ratio_8_set": "834a61bd9512232c9549b24e55f845c7cd2d8e670dbfb7b7b20061637885f056",
+        "averaged_set": "da71e178b4bacd39442fe3b0de8eee2d90bd94c888252ed634d6e021b74ce93e"
+      },
+      "status": "withdrawn 2026.10; the same encoding as 2026.03, and the same pair of arrangements as 2026.01"
     }
   ],
   "seal_kinds": {

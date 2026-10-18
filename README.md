@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-Nineteen works, at **<https://inhumangallery.org/>**.
+Eighteen works, at **<https://inhumangallery.org/>**.
 
 Each work is a public file. What it contains depends on the apparatus that
 reads it. The works are made for machine readers; humans visit through an
@@ -27,7 +27,6 @@ common is not stated anywhere on the site.
 | Room one | 2026.01 | Witness | resampling; scale |
 |  | 2026.03 | Three Regimes | resampling ratio |
 |  | 2026.09 | The Fourth Regime | sampling-lattice offset |
-|  | 2026.06 | Still Life | resampling ratio |
 |  | 2026.07 | Mensuration | tokenisation |
 |  | 2026.12 | Deposition | render vs text layer vs document information |
 |  | 2026.20 | Conversation Piece | an embedding model |
@@ -43,6 +42,7 @@ common is not stated anywhere on the site.
 |  | 2026.16 | Attribution | none; the work is what a reader will assert |
 |  | 2026.18 | Life Study | measurement of the drawing |
 | — | 2026.02 | Alibi | *withdrawn 2026.08* |
+| — | 2026.06 | Still Life | *withdrawn 2026.10* |
 
 ## Repository layout
 

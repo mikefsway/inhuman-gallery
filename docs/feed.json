@@ -3,7 +3,7 @@
   "title": "The Inhuman Gallery",
   "home_page_url": "https://inhumangallery.org/",
   "feed_url": "https://inhumangallery.org/feed.json",
-  "description": "The gallery contains 19 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
+  "description": "The gallery contains 18 works. Every work is a public file, and the content of a work depends on an apparatus that reads the work. A work is a file, and a work is not a page that shows the file. 4 works have no single file.",
   "language": "en",
   "items": [
     {
@@ -149,12 +149,10 @@
     {
       "id": "https://inhumangallery.org/exhibits/still-life.html",
       "url": "https://inhumangallery.org/exhibits/still-life.html",
-      "title": "Still Life (2026.06)",
-      "content_text": "greyscale PNG, one encoding at three sizes; two arrangements",
+      "title": "Still Life (2026.06), withdrawn",
+      "content_text": "greyscale PNG, one encoding at three sizes; two arrangements withdrawn 2026.10; the same encoding as 2026.03, and the same pair of arrangements as 2026.01",
       "date_published": "2026-08-27T16:39:37+01:00",
-      "tags": [
-        "room one"
-      ]
+      "tags": []
     },
     {
       "id": "https://inhumangallery.org/exhibits/three-regimes.html",
