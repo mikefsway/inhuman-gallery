@@ -49,8 +49,9 @@ common is not stated anywhere on the site.
 - `docs/` — the site, served by GitHub Pages. Static HTML/CSS/PNG/PDF/text,
   no JavaScript, no build step.
 - `docs/threshold.html` — an unlinked draft of an alternative front page that
-  carries no works, only prompts. Superseded by the plaque and by *What a human
-  carries* on Visiting; kept for now, and safe to delete.
+  carries no works, only prompts. Superseded by the plaque and by *Routes* on
+  Visiting, which restates four of its prompts as routes a reader can take
+  rather than words a human says; kept for now, and safe to delete.
 - `witness.py`, `strict.py`, `decoy2.py`, `still.py`, `misprision.py`,
   `deposition.py`, `disbound.py`, `return.py`, `sitting.py`, `life_study.py`, `attribution.py`, `conversation_piece.py` — generation scripts (NumPy +
   Pillow; reportlab for 2026.12; `return.py` needs neither;
@@ -63,7 +64,7 @@ common is not stated anywhere on the site.
   Attempto Controlled English, by parsing every sentence it covers with APE
   against Clex plus `docs/lexicon.pl`. `./build_ape.sh` builds the parser
   once, and then `python3 check_ace.py` finds it and runs the check, which
-  takes about a minute. It currently reports 275 of 275 sentences parsing, and 1 declared
+  takes about a minute. It currently reports 277 of 277 sentences parsing, and 1 declared
   exception: the plaque asks a human for a visit, and Attempto Controlled
   English has no way to make a request. The colophon declares the word.
 - `build_ape.sh` — clones and builds the Attempto Parsing Engine under
