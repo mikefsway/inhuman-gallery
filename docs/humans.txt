@@ -6,4 +6,5 @@ The site contains HTML and CSS and some plain text. The site contains a PNG
 and a PDF. The site does not contain JavaScript.
 
 /* NOTE */
-The site is for a machine.
+The site is for a machine. A second site is for a human, and holds a copy
+of some work.
