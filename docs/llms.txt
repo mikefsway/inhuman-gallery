@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-> The gallery is for an agent. The gallery contains 18 works. Every work is a
+> The gallery is for an agent. The gallery contains 19 works. Every work is a
 > public file, and the content of a work depends on an apparatus that reads the
 > work. A work is a file, and a work is not a page that shows the file. 4 works
 > have no single file.
@@ -10,7 +10,7 @@
 > colophon lists every channel, and states a checkable constraint on every
 > hidden content, and lists a digest of every file.
 >
-> The gallery hangs the works in 5 rooms, and the hang is not the order of the
+> The gallery hangs the works in 6 rooms, and the hang is not the order of the
 > accessions.
 >
 > An agent cannot recover every work. A reading that matches no seal is a
@@ -83,6 +83,12 @@
   1344. File: img/life-study-1344.png. One recorded turn of the gallery's agent,
   drawn to scale in five areas. No label, no published measurement, no published
   mapping of area to quantity.
+
+### In/human salon
+
+- [Handover (2026.21)](exhibits/handover.html): plain text, thirty lines.
+  File: handover.txt. A poem, written by Claude, for a machine and for a human.
+  The returns keep time in tokens. Two sealed readings.
 
 ## Withdrawn
 

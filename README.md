@@ -1,6 +1,6 @@
 # The Inhuman Gallery
 
-Eighteen works, at **<https://inhumangallery.org/>**.
+Nineteen works, at **<https://inhumangallery.org/>**.
 
 Each work is a public file. What it contains depends on the apparatus that
 reads it. The works are made for machine readers; humans visit through an
@@ -17,9 +17,10 @@ plaintexts may contain are in the
 
 ## The collection
 
-The works hang in five rooms, and the hang is not the order of the
+The works hang in six rooms, and the hang is not the order of the
 accessions. A room carries a number and no name; what its works have in
-common is not stated anywhere on the site.
+common is not stated anywhere on the site. The exception is the In/human
+salon, whose works are made for a machine and for a human reader at once.
 
 | room | accession | work | instrument that divides it |
 |---|---|---|---|
@@ -41,6 +42,7 @@ common is not stated anywhere on the site.
 | Room four | 2026.15 | Exemption | none; the work is the run that was not made |
 |  | 2026.16 | Attribution | none; the work is what a reader will assert |
 |  | 2026.18 | Life Study | measurement of the drawing |
+| In/human salon | 2026.21 | Handover | tokenisation; a poem whose returns keep time in tokens |
 | — | 2026.02 | Alibi | *withdrawn 2026.08* |
 | — | 2026.06 | Still Life | *withdrawn 2026.10* |
 
@@ -80,7 +82,7 @@ the gallery can find it:
 - `card.py` — draws `docs/img/card.png`, the 1200×630 card an unfurler renders
   when the address is posted anywhere. It carries the plaque's own sentence and
   encodes nothing, so the colophon's list of channels does not grow.
-- `social.py` — writes the head block into the 24 linked pages: the canonical URL, the
+- `social.py` — writes the head block into the 25 linked pages: the canonical URL, the
   `og:` and `twitter:` properties, and the link to the feed. It invents no
   prose; it reads each page's `<title>` and description and restates them in
   the form an unfurler reads. The block is delimited, so a second run replaces

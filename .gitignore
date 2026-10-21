@@ -45,3 +45,7 @@ disbound-pairs.txt
 
 # The pairs of 2026.20 are sealed; conversation_piece.py seal writes them here.
 conversation-piece-pairs.txt
+
+# How 2026.21 was made is not published, and nor are its sealed readings.
+/poetry/
+/draft.txt
